@@ -1,0 +1,48 @@
+﻿body {
+   	   margin: 0px;
+       width: 100%;
+       height: 100%;
+       background-color: #dddddd;
+}
+.maingorizontallist{
+    position:  center;
+    margin: 3% 20% 3% 20%; 
+    width:60%;
+    height:94%;
+    background-color: #eeeeee;
+    border-bottom: solid;
+    border-bottom-width: 3px;
+    padding-top: 5px;
+}
+.mainverticallist{
+    position: relative;
+    margin: 0 auto;
+    width: 34%;
+    height: 90%;
+    text-align: center;
+    background-color: white;
+}
+.allcontent{
+    margin: 0 auto;
+}
+.me{
+    position: center;
+    margin: 10px;
+    width:33%;
+    height:90%;
+    text-align:center;
+    background-color: white;
+}
+.work{
+    text-align: left;
+}
+.fio{
+    margin-top: 10%;
+    text-align:center;
+    font-weight:bold;
+    font-family:'Times New Roman', Times, serif;
+    font-size:14px;
+}
+li{
+    text-align:left;
+}
