@@ -36,6 +36,8 @@ p:first-of-type {
         text-align:left;
         margin-top: 7%;
 }
+
+/* Me (part 1 of 4) */
 .me{
     margin-top: 10%;
     border-bottom: 1px solid blue;
@@ -56,6 +58,8 @@ img{
 .work{
     text-align: left;
 }
+
+/* Motivation (part 2 of 4) */
 .motivation{
     margin: 10px;
     border-bottom: 1px solid blue;
@@ -68,11 +72,15 @@ ul{
 li{
     text-align:left;
 }
+
+/* Contacts (part 3 of 4) */
 .contacts{
     margin: 10px;
     border-bottom: 1px solid blue;
     padding-bottom: 5%;
 }
+
+/* Feedback (part 4 of 4) */
 .feedback{
     margin: 10px;
     padding-bottom: 20%;
