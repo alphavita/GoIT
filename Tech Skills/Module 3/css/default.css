@@ -1,0 +1,21 @@
+﻿body {
+        background-color: #f9f9f9;
+}
+.container{
+        background-color: white/*red*/;
+        width: 77.5%;
+        height: 100%;
+        margin: 0 auto;
+}
+.header{
+    padding: 5.25% 3.96% 0 3.8%;
+}
+.menu{
+    margin: 0; 
+    padding: 4px; 
+}
+.menu li {
+    display: inline; 
+    margin-right: 5px; 
+    padding: 3px; 
+}
