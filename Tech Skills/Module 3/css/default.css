@@ -2,6 +2,11 @@
         background-color: #f9f9f9;
         height: 100%;
         width: 100%;
+        font-family: Arial, sans-serif;
+}
+li a{
+    text-decoration: none;
+    color: inherit !important;  /*  ну Марианна и заставили Вы меня помучиться с user agent stylesheet, не наследовалось свойство и хоть волком вой */
 }
 .container{
         background-color: white;
@@ -59,9 +64,9 @@
 .menu-top {
     width: 100%;
     background-color: #525151;
-    color: white;
     list-style:  none;
     line-height:300%;
+    color: white;
 }
 .menu-top li{
     display: inline; 
@@ -79,23 +84,29 @@
 }  
 /* left menu */  
 .left-menu {
-    color: #adacac;
     list-style:  none;
     width: 25%;
     line-height:300%;
+
 }
 .left-menu li{
     margin-right: 5px; 
     padding: 1% 10%; 
-//    font-size: 20px;
-    border:1px solid;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-top: 1px solid;
+    color: #adacac;
     border-color: #adacac;
 }
+.left-menu li:last-child {
+    border-bottom: 1px solid;
+}
 .left-menu li:hover {
-    color:#2c2c2c;
     padding-left: 15%;
     background-color: #f9f9f9;
-}    
+    color: #2c2c2c;
+}
+
 /* image */
 .picture-frame {
     padding: 12% 10%;
