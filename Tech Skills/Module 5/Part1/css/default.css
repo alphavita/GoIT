@@ -1,0 +1,123 @@
+﻿@font-face {
+    font-family: 'Helvetica Neue Regular';
+    src: url('../fonts/helveticaneue-thin-webfont.eot');
+    src: url('../fonts/helveticaneue-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneue-thin-webfont.woff2') format('woff2'),
+         url('../fonts/helveticaneue-thin-webfont.woff') format('woff'),
+         url('../fonts/helveticaneue-thin-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    background-color: lightgray;
+}
+
+/***********          main blocks       ***********/
+
+.main-container {
+    position: relative;
+    margin: 2% 25%;
+}
+.box-main-picture{
+    position: relative;
+}
+.box-main-picture img{
+    max-width: 100%;
+}
+form {
+    position: absolute;
+    z-index: 5;
+    top: 23.5%;
+    left: 29%;
+    bottom: 18.5%;
+    right: 25%;
+    background-color: rgba(0,0,0,0.63);
+    line-height: 220%;
+}
+
+/***********          header       ***********/
+
+.header{
+    background-color: #075190;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 96.5%;
+    z-index:5;
+    text-align:right;
+    font-family: "Helvetica Neue Regular";
+    font-size: 12px;
+    line-height: 180%;
+
+}
+.header ul{
+    float:right;
+    width: 50%;
+}
+.header ul li{
+    float: right;
+    color:#4e9ed5 ;
+    padding-left:2%;
+    padding-right: 2%;
+}
+.header ul li:hover {
+    background-color:#4eabda;
+    color:white;
+}
+.header p{
+    float: right;
+    color: white;
+    margin-right: 2%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+.header img{
+    float: right;
+    width: 3%;
+    border-left: 1px solid blue;
+    padding-left: 1%;
+}
+.ola{           /* градиент, обводка*/
+        background: linear-gradient(to top, rgba(46,122,196,1),rgba(81,107,220,0.3));
+        text-shadow: blue 1px 0px, blue 1px 1px, blue 0px 1px, blue -1px 1px, blue -1px 0px, blue -1px -1px, blue 0px -1px, blue 1px -1px;
+}
+
+/***********          form       ***********/
+
+form p{
+    text-align:center;
+    font-family: "Helvetica Neue Regular";
+    color: white;
+}
+form p:first-child{
+    font-size: 15px;
+    border-bottom: 1px solid white;
+}
+#fb-login{
+    display: block;
+    margin: 6% auto;
+    max-width: 50%;
+}
+.ou{
+    margin-left: 23%;
+    font-size:12px;
+}
+.ou::after{
+    clear:both;
+    content:'';
+}
+.ou img, .ou p{
+    float:left;
+    display:block;
+}
+.ou p{
+margin-top: -7.5%;
+    font-size: 8px;
+    color: #999999;
+}
+input{
+    margin: 6% auto;
+    
+}
+    
