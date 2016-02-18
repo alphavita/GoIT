@@ -1,18 +1,35 @@
 ﻿body {
-    background-color: rgb(40,40,40);
+    background-color: black;
 }
 table{
     position:absolute;
-    left: 5%;
-    top: 5%;
-    width: 90%;
-    height:90%;
+    left: 30%;
+    top: 3%;
+    width: 40%;
+    height:96%;
     background-color:white;
-    border: 4px solid black;
+    border-collapse: collapse;
+    border-color:black;
+    border-width: 6px;
 }
-tr{
-    height: 25%;
+
+.background-red{
+    background-color: red;
 }
-td{
-    width:20%;
+.background-black{
+    background-color: rgba(0,0,0,0.95);
 }
+.background-blue{
+    background-color: darkblue;
+}
+.background-darkyellow {
+    background-color: rgb(255,248,103);
+}
+.background-yellow {
+    background-color: rgb(255,238,112);
+}
+.background-lightyellow {
+    background-color: rgb(255,238,97);
+}
+.row1{height:9.49%;} .row2{height:25.58%;} .row3{height:25.58%;} .row4{height:12.85%;} .row5{height:12.85%;} .row6{height:6.82%;}
+.col1{width: 10.37%;} .col2{width: 14.17%;} .col3 {width: 15.02%;} .col4{width: 27.78%;} .col5{width: 17.8%;} 
