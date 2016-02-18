@@ -6,13 +6,14 @@ table{
     left: 30%;
     top: 3%;
     width: 40%;
-    height:96%;
+    height:92%;
     background-color:white;
     border-collapse: collapse;
-    border-color:black;
-    border-width: 6px;
+    border: none;
 }
-
+td{
+    border: 6px solid black;
+}
 .background-red{
     background-color: red;
 }
