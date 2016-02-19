@@ -11,7 +11,12 @@
 body {
     background-color: lightgray;
     font-family: 'Helvetica Neue Regular',sans-serif;
+    background-image: url('../img/background.jpg') ;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
 }
+
 input[type="checkbox" i] {
     margin: inherit !important;
 }
@@ -25,9 +30,6 @@ input[type="checkbox" i] {
 }
 .box-main-picture{
     position: relative;
-}
-.box-main-picture img{
-    max-width: 100%;
 }
 form {
     position: absolute;
