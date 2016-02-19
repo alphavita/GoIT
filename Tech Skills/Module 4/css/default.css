@@ -9,11 +9,14 @@
     background-color: white;
     border-bottom: 2px solid #031d28;
     box-shadow: 11px 0 11px -10px #09556e, -9px 0 11px -9px #09556e;
+    width: 985px;
 }
 .autor-rights{
     text-align:center;
     font-size: 16px;
     color:white;
+    margin-left: 13.5%;
+    width: 985px;
 }
 .clearfix:after{
     display: block;
@@ -24,21 +27,22 @@
     position: relative;
 }
 .logo{
-    float:left;
-    width:50%;
+    float: left;
+    width: 325px;
+    height: 175px;
 }
 .logo img{
-    z-index:0;
-    max-width: 53%;
-    margin-left: 7%;
-    margin-top: 4%;
+z-index: 0;
+    max-width: 300px;
+    margin-left: 20px;
+    margin-top: 11px;
 }
 .logo p{
     position:absolute;
     z-index:1;
     color: #71aec1;
-    top: 28%;
-    left: 10%;
+    top: 110px;
+    left: 90px;    
     font-size: 12px;
 }
 .contacts{
@@ -46,9 +50,9 @@
     list-style:none;
     color: #5fa5bb;
     font-size: 12px;
-    margin-right: 6%;
-    margin-top: 1%;
-    line-height: 150%;
+    margin-right: 48px;
+    margin-top: 7px;    
+    line-height: 15px;
 }
 .contacts .first{
     font-weight: bold;
@@ -56,19 +60,21 @@
 .countries{
     clear: right;
     list-style: none;
-    margin-left: 58%;
     font-size: 11px;
-    padding-top: 4%;
+    padding-top: 55px;
+    margin-left: 580px;
+    width: 400px;
+    height: 50px;
 }
 .countries li{
     display: inline-block;
     text-align: center;
     color: blue;
-    width: 14%;
-
+    width: 60px;
 }
 .countries li img{
-    max-width:50%;
+    min-width: 15px;
+    max-width: 30px;
 }
 .foto {
     clear: both;
@@ -101,6 +107,7 @@
 ul {
     display: block;
     list-style: none;
+    z-index:10;
 }
 .top-menu > li > a {
     padding: 10px;
@@ -133,7 +140,7 @@ ul {
     display: block;
 }
 .columns{
-    z-index:20;
+    z-index:10;
 }
 .column-head {
     font-family: Tahoma;

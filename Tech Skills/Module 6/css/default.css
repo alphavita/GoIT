@@ -1,0 +1,50 @@
+﻿body {
+    width: 100%;
+    min-width: 930px;
+    color: #000;
+    font: 12px/14px Arial, Helvetica, sans-serif;
+    padding: 22px 46px;
+    font: 12px/14px Arial, Helvetica, sans-serif;
+}
+/****************  header  ****************/
+
+    /*************  telephones  *************/
+.box-head{
+    float:left;
+    background-color: rgb(241,0,0);
+    border-radius:82%;
+    width:20px;
+    height:20px;
+    background: rgb(32,105,136); /* Old browsers */
+    background: -moz-linear-gradient(top, rgb(32,105,136) 0%, rgb(12,50,86) 59%, rgb(12,50,86) 100%, rgb(12,50,86) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(32,105,136)), color-stop(59%,rgb(12,50,86)), color-stop(100%,rgb(12,50,86)), color-stop(100%,rgb(12,50,86))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgb(32,105,136) 0%,rgb(12,50,86) 59%,rgb(12,50,86) 100%,rgb(12,50,86) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgb(32,105,136) 0%,rgb(12,50,86) 59%,rgb(12,50,86) 100%,rgb(12,50,86) 100%); /* Opera 11.10+ */
+    background: linear-gradient(to bottom, rgb(32,105,136) 0%,rgb(12,50,86) 59%,rgb(12,50,86) 100%,rgb(12,50,86) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#206988', endColorstr='#0c3256',GradientType=0 ); /* IE6-9 */}
+.box-head img{
+    width: 60%;
+    margin-left: 4px;
+    margin-top: 3px;
+    float:left;
+}
+.telephones p{
+    float: left;
+    margin-left: 6px;
+    font: 18px Arial, sans-serif;
+}
+    /*************  authorization  *************/
+.authorization{
+    float:left;
+    background: rgb(32, 105, 36);
+    background: -moz-linear-gradient(270deg, rgb(32, 105, 36) 0%, rgb(17, 65, 101) 59%);
+    background: -webkit-linear-gradient(270deg, rgb(32, 105, 36) 0%, rgb(17, 65, 101) 59%);
+    background: -o-linear-gradient(270deg, rgb(32, 105, 36) 0%, rgb(17, 65, 101) 59%);
+    background: linear-gradient(0deg, rgb(32, 105, 36) 0%, rgb(17, 65, 101) 59%);
+
+}
+    /*************  logo  *************/
+.logo{
+    clear:both;
+    width: 100%;
+}

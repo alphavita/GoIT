@@ -19,7 +19,9 @@ input[type="checkbox" i] {
 
 .main-container {
     position: relative;
-    margin: 2% 25%;
+    margin: 2% auto;
+    width: 1215px;
+    height: 1064px;
 }
 .box-main-picture{
     position: relative;
@@ -30,10 +32,10 @@ input[type="checkbox" i] {
 form {
     position: absolute;
     z-index: 5;
-    top: 23.5%;
-    left: 29%;
-    bottom: 18.5%;
-    right: 25%;
+    top: 250px;
+    left:350px;
+    width:557px;
+    height:611px;
     background-color: rgba(0,0,0,0.63);
     line-height: 220%;
 }
@@ -45,45 +47,59 @@ form {
     position: absolute;
     left: 0;
     top: 0;
-    right: 0;
-    bottom: 96.5%;
+    width: 1215px;
+    height: 38px;
     z-index:5;
     text-align:right;
     font-family: "Helvetica Neue Regular";
-    font-size: 12px;
-    line-height: 180%;
-
+    font-size: 14px;
+    line-height: 38px;
 }
 .header ul{
-    float:right;
-    width: 50%;
+    float:left;
+    margin-left:450px;
 }
 .header ul li{
     float: right;
     color:#4e9ed5 ;
-    padding-left:2%;
-    padding-right: 2%;
+    padding-left:12px;
+    padding-right:12px;
 }
 .header ul li:hover {
     background-color:#4eabda;
     color:white;
 }
-.header p{
-    float: right;
+.header div{
+    float: left;
+    color:white;
+    margin-right: 2px;
+    padding-left: 13px;
+    padding-right: 6px;
+}
+.header div p{
+    float:left;
     color: white;
-    margin-right: 2%;
-    padding-left: 1%;
-    padding-right: 1%;
+}
+.underline-text{
+    text-decoration:underline;
 }
 .header img{
-    float: right;
-    width: 3%;
+    float: left;
+    width: 24px;
+    height: 38px;
     border-left: 1px solid blue;
-    padding-left: 1%;
+    padding-left: 18px;
 }
 .ola{           /* градиент, обводка*/
-        background: linear-gradient(to top, rgba(46,122,196,1),rgba(81,107,220,0.3));
-        text-shadow: blue 1px 0px, blue 1px 1px, blue 0px 1px, blue -1px 1px, blue -1px 0px, blue -1px -1px, blue 0px -1px, blue 1px -1px;
+    width: 190px;
+    text-align: center;
+    background: -webkit-linear-gradient(90deg, rgb(0, 0, 0) 20%, rgb(255, 255, 255) 100%);
+    background: linear-gradient(180deg, rgb(0, 0, 0) 20%, rgb(255, 255, 255) 100%);
+    background: -webkit-linear-gradient(90deg, rgb(66, 153, 210) 0%, rgb(101, 168, 228) 100%);
+    background: linear-gradient(180deg, rgb(66, 153, 210) 0%, rgb(101, 168, 228) 100%);
+}
+.ola p{
+    margin-right: 5px;
 }
 
 /***********          form       ***********/
@@ -94,17 +110,20 @@ form p{
     color: white;
 }
 form p:first-child{
-    font-size: 15px;
+    font-size: 24px;
+    line-height:64px;
     border-bottom: 1px solid white;
 }
 #fb-login{
     display: block;
-    margin: 6% auto;
-    max-width: 50%;
+    width: 276px;
+    height:34px;
+    margin: 38px auto 0;
 }
 .ou{
-    margin-left: 25%;
-    font-size:12px;
+    position:absolute;
+    margin: 30px 142px 0;
+    font-size:14px;
 }
 .ou::after{
     clear:both;
@@ -114,30 +133,34 @@ form p:first-child{
     float:left;
     display:block;
 }
+.ou img{
+    width:122px;
+}
 .ou p{
-margin-top: -7.5%;
-    font-size: 8px;
+    margin-top:-16px;
+    font-size: 14px;
     color: #999999;
 }
 .box-registration-controls{
-    margin-left: 25%;
-    margin-top: 10%;
-    width: 50%;
+    margin-top:67px;
+    margin-bottom: 11px;
     font-size: 9px;
     color: rgb(204,204,204);  
     border: none; 
 }
 .box-registration-controls input[type=text], [type=email], [type=password]{
     display:block;
-    margin-top:6%;
+    width:275px;
+    height: 40px;
+    margin-left:144px;
+    margin-top: 14px;
     background-color: rgb(15,15,15);
     color: rgb(204,204,204);  
-    font-size: 9px;
-    line-height: 200%;    border-top: none;
+    font-size: 14px;
+    border-top: none;
     border-right: none;
     border-bottom: 1px solid rgb(73,73,73);
     border-left: none;
-    width: 100%; 
 }
 .box-registration-controls input[type=text]:focus,[type=email]:focus,[type=password]:focus {
     background-color: #1b5288;
@@ -147,22 +170,22 @@ margin-top: -7.5%;
     box-shadow:         inset 0px 2px 5px 0px rgba(27, 82, 136, 0.2),2px 0px 5px 0px rgba(27, 82, 136, 0.1), 2px 0px 5px 2px rgba(27, 82, 136, 0.77), 0px 1px 5px 2px rgba(27, 82, 136, 1);
 }
 .box-registration-controls label {
-    display: block;
-    padding-left: 15px;
-    text-indent: -15px;
+display: block;
+    margin-left: 144px;
+    font-size: 14px;
 }
 .box-registration-controls input[type=checkbox] {
     position: relative;
-    top: 4px;
+    top: 1px;
 }
 #create {
-    margin: 0 auto 5%;
-    display: block;    
-    background-color:rgb(66,153,210);
-    font-size: 10px;
+    width:150px;
+    height:36px;  
+    margin-left: 200px;
+    margin-top: 7px;   
+    font-size: 14px;
     border: none; 
     color: white;  
-    line-height:180%;
     background: linear-gradient(to top, rgb(46,122,196) 0%,rgb(81,176,220) 80%); 
     box-shadow: 0   -1px 0   #57A2DD, 0   -1px 0   #57A2DD, 0    1px 0   #57A2DD, 0    1px 0   #57A2DD,
 		        1px 0   0   #57A2DD, 1px 0   0   #57A2DD, -1px  0   0   #57A2DD, 1px  0   0   #57A2DD,
@@ -170,7 +193,6 @@ margin-top: -7.5%;
 		        -1px -1px 0   #57A2DD, 1px -1px 0   #57A2DD,-1px  1px 0   #57A2DD, 1px  1px 0   #57A2DD;
 }
 .form-footer {
-    margin-top: 0.5%;
-    font-size: 8px;
-    line-height: 100%;
+    font-size: 11px;
+    line-height: 15px;
 }
