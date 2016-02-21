@@ -1,14 +1,19 @@
 ﻿body {
-    width: 100%;
-    min-width: 930px;
-    color: #000;
-    font: 12px/14px Arial, Helvetica, sans-serif;
-    padding: 22px 46px;
+}
+#site-frame{
+    margin: 0 auto;
+    width: 910px;
     font: 12px/14px Arial, Helvetica, sans-serif;
 }
-/****************  header  ****************/
+
+
+                                        /****************  header  ****************/
 
     /*************  telephones  *************/
+.telephones{
+    margin-top:4px;
+    padding-top:2px;
+}
 .box-head{
     float:left;
     background-color: rgb(241,0,0);
@@ -32,19 +37,264 @@
     float: left;
     margin-left: 6px;
     font: 18px Arial, sans-serif;
+    line-height:26px;
 }
     /*************  authorization  *************/
 .authorization{
     float:left;
-    background: rgb(32, 105, 36);
-    background: -moz-linear-gradient(270deg, rgb(32, 105, 36) 0%, rgb(17, 65, 101) 59%);
-    background: -webkit-linear-gradient(270deg, rgb(32, 105, 36) 0%, rgb(17, 65, 101) 59%);
-    background: -o-linear-gradient(270deg, rgb(32, 105, 36) 0%, rgb(17, 65, 101) 59%);
-    background: linear-gradient(0deg, rgb(32, 105, 36) 0%, rgb(17, 65, 101) 59%);
-
+    padding-top:3px;
+    margin-left: 16px;
+    width: 497px;
+    height: 26px;
+    border-radius:3px;
+    background: linear-gradient(to top, #0d365a,#114064,#1f6787);
+    box-shadow:
+          1px 0px rgb(150,150,150), 1px 1px rgb(150,150,150),
+          2px 1px rgb(149,149,149), 2px 2px rgb(149,149,149);
+}
+.authorization img{
+    display: block;
+    float: left;    
+    margin-top: 3px;
+    margin-right: 3px;
+    margin-left:6px;
+}
+.authorization input{
+    display: block;
+    float: left;
+    margin-right:7px; 
+    width:114px;
+    line-height:16px;
+    font-family: 'Lucida Sans Unicode', sans-serif;
+    font-size:10.91px;
+    color: rgb(151,162,166);
+}
+.authorization a, .authorization p{
+    display: block;
+    float: left;    
+    color:white;
+    font-family: 'Lucida Sans Unicode', sans-serif;
+    font-size:10.91px;
+    line-height: 26px;
+    text-decoration:none;
+}
+.authorization a:last-child{
+    color:rgb(158,164,171);
+    font-size:12px;
+    text-decoration:underline;
+    line-height: 22px;
+    margin-left:20px;
+}
+    /*************  nav  *************/
+nav{
+    float:left;
+    padding-top:3px;
+    margin-left: 15px;
+    width: 76px;
+    height: 20px;
+    border: 1px solid rgb(193,200,203);
+    border-radius:10px;
+    box-shadow:
+      -1px 0px rgb(202,207,209), -1px 1px rgb(202,207,209);
+    }
+nav img{
+display: block;
+    float: left;
+    width: 12px;
+    height: 12px;
+    margin: 3px 6px;
 }
     /*************  logo  *************/
 .logo{
-    clear:both;
-    width: 100%;
+    clear: both;
+    float:left;
+    display:block;
+    margin-top:10px;
+    width: 910px;
+//    height:238px;
+}
+
+                                        /*************  top menu  *************/
+.top-menu{
+    float: left;
+    margin-top: 7px;
+    width: 910px;
+    height: 32px;
+    border: 1px solid rgb(5,5,6);
+    border-radius: 3px;
+    background: linear-gradient(#576068 0px, #2d3236 4px, #000 32px);
+    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+}
+
+    /*************  menu  *************/
+.top-menu menu{
+    float:left;
+    margin-left: 126px;
+    margin-top: 4px;
+}
+.top-menu menu menuitem {
+    display: inline-block;
+    height: 26px;
+    margin: 0px -7px;
+    color: #b1bcc0;
+    font-family: 'Lucida Sans Unicode', sans-serif;
+    font-size: 13.64px;
+    text-align: center;
+    line-height: 27px;
+    padding: 0 20px;
+    border-radius: 16px;
+}
+.top-menu menu menuitem:hover {
+    background-image: linear-gradient(#1f6787 0px, #185476 9px, #0c3256 32px);
+    color: white;
+    cursor: pointer;
+}
+    /*************  shopping basket  *************/
+.shopping-basket {
+    float: left;
+    margin-top: 4px;
+    margin-left: 60px;
+}
+.shopping-basket img{
+    float:left;
+    width: 22px;
+    margin-top: 2px;
+    margin-right: 6px;
+}
+.shopping-basket p{
+    float: left;
+    font-family: "Arial Regular", sans-serif;
+    line-height: 24px;
+}
+.shopping-basket .amount, .quantity {
+    color: #104c77;
+    font-size: 12px;
+    margin-top: 1px;
+    margin-right: 14px;
+    padding-right: 2px;
+}
+.shopping-basket .amount {
+    padding-left: 8px;
+}
+.shopping-basket .text-label {
+    color: white;
+    font-size: 11px;
+}
+                                        /*************  top menu  *************/
+.search-strip{
+    float: left;
+    margin-top: 8px;
+    width: 910px;
+}
+.search-block {
+    border: 1px solid rgb(184,184,185);
+    border-radius: 14px;
+    box-shadow: 5px 5px 5px 0px rgba(104,104,104,0.75);
+    height: 138px;
+    position: relative;
+}
+.search-block header{
+    font: 12px 'Arial Black', Arial, sans-serif;
+    text-decoration: none;
+    color: #114165;
+    position: absolute;
+    top: 3px;
+}
+.search-block .center-header{
+    left: 0;
+    right: 0;
+    text-align: center; 
+}
+.search-block .left-header{
+    text-align: left;
+    padding-left: 10px;
+}
+.search-block footer{
+    font: italic 14px Arial, sans-serif;
+    text-decoration: underline;
+    color: #154467;
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+}
+#left-search-block{
+    float:left;
+    width: 414px;
+    margin-right:12px;
+}
+#center-search-block{
+    float:left;
+    width: 192px;
+}
+#right-search-block{
+    float:right;
+    width: 268px;
+    margin-left:12px;
+}
+.group-label{
+    float:left;
+}
+.group-label header,.group-control header{
+    font: 10px 'Arial Black', Arial, sans-serif;
+    color: #154468;
+    display: block;
+    position: relative;
+}
+.group-label{
+    line-height: 18px;
+}
+.group-label p{ 
+    font: 10px 'Arial Regular', Arial, sans-serif;
+    color: #154468;
+    display: block;
+    position: relative;
+}
+.group-label  .text-begin {
+    float:left;
+    color: rgb(66,66,66);
+}
+.group-label .text-end {
+    color: rgb(119,133,139);
+    float:none;
+}
+
+#left-search-block .group-label{
+    margin-left: 18px;
+}
+
+#left-search-block .group-label header {
+    margin-left: 2px;
+    margin-bottom:5px;
+}
+.width-100px{
+    width: 100px;
+}
+.width-58px{
+    width: 58px;
+}
+.group-control{
+    float:right;
+}
+.group-control select{
+    float:none;
+    display:block;
+}
+select::-ms-expand {
+    display: none; /* hide default arrow in IE10 */
+}
+select {
+    color: #333;
+    font-weight: normal;
+    font-size: 1em;
+    line-height:1.2em;
+    margin: 0 0 10px;
+    border: 0 none;
+    cursor: pointer;
+    text-indent: 0.01px;
+    background: url('../img/img-select.png') no-repeat 100% 0px;
+    -webkit-appearance: none; /* gets rid of default appearance in Webkit browsers*/
+    -moz-appearance: none; /* Get rid of default appearance for older Firefox browsers */
+}
+select option {
+    background: #fff; /* style the dropdown bg color */
 }

@@ -7,35 +7,89 @@
     <link rel="stylesheet"  href="css/default.css" />
 </head>
 <body>
-    <header>    
-        <section class="telephones">
-            <div class="box-head">
-                <img src="img/telhead.png" alt="telhead" />
-            </div> 
-            <p>(044)123-45-67 (044)567-89-10</p>
+    <div id="site-frame">
+        <header>
+            <section class="telephones">
+                <div class="box-head">
+                    <img src="img/telhead.png" alt="telhead" />
+                </div>
+                <p>(044)123-45-67 (044)567-89-10</p>
+            </section>
+            <section class="authorization">
+                <img src="img/user.png" alt="user" />
+                <input type="text" name="login" placeholder="логин" />
+                <input type="password" name="pwd" placeholder="пароль" />
+                <a href="#">вход</a>
+                <p>&nbsp;|&nbsp;</p>
+                <a href="#">регистрация</a>
+                <a href="#">забыли пароль?</a>
+            </section>
+            <nav>
+                <img src="img/home.png" alt="home" title="Домой" />
+                <img src="img/map-site.png" alt="map" title="Карта сайта" />
+                <img src="img/letter.png" alt="letter" title="Написать письмо" />
+            </nav>
+            <img class="logo" src="img/logo.png" alt="logo" />
+        </header>
+        <section class="top-menu">
+            <menu>
+                <menuitem label="about-company" onclick="window.location.reload();">О КОМПАНИИ</menuitem>
+                <menuitem label="pay" onclick="window.location.reload();">ОПЛАТА</menuitem>
+                <menuitem label="delivary" onclick="window.location.reload();">ДОСТАВКА</menuitem>
+                <menuitem label="articles" onclick="window.location.reload();">СТАТЬИ</menuitem>
+                <menuitem label="contacts" onclick="window.location.reload();">КОНТАКТЫ</menuitem>
+            </menu>
+            <div class="shopping-basket">
+                <img src="img/basket.png" alt="basket" />
+                <p class="text-label">товаров:</p>
+                <p class="quantity">0</p>
+                <p class="text-label">на сумму:</p>
+                <p class="amount">0,00 грн.</p>
+            </div>
         </section>
-        <section class="authorization">
-            <img src="img/user.png" alt="user" />
-            <input type="text" name="login" placeholder="логин" />
-            <input type="password" name="pwd" placeholder="пароль" />
-            <a href="#">вход</a
-            <p>&nbsp;|&nbsp;</p>
-            <a href="#">регистрация</a>
-            <a href="#">забыли пароль?</a>
-        </section>
-        <nav></nav>
-        <img class="logo" src="img/logo.png" alt="logo" />
-    </header>
-    <menu class="top-menu">
-
-    </menu>
-    <div class="search-strip">
-
+        <div class="search-strip">
+            <div id="left-search-block" class="search-block">
+                <header class="center-header">Поиск по автомобилю</header>
+                <div class="group-label-control left-group">
+                    <div class="group-label">
+                        <header>Диски:</header>
+                        <label><p class="text-begin">Марка&nbsp;</p><p class="text-end">авто:</p></label>
+                        <label><p class="text-begin">Модель&nbsp;&nbsp;</p><p class="text-end">автомобиля:</p></label>
+                        <label><p class="text-begin">Год выпуска&nbsp;&nbsp;</p><p class="text-end">автомобиля:</p></label>
+                        <label><p class="text-begin">Комплектация:</p></label>
+                    </div>
+                    <div class="group-control">
+                        <header>&nbsp;</header>
+                        <select class="width-100px" name="select-car-brend" value="">
+                            <option>&nbsp;</option>
+                        </select>
+                        <select class="width-100px" name="select-car-brend" value="">
+                            <option>&nbsp;</option>
+                        </select>
+                        <select class="width-58px" name="select-car-brend" value="">
+                            <option>&nbsp;</option>
+                        </select>
+                        <select class="width-100px" name="select-car-brend" value="">
+                            <option>&nbsp;</option>
+                        </select>
+                    </div>
+                </div>
+                <footer>поиск...</footer>
+            </div>
+            <div id="center-search-block" class="search-block">
+                <header class="left-header">Поиск шин</header>
+                <footer>поиск...</footer>
+            </div>
+            <div id="right-search-block" class="search-block">
+                <header class="left-header">Поиск дисков</header>
+                <footer>поиск...</footer>
+            </div>
+        </div>
+        <aside id="left-sidebar" class="filters "></aside>
+        <table class="goods"></table>
+        <aside id="right-sidebar" class="filters "></aside>
+        <div class="brand-strip"></div>
+        <footer></footer>
     </div>
-    <aside id="left-sidebar" class="filters "></aside>
-    <table class="goods"></table>
-    <aside id="right-sidebar" class="filters "></aside>
-    <div class="brand-strip"></div>
-    <footer></footer>
 </body>
 </html>
