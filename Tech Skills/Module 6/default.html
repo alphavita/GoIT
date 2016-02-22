@@ -1,9 +1,10 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>GoIT HTML Module 6</title>
     <link rel="stylesheet"  href="css/reset.css" />
+    <link rel="stylesheet" href="css/custom-controls.css" />
     <link rel="stylesheet"  href="css/default.css" />
 </head>
 <body>
@@ -47,49 +48,250 @@
                 <p class="amount">0,00 грн.</p>
             </div>
         </section>
-        <div class="search-strip">
+        <section class="search-strip">
             <div id="left-search-block" class="search-block">
                 <header class="center-header">Поиск по автомобилю</header>
                 <div class="group-label-control left-group">
-                    <div class="group-label">
-                        <header>Диски:</header>
-                        <label><p class="text-begin">Марка&nbsp;</p><p class="text-end">авто:</p></label>
-                        <label><p class="text-begin">Модель&nbsp;&nbsp;</p><p class="text-end">автомобиля:</p></label>
-                        <label><p class="text-begin">Год выпуска&nbsp;&nbsp;</p><p class="text-end">автомобиля:</p></label>
-                        <label><p class="text-begin">Комплектация:</p></label>
+                    <header>Диски:</header>
+                    <div class="control">
+                        <div class="label-text"><p class="text-begin">Марка&nbsp;</p><p class="text-end">авто:</p></div>
+                        <select style="width:100px;" name="select-car-brend-left"><option>&nbsp;</option></select>
                     </div>
-                    <div class="group-control">
-                        <header>&nbsp;</header>
-                        <select class="width-100px" name="select-car-brend" value="">
-                            <option>&nbsp;</option>
-                        </select>
-                        <select class="width-100px" name="select-car-brend" value="">
-                            <option>&nbsp;</option>
-                        </select>
-                        <select class="width-58px" name="select-car-brend" value="">
-                            <option>&nbsp;</option>
-                        </select>
-                        <select class="width-100px" name="select-car-brend" value="">
-                            <option>&nbsp;</option>
-                        </select>
+                    <div class="control">
+                        <div class="label-text"><p class="text-begin first-line">Модель&nbsp;&nbsp;</p><p class="text-end second-line">автомобиля:</p></div>
+                        <select style="width:100px;" name="select-car-model-left"><option>&nbsp;</option></select>
+                    </div>
+                    <div class="control">
+                        <div class="label-text"><p class="text-begin first-line">Год выпуска&nbsp;&nbsp;</p><p class="text-end second-line">автомобиля:</p></div>
+                        <select style="width:58px;" name="select-car-year-left"><option>&nbsp;</option></select>
+                    </div>
+                    <div class="control">
+                        <div class="label-text"><p class="text-begin">Комплектация:</p></div>
+                        <select style="width:100px;" name="select-car-equipment-left"><option>&nbsp;</option></select>
                     </div>
                 </div>
-                <footer>поиск...</footer>
-            </div>
+                <div class="group-label-control right-group">
+                    <header>Шины:</header>
+                    <div class="control">
+                        <div class="label-text"><p class="text-begin">Марка&nbsp;</p><p class="text-end">авто:</p></div>
+                        <select style="width:100px;" name="select-car-brend-right"><option>&nbsp;</option></select>
+                    </div>
+                    <div class="control">
+                        <div class="label-text"><p class="text-begin first-line">Модель&nbsp;&nbsp;</p><p class="text-end second-line">автомобиля:</p></div>
+                        <select style="width:100px;" name="select-car-model-right"><option>&nbsp;</option></select>
+                    </div>
+                    <div class="control">
+                        <div class="label-text"><p class="text-begin first-line">Год выпуска&nbsp;&nbsp;</p><p class="text-end second-line">автомобиля:</p></div>
+                        <select style="width:58px;" name="select-car-year-right"><option>&nbsp;</option></select>
+                    </div>
+                    <div class="control">
+                        <div class="label-text"><p class="text-begin">Комплектация:</p></div>
+                        <select style="width:100px;" name="select-car-equipment-right"><option>&nbsp;</option></select>
+                    </div>
+                </div>
+                <div class="block-footer">поиск...</div>
+             </div>
             <div id="center-search-block" class="search-block">
                 <header class="left-header">Поиск шин</header>
-                <footer>поиск...</footer>
+                <div class="group-label-control left-group">
+                    <div class="control">
+                        <p class="text-left lsu-10">Размер:</p>
+                        <select style="width:50px;" name="select-tire-size-min"><option>145</option></select>
+                    </div>
+                    <div class="control">
+                        <p class="text-right ar-11">R</p>
+                        <select style="width:45px;" name="select-car-radius"><option>12</option></select>
+                    </div>
+                    <div class="control">
+                        <p class="text-left lsu-10">Сезон</p>
+                        <Label><input type="checkbox" class="season" name="summer"><span class="lsu-12">лето</span></Label>
+                    </div>
+                    <div class="control">
+                        <p class="text-left">&nbsp;</p>
+                        <Label><input type="checkbox" class="season" name="winter"><span class="lsu-12">зима</span></Label>
+                    </div>
+                    <div class="control">
+                        <p class="text-left">&nbsp;</p>
+                        <Label><input type="checkbox" class="season" name="all-seasons"><span class="lsu-12">всесез</span></Label>
+                    </div>
+                </div>
+                <div class="group-label-control right-group">
+                    <div class="control">
+                        <p class="text-left ar-14">/</p>
+                        <select style="width:50px;" name="select-tire-size-max"><option>&nbsp;</option></select>
+                    </div>
+                </div>
+                <div class="block-footer">поиск...</div>
             </div>
             <div id="right-search-block" class="search-block">
                 <header class="left-header">Поиск дисков</header>
-                <footer>поиск...</footer>
+                <div class="group-label-control left-group">
+                    <div class="control">
+                        <div class="label-text"><p class="text-begin">Диаметр&nbsp;</p><p class="text-end">диска:</p></div>
+                        <select style="width:57px;" name="select-car-brend-left"><option>14</option></select>
+                    </div>
+                    <div class="control">
+                        <div class="label-text"><p class="text-begin first-line">Количество</p><p class="text-end second-line">крепёжных</p><p class="text-end second-line">отверстий:</p></div>
+                        <select style="width:50px;" name="select-car-model-left"><option>3</option></select>
+                    </div>
+                    <div class="control">
+                        <div class="label-text"><p class="text-begin first-line">Диаметр</p><p class="text-end second-line">расположения</p><p class="text-end second-line">крепёжных</p><p class="text-end second-line">отверстий:</p></div>
+                        <select style="width:57px;" name="select-car-year-left"><option>12</option></select>
+                    </div>
+                </div>
+                <div class="group-label-control right-group">
+                    <div class="control">
+                        <div class="label-text"><p class="text-begin first-line">ДЦО&nbsp;&nbsp;&nbsp;&nbsp;</p><p class="text-end second-line">(диаметр<p class="text-end second-line">центрального<p class="text-end second-line">отверстия):</p></div>
+                        <select style="width:57px;" name="select-car-brend-right"><option>12</option></select>
+                    </div>
+                    <div class="control">
+                        <div class="label-text"><p class="text-begin first-line">ЕТ</p><p class="text-end second-line">(вылет диска):</div>
+                        <select style="width:57px;" name="select-car-brend-right"><option>12</option></select>
+                    </div>
+                </div>
+                <div class="block-footer">поиск...</div>
             </div>
-        </div>
-        <aside id="left-sidebar" class="filters "></aside>
-        <table class="goods"></table>
-        <aside id="right-sidebar" class="filters "></aside>
-        <div class="brand-strip"></div>
-        <footer></footer>
+        </section>
+        <section class="content-with-filters">
+            <aside id="left-sidebar" class="filters-column">
+                <header>
+                    <img src="img/book.png" alt="book" />
+                    <p>КАТАЛОГ ПРОДУКЦИИ:</p>
+                </header>
+                <div class="filters-group radio-group">
+                    <header>
+                        <img src="img/wheel.png" alt="wheel" />
+                        <p>ШИНЫ</p>
+                    </header>
+                    <label><input type="radio" class="filter-radio" name="good-tire" value="name1" /><span>Наименование 1</span></label>
+                    <label><input type="radio" class="filter-radio" name="good-tire" value="name2" /><span>Наименование 2</span></label>
+                    <label><input type="radio" class="filter-radio" name="good-tire" value="name3" /><span>Наименование 3</span></label>
+                    <label><input type="radio" class="filter-radio" name="good-tire" value="name4" /><span>Наименование 4</span></label>
+                </div>
+                <div class="filters-group radio-group ">
+                    <header>
+                        <img src="img/wheel.png" alt="wheel" />
+                        <p>ДИСКИ</p>
+                    </header>
+                    <label><input type="radio" class="filter-radio" name="good-disc" value="name1" /><span>Наименование 1</span></label>
+                    <label><input type="radio" class="filter-radio" name="good-disc" value="name2" /><span>Наименование 2</span></label>
+                    <label><input type="radio" class="filter-radio" name="good-disc" value="name3" /><span>Наименование 3</span></label>
+                    <label><input type="radio" class="filter-radio" name="good-disc" value="name4" /><span>Наименование 4</span></label>
+                </div>
+                <div class="filters-group radio-group ">
+                    <header>
+                        <img src="img/wheel.png" alt="wheel" />
+                        <p>БОЛТЫ</p>
+                    </header>
+                    <label><input type="radio" class="filter-radio" name="good-bolt" value="name1" /><span>Наименование 1</span></label>
+                    <label><input type="radio" class="filter-radio" name="good-bolt" value="name2" /><span>Наименование 2</span></label>
+                    <label><input type="radio" class="filter-radio" name="good-bolt" value="name3" /><span>Наименование 3</span></label>
+                    <label><input type="radio" class="filter-radio" name="good-bolt" value="name4" /><span>Наименование 4</span></label>
+                </div>
+            </aside>
+            <div class="goods">
+                <div class="good">
+                    <p class="good-brand">Goodyear</p>
+                    <p class="good-model">Ultra Grip Extreme</p>
+                    <div class="good-frame"><img src="img/fotos/img11.png" alt="img" /></div>
+                    <p class="good-price">90.00 грн.</p>
+                </div>
+                <div class="good">
+                    <p class="good-brand">Nokian</p>
+                    <p class="good-model">Hakkapeliitta R</p>
+                    <div class="good-frame"><img src="img/fotos/img12.png" alt="img" /></div>
+                    <p class="good-price">115.00 грн.</p>
+                </div>
+                <div class="good">
+                    <p class="good-brand">Hankook</p>
+                    <p class="good-model">K 708 155/65 R14</p>
+                    <div class="good-frame"><img src="img/fotos/img13.png" alt="img" /></div>
+                    <p class="good-price">393.00 грн.</p>
+                </div>
+                <div class="good">
+                    <p class="good-brand">Goodyear</p>
+                    <p class="good-model">Ultra Grip Extreme</p>
+                    <div class="good-frame"><img src="img/fotos/img21.png" alt="img" /></div>
+                    <p class="good-price">90.00 грн. copy</p>
+                </div>
+                <div class="good">
+                    <p class="good-brand">Nokian</p>
+                    <p class="good-model">Hakkapeliitta R</p>
+                    <div class="good-frame"><img src="img/fotos/img22.png" alt="img" /></div>
+                    <p class="good-price">115.00 грн.</p>
+                </div>
+                <div class="good">
+                    <p class="good-brand">Hankook</p>
+                    <p class="good-model">K 708 155/65 R14</p>
+                    <div class="good-frame"><img src="img/fotos/img23.png" alt="img" /></div>
+                    <p class="good-price">393.00 грн.</p>
+                </div>
+                <div class="good">
+                    <p class="good-brand">Goodyear</p>
+                    <p class="good-model">Ultra Grip Extreme</p>
+                    <div class="good-frame"><img src="img/fotos/img31.png" alt="img" /></div>
+                    <p class="good-price">90.00 грн. copy</p>
+                </div>
+                <div class="good">
+                    <p class="good-brand">Nokian</p>
+                    <p class="good-model">Hakkapeliitta R</p>
+                    <div class="good-frame"><img src="img/fotos/img32.png" alt="img" /></div>
+                    <p class="good-price">115.00 грн.</p>
+                </div>
+                <div class="good">
+                    <p class="good-brand">Hankook</p>
+                    <p class="good-model">K 708 155/65 R14</p>
+                    <div class="good-frame"><img src="img/fotos/img33.png" alt="img" /></div>
+                    <p class="good-price">393.00 грн.</p>
+                </div>
+            </div>
+            <aside id="right-sidebar" class="filters-column">
+                <header>
+                    <img src="img/book.png" alt="book" />
+                    <p>БРЕНДЫ:</p>
+                </header>
+                <div class="filters-group checkbox-group">
+                    <header>
+                        <img src="img/wheel.png" alt="wheel" />
+                        <p>ШИНЫ</p>
+                    </header>
+                    <label><input type="checkbox" class="filter-checkbox" name="brand-tire1" /><span>Бренд 1</span></label>
+                    <label><input type="checkbox" class="filter-checkbox" name="brand-tire2" /><span>Бренд 2</span></label>
+                    <label><input type="checkbox" class="filter-checkbox" name="brand-tire3" /><span>Бренд 3</span></label>
+                </div>
+                <div class="filters-group checkbox-group">
+                    <header>
+                        <img src="img/wheel.png" alt="wheel" />
+                        <p>ДИСКИ</p>
+                    </header>
+                    <label><input type="checkbox" class="filter-checkbox" name="brand-disk1" /><span>Бренд 1</span></label>
+                    <label><input type="checkbox" class="filter-checkbox" name="brand-disk2" /><span>Бренд 2</span></label>
+                    <label><input type="checkbox" class="filter-checkbox" name="brand-disk3" /><span>Бренд 3</span></label>
+                </div>
+                <button>ВЫБРАТЬ</button>
+           </aside>
+        </section>
+        <section class="logos">
+            <div>
+                <img src="img/logos/logo1.png" alt="logo" />
+                <img src="img/logos/logo2.png" alt="logo" />
+                <img src="img/logos/logo3.png" alt="logo" />
+                <img src="img/logos/logo4.png" alt="logo" />
+                <img src="img/logos/logo5.png" alt="logo" />
+                <img src="img/logos/logo6.png" alt="logo" />
+                <img src="img/logos/logo7.png" alt="logo" />
+                <img src="img/logos/logo8.png" alt="logo" />
+            </div>
+        </section>
+        <footer>
+            <menu>
+                <menuitem label="about-company" onclick="window.location.reload();">О компании</menuitem>
+                <menuitem label="delivary" onclick="window.location.reload();">Доставка</menuitem>
+                <menuitem label="articles" onclick="window.location.reload();">Статьи</menuitem>
+                <menuitem label="contacts" onclick="window.location.reload();">Контакты</menuitem>
+            </menu>
+            <p>Создание сайта © Global Vision</p>
+        </footer>
     </div>
 </body>
 </html>

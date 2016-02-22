@@ -47,7 +47,7 @@
     width: 497px;
     height: 26px;
     border-radius:3px;
-    background: linear-gradient(to top, #0d365a,#114064,#1f6787);
+    background: linear-gradient(#1f6787 0px,#1c5e7f 7px,#14496c 12px,#0c3357 26px);
     box-shadow:
           1px 0px rgb(150,150,150), 1px 1px rgb(150,150,150),
           2px 1px rgb(149,149,149), 2px 2px rgb(149,149,149);
@@ -104,6 +104,7 @@ display: block;
     height: 12px;
     margin: 3px 6px;
 }
+
     /*************  logo  *************/
 .logo{
     clear: both;
@@ -111,7 +112,6 @@ display: block;
     display:block;
     margin-top:10px;
     width: 910px;
-//    height:238px;
 }
 
                                         /*************  top menu  *************/
@@ -149,6 +149,7 @@ display: block;
     color: white;
     cursor: pointer;
 }
+
     /*************  shopping basket  *************/
 .shopping-basket {
     float: left;
@@ -180,7 +181,8 @@ display: block;
     color: white;
     font-size: 11px;
 }
-                                        /*************  top menu  *************/
+
+                                        /************* search strip   *************/
 .search-strip{
     float: left;
     margin-top: 8px;
@@ -209,7 +211,7 @@ display: block;
     text-align: left;
     padding-left: 10px;
 }
-.search-block footer{
+.search-block  .block-footer{
     font: italic 14px Arial, sans-serif;
     text-decoration: underline;
     color: #154467;
@@ -222,79 +224,364 @@ display: block;
     width: 414px;
     margin-right:12px;
 }
-#center-search-block{
-    float:left;
-    width: 192px;
-}
-#right-search-block{
-    float:right;
-    width: 268px;
-    margin-left:12px;
-}
-.group-label{
-    float:left;
-}
-.group-label header,.group-control header{
+
+    /*************  left search block  *************/
+#left-search-block .group-label-control header{
     font: 10px 'Arial Black', Arial, sans-serif;
     color: #154468;
     display: block;
     position: relative;
-}
-.group-label{
     line-height: 18px;
 }
-.group-label p{ 
-    font: 10px 'Arial Regular', Arial, sans-serif;
-    color: #154468;
-    display: block;
-    position: relative;
+#left-search-block .group-label-control .control{
+    line-height: 22px;
 }
-.group-label  .text-begin {
+#left-search-block .group-label-control .label-text{
+    width: 76px;
     float:left;
-    color: rgb(66,66,66);
+    height: 18px;
+    line-height: 18px;
 }
-.group-label .text-end {
-    color: rgb(119,133,139);
-    float:none;
+#left-search-block .group-label-control .label-text p{ 
+    font: 10px 'Arial Regular', Arial, sans-serif;
+    line-height: 15px;
 }
-
-#left-search-block .group-label{
+#left-search-block .group-label-control .first-line{
+    margin-top: -2px;
+}
+#left-search-block .group-label-control .second-line{
+    margin-top: -6px;
+    float: left;
+}
+#left-search-block .group-label-control select{
+    display: inline;
+    line-height: 22px;
+}
+#left-search-block .left-group {
     margin-left: 18px;
+    float:left;
 }
-
-#left-search-block .group-label header {
+#left-search-block .left-group header{
     margin-left: 2px;
     margin-bottom:5px;
+    text-align: left;
 }
-.width-100px{
-    width: 100px;
-}
-.width-58px{
-    width: 58px;
-}
-.group-control{
+#left-search-block .right-group{
+    margin-right: 18px;
     float:right;
 }
-.group-control select{
-    float:none;
-    display:block;
+#left-search-block .right-group header {
+    margin-right: 2px;
+    margin-bottom:5px;
+    text-align: right;
 }
-select::-ms-expand {
-    display: none; /* hide default arrow in IE10 */
+
+    /*************  center search block  *************/
+#center-search-block{
+    float:left;
+    width: 192px;
 }
-select {
-    color: #333;
-    font-weight: normal;
-    font-size: 1em;
-    line-height:1.2em;
-    margin: 0 0 10px;
-    border: 0 none;
+#center-search-block .group-label-control .control{
+    line-height: 22px;
+}
+#center-search-block .left-group p{
+    width: 40px;
+    float:left;
+    height: 16px;
+//    line-height: 16px;
+}
+#center-search-block .left-group select,
+#center-search-block .left-group .season{
+    margin-left: 6px;
+}
+#center-search-block .left-group .season{
+    width: 10px;
+    float:left;
+}
+#center-search-block .left-group {
+    margin-left: 14px;
+    margin-top: 24px;
+    float:left;
+}
+#center-search-block .right-group{
+    margin-right: 16px;
+    margin-top: 24px;
+    float:right;
+}
+#center-search-block .right-group p{
+    width: 10px;
+    float:left;
+}    
+
+    /*************  right search block  *************/
+#right-search-block{
+    float: right;
+    width: 268px;
+    margin-left: 12px;
+}
+#right-search-block .left-group {
+    margin-left: 16px;
+    margin-top: 20px;
+    float:left;
+}
+#right-search-block .left-group .label-text{
+    width: 92px;
+    float:left;
+    line-height: 18px;
+}
+#right-search-block .right-group{
+    margin-right: 14px;
+    margin-top: 6px;
+    padding-left: 10px;
+    width: 76px;
+    float: right;
+    border-left: 1px solid #bdc6ca;
+}
+#right-search-block .right-group .label-text{
+    float:left;
+    line-height: 18px;
+}
+#right-search-block .group-label-control .label-text p{ 
+    font: 10px 'Lucida Sans Unicode','Arial Regular', Arial, sans-serif;
+    line-height: 15px;
+}
+#right-search-block .group-label-control .first-line{
+    margin-top: -2px;
+}
+#right-search-block .group-label-control .second-line{
+    margin-top: -6px;
+    float: left;
+}
+#right-search-block .group-label-control select{
+    display: inline;
+    line-height: 22px;
+}
+
+                                        /************* content with filters   *************/
+.content-with-filters{
+    float: left;
+    margin-top: 12px;
+    width: 910px;
+}
+.filters-column {
+    position: relative;
+}
+.filters-column header{
+    width: 188px;
+    height: 26px;
+    margin-bottom: 10px;
+    border: 1px solid #79878d;
+    border-radius: 16px;
+    box-shadow: 3px 3px 5px 0px rgba(140,150,154,0.75);
+}
+.filters-column header img {
+    float:left;
+    width: 20px;
+    margin: 2px;
+ }
+.filters-column header p {
+    text-decoration: none;
+    color: #114165;
+    margin-left: 6px;
+    margin-top: 4px;
+}
+.filters-group header{
+    width: 152px;
+    height: 27px;
+    margin-bottom: 6px;
+    border: 1px solid #79878d;
+    border-radius: 12px;
+    box-shadow:none;
+}
+.filters-group header img {
+    float:left;
+    width: 22px;
+    margin: 2px;
+ }
+.filters-group header p {
+    color: #114165;
+    margin-left: 6px;
+    margin-top: 4px;
+    font: 14px 'Lucida Sans Unicode','Arial Black', Arial, sans-serif;
+}
+
+    /*************  left sidebar  *************/
+#left-sidebar{
+    float:left;
+    width: 188px;
+    margin-right: 6px;
+}
+#left-sidebar header p{
+    font: 12.73px 'Lucida Sans Unicode','Arial Black', Arial, sans-serif;
+}
+.radio-group label{
+    display: block;
+    width: 150px;
+    height: 24px;
+    margin-left:24px;
+    font: 12.73px 'Lucida Sans Unicode','Arial Black', Arial, sans-serif;
+    color: #465961;
+}
+.radio-group input[type=radio]{
+    height: 8px;
+}
+
+    /*************  right sidebar  *************/
+#right-sidebar{
+    float: right;
+    width: 182px;
+    margin-left: 6px;
+}
+#right-sidebar header p{
+    font: 14px 'Lucida Sans Unicode','Arial Black', Arial, sans-serif;
+}
+#right-sidebar .filters-group{
+    margin-left: 13px;
+}
+.checkbox-group label{
+    display: block;
+    margin-left: 13px;
+    margin-bottom: 16px;
+    color: #465961;
+}
+.checkbox-group label span{
+    margin-left: 16px;
+    font: 12.73px 'Lucida Sans Unicode','Arial Black', Arial, sans-serif;
+}
+#right-sidebar button{
+    margin-left: 13px;
+    width: 80px;
+    height: 26px;
+    border-radius: 11px;
+    font: 11px 'Arial Regular', Arial, sans-serif;
+    color: #e5e9ea;
+    background: linear-gradient(#1f6787 0px, #1c5e7e 6px, #154b6d 12px,#0e3a5e 18px,#0c3357 24px);
+    box-shadow: 1px 1px 3px 0px rgb(206,206,206);
+}
+
+                                        /************* goods   *************/
+.goods {
+    width: 527px;
+    height: 627px; 
+    float: left;
+//    padding-top: 14px;
+//    padding-left: 24px;
+    margin-bottom: 40px;
+    background: linear-gradient(rgba(229,231,232,0.49) 0px,rgba(147,167,176,0.49)  626px);
+}    
+.good{
+    float:left;
+    margin-top: 14px;
+    margin-left: 22px;
+    margin-right: 6px;
+    margin-bottom: 10px;
+}
+.good p{
+    text-align: center;
+}
+.good-frame{
+    background-color: white;
+    width: 139px;
+    height: 129px;
+    border: 1px solid #acb5b8;
+    border-radius: 6px;
+}
+.good-frame img{
+    display: block;
+    margin: 5px auto;
+}
+.good-brand{
+    font: 14.59px 'Lucida Sans Unicode','Arial Regular', Arial, sans-serif;
+    color: #206988;
+}
+.good-model{
+    font: 12.77px 'Lucida Sans Unicode','Arial Regular', Arial, sans-serif;
+    color: #1f2528;
+}
+.good-price{
+    font: 12.77px  Arial, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    color: #114165;
+}    
+                                        /************* logos   *************/
+.logos{
+    margin-bottom: 20px;
+} 
+.logos:after{
+    display: block;
+    content: '';
+    clear: both;
+}                                      
+.logos div{
+    margin: 0 auto;
+    width: 677px;
+}
+.logos div img{
+    display: block;
+    float: left;
+    width: 75px;
+    margin: 0 4px;
+}
+
+
+                                        /************* footer   *************/
+footer{
+    height: 100px;
+    border: 1px solid rgb(36,42,60);
+    background-color: rgb(33,58,77);
+}   
+footer menu{
+    width: 300px;
+    margin: 12px auto;
+}
+footer menu menuitem{
+    font: 12px  'Arial Regular', Arial, sans-serif;
+    color: #bec6c9;
+    padding: 0 10px;
+    border-right: 1px solid #8d989f;
+}
+footer menu menuitem:last-child{
+    border-right: none;
+}
+footer menu menuitem:hover{
+    color: #52abcb;
     cursor: pointer;
-    text-indent: 0.01px;
-    background: url('../img/img-select.png') no-repeat 100% 0px;
-    -webkit-appearance: none; /* gets rid of default appearance in Webkit browsers*/
-    -moz-appearance: none; /* Get rid of default appearance for older Firefox browsers */
 }
-select option {
-    background: #fff; /* style the dropdown bg color */
+footer p{
+    font: 10px  'Arial Regular', Arial, sans-serif;
+    color: #7f4740;
+//    width: 298px;
+    margin: 6px auto;
+    text-align: center;
+   
+}
+
+/************* used fonts   *************/
+
+.lsu-10{
+    font-family:'Lucida Sans Unicode','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',  Geneva, Verdana, sans-serif;
+    font-size: 10px;
+}
+.lsu-12{
+    font-family:'Lucida Sans Unicode','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',  Geneva, Verdana, sans-serif;
+    font-size: 12px;
+}
+.ar-11{
+    font-family: 'Arial Regular',Arial, Helvetica, sans-serif;
+    font-size: 11px;
+ }
+.ar-14{
+    font-family: 'Arial Regular',Arial, Helvetica, sans-serif;
+    font-size: 14px;
+ }
+p.text-right {
+    text-align: right;
+}
+.group-label-control .text-begin {
+    float: left;
+    color: black;
+}
+.group-label-control .text-end {
+    color: rgb(119,133,139);
 }

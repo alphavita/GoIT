@@ -1,0 +1,70 @@
+﻿/*  combobox  */
+select {
+    height: 18px;
+    box-shadow: 1px 1px 0px 1px rgba(166,166,166,0.75) inset;
+    border: 0;
+    background: #fff url('../img/arrow-select.png') no-repeat;
+    background-size: 20px;
+    background-position: right 0px center;
+    font-family: 'Arial';
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -moz-border-radius: 4px;
+}
+
+/*  checkbox season   */
+.season[type="checkbox"]{
+ -webkit-appearance: none;
+ background: url('../img/season-unchecked.png') no-repeat;
+ width: 10px;
+ height: 10px;
+ vertical-align: middle;
+}
+.season[type="checkbox"]:checked
+{
+ background: url('../img/season-checked.png') no-repeat;
+}
+.season[type="checkbox"]:disabled
+{
+ opacity: .3;
+}
+
+/*  checkbox filters   */
+.filter-checkbox[type="checkbox"]{
+ -webkit-appearance: none;
+ background: url('../img/filter-unchecked.png') no-repeat;
+ width: 10px;
+ height: 10px;
+ vertical-align: middle;
+}
+.filter-checkbox[type="checkbox"]:checked
+{
+ background: url('../img/filter-checked.png') no-repeat;
+}
+.filter-checkbox[type="checkbox"]:disabled
+{
+ opacity: .3;
+}
+
+/*  radio   */
+input[type="radio"]{
+ -webkit-appearance: none;
+ background: url('../img/radio-unchecked.png') no-repeat;
+ width: 7px;
+ height: 7px;
+ vertical-align: middle;
+}
+input[type="radio"]:checked{
+    background: url('../img/radio-checked.png') no-repeat;
+}
+input[type="radio"]:checked  + span{
+    text-decoration:underline;
+    font: 14px  Arial, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+
+}
+input[type="radio"]:disabled
+{
+ opacity: .3;
+}
