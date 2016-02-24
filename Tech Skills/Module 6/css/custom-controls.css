@@ -68,3 +68,14 @@ input[type="radio"]:disabled
 {
  opacity: .3;
 }
+
+
+/* underline */
+
+span.other-underline a{
+    text-decoration: none;
+}
+span.other-underline{
+    border-bottom: 1px solid rgb(158,164,171);
+    display: inline-block;
+}

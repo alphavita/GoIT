@@ -1,32 +1,27 @@
 ﻿body {
 }
 #site-frame{
-    margin: 0 auto;
-    width: 910px;
+    margin: 16px auto;
+    width: 916px;
     font: 12px/14px Arial, Helvetica, sans-serif;
 }
-
-
                                         /****************  header  ****************/
 
     /*************  telephones  *************/
 .telephones{
-    margin-top:4px;
     padding-top:2px;
+    margin-left: 3px;
 }
 .box-head{
     float:left;
     background-color: rgb(241,0,0);
+    margin-top: 5px;
+    margin-left: 6px;
     border-radius:82%;
     width:20px;
     height:20px;
-    background: rgb(32,105,136); /* Old browsers */
-    background: -moz-linear-gradient(top, rgb(32,105,136) 0%, rgb(12,50,86) 59%, rgb(12,50,86) 100%, rgb(12,50,86) 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(32,105,136)), color-stop(59%,rgb(12,50,86)), color-stop(100%,rgb(12,50,86)), color-stop(100%,rgb(12,50,86))); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, rgb(32,105,136) 0%,rgb(12,50,86) 59%,rgb(12,50,86) 100%,rgb(12,50,86) 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, rgb(32,105,136) 0%,rgb(12,50,86) 59%,rgb(12,50,86) 100%,rgb(12,50,86) 100%); /* Opera 11.10+ */
-    background: linear-gradient(to bottom, rgb(32,105,136) 0%,rgb(12,50,86) 59%,rgb(12,50,86) 100%,rgb(12,50,86) 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#206988', endColorstr='#0c3256',GradientType=0 ); /* IE6-9 */}
+    background: linear-gradient(to bottom, rgb(32,105,136) 0%,rgb(12,50,86) 59%,rgb(12,50,86) 100%,rgb(12,50,86) 100%); 
+}
 .box-head img{
     width: 60%;
     margin-left: 4px;
@@ -34,18 +29,18 @@
     float:left;
 }
 .telephones p{
-    float: left;
-    margin-left: 6px;
-    font: 18px Arial, sans-serif;
-    line-height:26px;
+float: left;
+    margin-left: 5px;
+    margin-top: 2px;
+    font: 18px Arial Regular, Arial, sans-serif;
+    line-height: 26px;
+    letter-spacing: 0.45px;
 }
     /*************  authorization  *************/
 .authorization{
     float:left;
-    padding-top:3px;
-    margin-left: 16px;
-    width: 497px;
-    height: 26px;
+    margin-left: 15px;
+    width: 494px;
     border-radius:3px;
     background: linear-gradient(#1f6787 0px,#1c5e7f 7px,#14496c 12px,#0c3357 26px);
     box-shadow:
@@ -55,42 +50,59 @@
 .authorization img{
     display: block;
     float: left;    
-    margin-top: 3px;
+    margin-top: 4px;
     margin-right: 3px;
-    margin-left:6px;
+    margin-left:7px;
 }
 .authorization input{
     display: block;
     float: left;
-    margin-right:7px; 
-    width:114px;
-    line-height:16px;
+    margin-top: 3px;
+    margin-right: 7px;
+    padding-left: 3px;
+    width: 107px;
+    line-height: 12px;
     font-family: 'Lucida Sans Unicode', sans-serif;
-    font-size:10.91px;
+    font-size: 10.91px;
     color: rgb(151,162,166);
+    letter-spacing: -0.3px;
 }
 .authorization a, .authorization p{
     display: block;
     float: left;    
-    color:white;
+    color: white;
     font-family: 'Lucida Sans Unicode', sans-serif;
-    font-size:10.91px;
-    line-height: 26px;
-    text-decoration:none;
+    font-size: 10.91px;
+    line-height: 25px;
+    text-decoration: none;
+    letter-spacing: -0.2px;
 }
-.authorization a:last-child{
-    color:rgb(158,164,171);
-    font-size:12px;
-    text-decoration:underline;
-    line-height: 22px;
-    margin-left:20px;
+authorization p {
+    margin-left: -1px;
 }
+.authorization a:first-of-type{
+    margin-left: 1px;
+    letter-spacing: 0.25px;
+}
+#lost-pwd{
+    letter-spacing: 0.1px;
+}
+.authorization span a{
+    color: rgb(158,164,171);
+    font-size: 12px;
+    margin-left: 20px;
+    letter-spacing: 0.1px;
+}
+.authorization span{
+    margin-left: 18px;
+    height: 19px;
+}
+
     /*************  nav  *************/
 nav{
     float:left;
-    padding-top:3px;
-    margin-left: 15px;
-    width: 76px;
+    margin-left: 18px;
+    width: 75px;
     height: 20px;
     border: 1px solid rgb(193,200,203);
     border-radius:10px;
@@ -98,20 +110,26 @@ nav{
       -1px 0px rgb(202,207,209), -1px 1px rgb(202,207,209);
     }
 nav img{
-display: block;
+    display: block;
     float: left;
     width: 12px;
     height: 12px;
-    margin: 3px 6px;
+    margin: 3px 0;
 }
-
-    /*************  logo  *************/
+nav img:first-child {
+    margin: 3px 8px;
+}
+nav img:last-child {
+    margin: 4px 11px;
+} 
+   /*************  logo  *************/
 .logo{
     clear: both;
     float:left;
     display:block;
-    margin-top:10px;
-    width: 910px;
+    margin-top:8px;
+    margin-left: 3px;
+    width: 906px;
 }
 
                                         /*************  top menu  *************/
@@ -128,9 +146,9 @@ display: block;
 
     /*************  menu  *************/
 .top-menu menu{
-    float:left;
-    margin-left: 126px;
-    margin-top: 4px;
+    float: left;
+    margin-left: 133px;
+    margin-top: 3px;
 }
 .top-menu menu menuitem {
     display: inline-block;
@@ -144,6 +162,15 @@ display: block;
     padding: 0 20px;
     border-radius: 16px;
 }
+.top-menu menu menuitem:first-child {
+    margin-right: -10px;  /*  designer's error 'И' */
+}
+.top-menu menu menuitem:nth-child(4) {
+    margin-left: -5px;
+}
+.top-menu menu menuitem:last-child {
+    margin-left: -10px;
+}
 .top-menu menu menuitem:hover {
     background-image: linear-gradient(#1f6787 0px, #185476 9px, #0c3256 32px);
     color: white;
@@ -154,7 +181,7 @@ display: block;
 .shopping-basket {
     float: left;
     margin-top: 4px;
-    margin-left: 60px;
+    margin-left: 58px;
 }
 .shopping-basket img{
     float:left;
@@ -164,35 +191,39 @@ display: block;
 }
 .shopping-basket p{
     float: left;
-    font-family: "Arial Regular", sans-serif;
+    font: 11px 'Arial Regular', Arial, sans-serif;
     line-height: 24px;
+    letter-spacing: 0.3px;
 }
 .shopping-basket .amount, .quantity {
     color: #104c77;
     font-size: 12px;
-    margin-top: 1px;
-    margin-right: 14px;
     padding-right: 2px;
 }
+.shopping-basket .quantity {
+    margin-left: 1px;
+    font-size: 12px;
+    margin-right: 13px;
+}
 .shopping-basket .amount {
-    padding-left: 8px;
+    margin-left: 10px;
 }
 .shopping-basket .text-label {
     color: white;
+    margin-top: -1px;
     font-size: 11px;
 }
 
                                         /************* search strip   *************/
 .search-strip{
     float: left;
-    margin-top: 8px;
-    width: 910px;
+    margin-top: 12px;
 }
 .search-block {
     border: 1px solid rgb(184,184,185);
-    border-radius: 14px;
+    border-radius: 16px;
     box-shadow: 5px 5px 5px 0px rgba(104,104,104,0.75);
-    height: 138px;
+    height: 132px;
     position: relative;
 }
 .search-block header{
@@ -204,14 +235,16 @@ display: block;
 }
 .search-block .center-header{
     left: 0;
-    right: 0;
-    text-align: center; 
+    top: -1px;
+    right: 6px;
+    letter-spacing: 0.4px;
+    text-align: center;
 }
 .search-block .left-header{
     text-align: left;
     padding-left: 10px;
 }
-.search-block  .block-footer{
+.search-block .block-footer{
     font: italic 14px Arial, sans-serif;
     text-decoration: underline;
     color: #154467;
@@ -223,6 +256,7 @@ display: block;
     float:left;
     width: 414px;
     margin-right:12px;
+    margin-left: 5px;
 }
 
     /*************  left search block  *************/
@@ -233,47 +267,52 @@ display: block;
     position: relative;
     line-height: 18px;
 }
-#left-search-block .group-label-control .control{
-    line-height: 22px;
-}
-#left-search-block .group-label-control .label-text{
-    width: 76px;
-    float:left;
+#left-search-block .control{
+    margin-bottom: 4px;
     height: 18px;
-    line-height: 18px;
 }
-#left-search-block .group-label-control .label-text p{ 
-    font: 10px 'Arial Regular', Arial, sans-serif;
-    line-height: 15px;
+#left-search-block .group-label-control .control:after{
+    display: block;
+    content: '';
+    clear:both;
 }
-#left-search-block .group-label-control .first-line{
-    margin-top: -2px;
-}
-#left-search-block .group-label-control .second-line{
-    margin-top: -6px;
+#left-search-block .control .label-text{
+    width: 75px;
     float: left;
+    margin: auto 0;
 }
-#left-search-block .group-label-control select{
-    display: inline;
-    line-height: 22px;
+#left-search-block .control p{
+    font: 10px 'Arial Regular', Arial, sans-serif;
+}
+#left-search-block .control p, span{
+    line-height:8px;
 }
 #left-search-block .left-group {
     margin-left: 18px;
+    margin-top: -4px;
     float:left;
 }
 #left-search-block .left-group header{
     margin-left: 2px;
-    margin-bottom:5px;
+    margin-bottom: 5px;
+    margin-top: 1px;
+    letter-spacing: 0.5px;
     text-align: left;
 }
 #left-search-block .right-group{
-    margin-right: 18px;
-    float:right;
+    margin-right: 14px;
+    margin-top: -6px;
+    float: right;
 }
 #left-search-block .right-group header {
-    margin-right: 2px;
-    margin-bottom:5px;
+    margin-right: 9px;
+    margin-top: 1px;
+    margin-bottom: 5px;
     text-align: right;
+}
+#left-search-block .block-footer{
+    bottom: 10px;
+    right: 20px;
 }
 
     /*************  center search block  *************/
@@ -281,14 +320,16 @@ display: block;
     float:left;
     width: 192px;
 }
+#center-search-block .left-header{
+    margin-top: -4px;
+}
 #center-search-block .group-label-control .control{
-    line-height: 22px;
+    line-height: 24px;
 }
 #center-search-block .left-group p{
     width: 40px;
     float:left;
     height: 16px;
-//    line-height: 16px;
 }
 #center-search-block .left-group select,
 #center-search-block .left-group .season{
@@ -300,12 +341,12 @@ display: block;
 }
 #center-search-block .left-group {
     margin-left: 14px;
-    margin-top: 24px;
+    margin-top: 18px;
     float:left;
 }
 #center-search-block .right-group{
     margin-right: 16px;
-    margin-top: 24px;
+    margin-top: 18px;
     float:right;
 }
 #center-search-block .right-group p{
@@ -464,8 +505,6 @@ display: block;
     width: 527px;
     height: 627px; 
     float: left;
-//    padding-top: 14px;
-//    padding-left: 24px;
     margin-bottom: 40px;
     background: linear-gradient(rgba(229,231,232,0.49) 0px,rgba(147,167,176,0.49)  626px);
 }    
@@ -551,10 +590,8 @@ footer menu menuitem:hover{
 footer p{
     font: 10px  'Arial Regular', Arial, sans-serif;
     color: #7f4740;
-//    width: 298px;
     margin: 6px auto;
     text-align: center;
-   
 }
 
 /************* used fonts   *************/
