@@ -242,7 +242,8 @@ nav img:last-child {
 }
 .search-block .left-header{
     text-align: left;
-    padding-left: 10px;
+    padding-left: 7px;
+    margin-top: -3px;
 }
 .search-block .block-footer{
     font: italic 14px Arial, sans-serif;
@@ -252,14 +253,15 @@ nav img:last-child {
     bottom: 10px;
     right: 20px;
 }
+
+
+    /*************  left search block  *************/
 #left-search-block{
     float:left;
     width: 414px;
     margin-right:12px;
     margin-left: 5px;
 }
-
-    /*************  left search block  *************/
 #left-search-block .group-label-control header{
     font: 10px 'Arial Black', Arial, sans-serif;
     color: #154468;
@@ -271,11 +273,6 @@ nav img:last-child {
     margin-bottom: 4px;
     height: 18px;
 }
-/*#left-search-block .group-label-control .control:after{
-   display: block;
-    content: '';
-    clear:both; 
-}*/
 #left-search-block .control .label-text{
     width: 75px;
     display: inline-block;
@@ -323,7 +320,7 @@ nav img:last-child {
     margin-top: -4px;
 }
 #center-search-block .group-label-control .control{
-    line-height: 24px;
+    line-height: 18px;
 }
 #center-search-block .left-group p{
     width: 40px;
@@ -333,6 +330,7 @@ nav img:last-child {
 #center-search-block .left-group select,
 #center-search-block .left-group .season{
     margin-left: 6px;
+    margin-bottom: 3px;
 }
 #center-search-block .left-group .season{
     width: 10px;
@@ -340,12 +338,12 @@ nav img:last-child {
 }
 #center-search-block .left-group {
     margin-left: 14px;
-    margin-top: 18px;
+    margin-top: 22px;
     float:left;
 }
 #center-search-block .right-group{
     margin-right: 16px;
-    margin-top: 18px;
+    margin-top: 20px;
     float:right;
 }
 #center-search-block .right-group p{
@@ -356,30 +354,35 @@ nav img:last-child {
     /*************  right search block  *************/
 #right-search-block{
     float: right;
-    width: 268px;
+    width: 264px;
     margin-left: 10px;
 }
 #right-search-block .left-group {
     margin-left: 16px;
-    margin-top: 20px;
+    margin-top: 6px;
+    width: 160px;
     float:left;
 }
 #right-search-block .left-group .label-text{
     width: 92px;
-    float:left;
-    line-height: 18px;
+    float: left;
+    display: block;
+    margin: auto 0;
+    margin-bottom: -4px;
+}
+#right-search-block .left-group .control:first-child .label-text{
+    padding-top: 14px;
 }
 #right-search-block .right-group{
-    margin-right: 14px;
-    margin-top: 6px;
-    padding-left: 10px;
+    margin-top: 3px;
     width: 76px;
-    float: right;
+    float: left;
+    padding-left: 10px;
     border-left: 1px solid #bdc6ca;
 }
-#right-search-block .right-group .label-text{
-    float:left;
-    line-height: 18px;
+#right-search-block .right-group select{
+    margin-top: -10px;
+    margin-bottom: 5px;
 }
 #right-search-block .group-label-control .label-text p{ 
     font: 10px 'Lucida Sans Unicode','Arial Regular', Arial, sans-serif;
@@ -392,9 +395,9 @@ nav img:last-child {
     margin-top: -6px;
     float: left;
 }
-#right-search-block .group-label-control select{
+#right-search-block .left-group select{
     display: inline;
-    line-height: 22px;
+    margin-top: 13px;
 }
 
                                         /************* content with filters   *************/
@@ -402,6 +405,11 @@ nav img:last-child {
     float: left;
     margin-top: 16px;
     width: 910px;
+}
+.content-with-filters:after{
+    display:block;
+    content:'';
+    clear:both;
 }
 .filters-column {
     position: relative;
@@ -479,8 +487,8 @@ nav img:last-child {
 }
 .checkbox-group label{
     display: block;
-    margin-left: 13px;
-    margin-bottom: 16px;
+    margin-left: 7px;
+    margin-bottom: 7px;
     color: #465961;
 }
 .checkbox-group label span{
@@ -488,8 +496,9 @@ nav img:last-child {
     font: 12.73px 'Lucida Sans Unicode','Arial Black', Arial, sans-serif;
 }
 #right-sidebar button{
-    margin-left: 13px;
+    margin-left: 23px;
     width: 80px;
+    margin-top: 7px;
     height: 26px;
     border-radius: 11px;
     font: 11px 'Arial Regular', Arial, sans-serif;
@@ -503,14 +512,13 @@ nav img:last-child {
     width: 527px;
     height: 627px; 
     float: left;
-    margin-bottom: 40px;
     background: linear-gradient(rgba(229,231,232,0.49) 0px,rgba(147,167,176,0.49)  626px);
 }    
 .good{
-    float:left;
-    margin-top: 14px;
+    float: left;
+    margin-top: 2px;
     margin-left: 22px;
-    margin-right: 6px;
+    margin-right: 7px;
     margin-bottom: 10px;
 }
 .good p{
@@ -518,10 +526,11 @@ nav img:last-child {
 }
 .good-frame{
     background-color: white;
-    width: 139px;
-    height: 129px;
+    width: 137px;
+    height: 126px;
     border: 1px solid #acb5b8;
     border-radius: 6px;
+    margin-top: -2px;
 }
 .good-frame img{
     display: block;
@@ -530,20 +539,24 @@ nav img:last-child {
 .good-brand{
     font: 14.59px 'Lucida Sans Unicode','Arial Regular', Arial, sans-serif;
     color: #206988;
+    padding-top: 9px;
 }
 .good-model{
     font: 12.77px 'Lucida Sans Unicode','Arial Regular', Arial, sans-serif;
     color: #1f2528;
+    margin-top: -7px;
 }
 .good-price{
-    font: 12.77px  Arial, sans-serif;
+    font: 16px'Arial Bold', sans-serif;
     font-weight: bold;
     font-style: italic;
     color: #114165;
+    margin-top: 3px;
 }    
                                         /************* logos   *************/
 .logos{
-    margin-bottom: 20px;
+    float: left;
+    width: 916px;
 } 
 .logos:after{
     display: block;
@@ -551,29 +564,33 @@ nav img:last-child {
     clear: both;
 }                                      
 .logos div{
-    margin: 0 auto;
-    width: 677px;
+    margin: 42px auto;
+    width: 916px;
+    padding-left: 118px;
 }
 .logos div img{
     display: block;
     float: left;
-    width: 75px;
-    margin: 0 4px;
+    margin-right: 13px;
 }
 
 
                                         /************* footer   *************/
 footer{
     height: 100px;
+    width: 908px;
     border: 1px solid rgb(36,42,60);
     background-color: rgb(33,58,77);
+    clear: both;
+    margin-top: 21px;
+    float: left;
 }   
 footer menu{
     width: 300px;
-    margin: 12px auto;
+    margin: 10px auto;
 }
 footer menu menuitem{
-    font: 12px  'Arial Regular', Arial, sans-serif;
+    font: 12px 'Arial Regular', Arial, sans-serif;
     color: #bec6c9;
     padding: 0 10px;
     border-right: 1px solid #8d989f;
@@ -588,7 +605,7 @@ footer menu menuitem:hover{
 footer p{
     font: 10px  'Arial Regular', Arial, sans-serif;
     color: #7f4740;
-    margin: 6px auto;
+    margin: 14px auto;
     text-align: center;
 }
 
