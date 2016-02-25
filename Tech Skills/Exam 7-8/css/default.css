@@ -1,0 +1,57 @@
+﻿@font-face {
+    font-family: 'League Gothic Condensed Italic';
+    src: url('../fonts/leaguegothic-condenseditalic-webfont.eot');
+    src: url('../fonts/leaguegothic-condenseditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/leaguegothic-condenseditalic-webfont.woff2') format('woff2'),
+         url('../fonts/leaguegothic-condenseditalic-webfont.woff') format('woff'),
+         url('../fonts/leaguegothic-condenseditalic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'League Gothic Condensed Regular';
+    src: url('../fonts/leaguegothic-condensedregular-webfont.eot');
+    src: url('../fonts/leaguegothic-condensedregular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/leaguegothic-condensedregular-webfont.woff2') format('woff2'),
+         url('../fonts/leaguegothic-condensedregular-webfont.woff') format('woff'),
+         url('../fonts/leaguegothic-condensedregular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'League Gothic Italic';
+    src: url('../fonts/leaguegothic-italic-webfont.eot');
+    src: url('../fonts/leaguegothic-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/leaguegothic-italic-webfont.woff2') format('woff2'),
+         url('../fonts/leaguegothic-italic-webfont.woff') format('woff'),
+         url('../fonts/leaguegothic-italic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'League Gothic Regular';
+    src: url('../fonts/leaguegothic-regular-webfont.eot');
+    src: url('../fonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/leaguegothic-regular-webfont.woff2') format('woff2'),
+         url('../fonts/leaguegothic-regular-webfont.woff') format('woff'),
+         url('../fonts/leaguegothic-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body {
+}
+.header{
+    width: 100%;
+    height: 100%;
+    max-width: 2400px;
+    padding-top: 36.21%;  /* =869px/2400 px = 0.36208 */
+    background-image: url('../img/bgr_landscape.jpg');
+    background-size: cover;
+    background-position: center;  /* Internet Explorer 7/8 */
+}
+.menuitem{
+    font-size: 24px;
+    font-family: 'League Gothic Regular', 'Arial Regular', Arial, sans-serif ;
+    color: white;
+}
