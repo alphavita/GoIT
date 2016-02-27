@@ -99,7 +99,7 @@ authorization p {
 }
 
     /*************  nav  *************/
-nav{
+.top-right-nav{
     float:left;
     margin-left: 18px;
     width: 75px;
@@ -109,17 +109,17 @@ nav{
     box-shadow:
       -1px 0px rgb(202,207,209), -1px 1px rgb(202,207,209);
     }
-nav img{
+.top-right-nav img{
     display: block;
     float: left;
     width: 12px;
     height: 12px;
     margin: 3px 0;
 }
-nav img:first-child {
+.top-right-nav img:first-child {
     margin: 3px 8px;
 }
-nav img:last-child {
+.top-right-nav img:last-child {
     margin: 4px 11px;
 } 
    /*************  logo  *************/
@@ -145,12 +145,13 @@ nav img:last-child {
 }
 
     /*************  menu  *************/
-.top-menu menu{
+.top-menu ul{
     float: left;
+    list-style-type: none;
     margin-left: 133px;
     margin-top: 3px;
 }
-.top-menu menu menuitem {
+.top-menu ul li{
     display: inline-block;
     height: 26px;
     margin: 0px -7px;
@@ -162,16 +163,16 @@ nav img:last-child {
     padding: 0 20px;
     border-radius: 16px;
 }
-.top-menu menu menuitem:first-child {
+.top-menu ul li:first-child {
     margin-right: -10px;  /*  designer's error 'И' */
 }
-.top-menu menu menuitem:nth-child(4) {
+.top-menu ul li:nth-child(4) {
     margin-left: -5px;
 }
-.top-menu menu menuitem:last-child {
+.top-menu ul li:last-child {
     margin-left: -10px;
 }
-.top-menu menu menuitem:hover {
+.top-menu nav li:hover {
     background-image: linear-gradient(#1f6787 0px, #185476 9px, #0c3256 32px);
     color: white;
     cursor: pointer;
