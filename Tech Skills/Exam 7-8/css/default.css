@@ -13,24 +13,16 @@
 }
 .wrapper{
     margin: 0 auto;
-    height: auto !important;
-    position:relative;
     overflow: hidden;
+}
+.header{
+    position:relative;
+    width: 100%;
+    height: auto !important;
     background-color:red;
 }
-
-
-/*
-.header{
-}
 .header__container{
-    height: 100%;
-    margin: 0 auto;
-    position: relative;
-}
-.header__poster{
     width: 100%;
-    height: 400px;
     background-image: url("../img/bgr_landscape.jpg");
     position: relative;
     overflow: hidden;
@@ -38,13 +30,22 @@
     background-size: 100%;
     background-position: 0% 0%;
 }
+.content{
+    width:100%;
+    height: 20%;
+}
+
+/*.header__poster{
+}
 .logo{
     margin-top: 3.3%;
     margin-left: 29.5%;
-}
+}*/
 .logo-text{
+    position:absolute;
+    top: 5%;
+    left: 29.5%;
     font-family: 'League Gothic Regular', 'Arial Regular', Arial, sans-serif;
-    float: left;
 }
 .begin-logo{
     color: white;
@@ -56,7 +57,10 @@
     color: transparent;
 }
 .main-nav{
-    margin-left: 16.7%;
+    position:absolute;
+    left: 44%;
+    top:5%;
+    width: 50%;
 }
 .main-nav__menuitem{
     font-family: 'League Gothic Regular', 'Arial Regular', Arial, sans-serif;
@@ -68,61 +72,67 @@
     border-bottom-width: 1px;
     cursor: pointer;
 }
-.sliders{
+.sliders__opacity{
+    position:absolute;
+    z-index: 0;
+    left: 0;
+    top: 32%;
+    height: 47%;
+    width:100%;
+    background-color: rgba(0,0,0,0.2);
+}
+/*.sliders{
     margin-top: -16%;
     position: relative;
     z-index: 5;
 }
-.sliders__opacity{
-    z-index: 0;
-    width: 100%;
-    height: 53%;
-    margin-top: 7%;
-    background-color: rgba(0,0,0,0.2);
-}
+
 .sliders__container{
-}
+}*/
 .sliders__arrow {
-    display: block;
-    float: left;
-    background-size: cover;
-    width: 1.1%;
-    margin-top: 7.5%;
+    position: absolute;
+    width: 1%;
+    top: 60%;
 }
 .sliders__arrow--left {
-    margin-left: 15.5%;
+    left: 15.5%;
 }
 .sliders__arrow--right {
     margin-left: 15%;
 }
 .sliders__article {
-    display: block;
-    width: 22%;
-    float: left;
-    margin-left: 10.4%;
-    margin-top: 3%;
+    position: absolute;
+    width: 25%;
+    left: 24%;
+    top: 50%;
 }
 .sliders__article--header{
     font-family: 'League Gothic Regular', 'Arial Regular', Arial, sans-serif;
     color: #fefefe;
     width: 100%;
+    font-size: 260%;
+    position: relative;
+    display: block;
 }
 .sliders__article--subheader{
     font-family: 'League Gothic Regular', 'Arial Regular', Arial, sans-serif;
+    font-size: 96%;
     color: #edbfff;
     margin-top: 3%;
-    clear: left;
     width: 100%;
+    position: relative;
+    display: block;
 }
 .sliders__article--content{
-    font-family: 'Open Sans Light',  sans-serif;
+    font-family: 'Open Sans Light', sans-serif;
+    font-size: 56%;
     color: #fff;
-    clear: left;
-    margin-top: 2%;
+    display: block;
     line-height: 139%;
     width: 100%;
+    position: relative;
 }
-.sliders__ipfone--back{
+/*.sliders__ipfone--back{
     float: left;
     display: block;
     width: 5%;
@@ -202,7 +212,7 @@
     }
 }
 
-@media screen and (min-width: 300px) and (max-width: 499px) {
+@media screen and (min-width: 320px) and (max-width: 479px) {
     .logo-text{
         font-size: 6px;
     }    
@@ -211,15 +221,58 @@
     }
 }
 */
-@media screen and (min-width: 960px){
+@media screen and (min-width: 1050px) {
+    .header__container{
+        height: 380px;
+    }
     .wrapper{
-        min-width:850px;
         max-width:1050px;
+    }
+    .logo-text{
+        font-size: 24px;  
+    }    
+}
+@media screen and (min-width: 960px) and (max-width: 1049px){
+     .header__container{
+        height: 346px;
     }
     .logo-text{
         font-size: 18px;
     }    
     .main-nav__menuitem{
         font-size: 9px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+    .header__container{
+        padding-top:36%;
+    }
+    .logo-text{
+        font-size: 18px;
+    }    
+    .main-nav__menuitem{
+        font-size: 9px;
+    }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    .header__container{
+        padding-top:36%;
+    }
+    .logo-text{
+        font-size: 12px;
+    }    
+    .main-nav__menuitem{
+        font-size: 6px;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 479px) {
+    .header__container{
+        padding-top:36%;
+    }
+    .logo-text{
+        font-size: 6px;
+    }    
+    .main-nav__menuitem{
+        font-size: 4px;
     }
 }
