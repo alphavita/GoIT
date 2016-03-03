@@ -1,0 +1,27 @@
+﻿/*  radio   */
+input[type="radio"]{
+ -webkit-appearance: none;
+    background: url('../img/radio.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 17px;
+    height: 17px;
+    /* padding-top: 1px; */
+    /* vertical-align: middle; */
+    position: absolute;
+    /* top: 0; */
+    /* bottom: 0; */
+    left: 0;
+    right: 0;
+    /* display: inline; */
+    /* z-index: 500; */
+}
+input[type="radio"]:checked{
+    background-position-x: -19px;
+}
+input[type="radio"]:disabled
+{
+ opacity: .3;
+}
+
+
