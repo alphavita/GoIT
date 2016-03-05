@@ -1,28 +1,27 @@
 ﻿/*  radio   */
 input[type="radio"]{
  -webkit-appearance: none;
-    background-image: url('../img/radio-unchecked.png');
     background-repeat: no-repeat;
     background-size:cover;
     width: 8px;
     height: 8px;
-    /* padding-top: 1px; */
-    /* vertical-align: middle; */
     position: absolute;
-    /* top: 0; */
-    /* bottom: 0; */
     left: 0;
     right: 0;
-    /* display: inline; */
-    /* z-index: 500; */
-}
-input[type="radio"]:checked{
-    background-image: url('../img/radio-checked.png');
-    /*background-position-x: -19px;*/
 }
 input[type="radio"]:disabled
 {
  opacity: .3;
 }
-
-
+.sliders__radio{
+    background-image: url('../img/radio-unchecked.png');
+}
+.sliders__radio:checked{
+    background-image: url('../img/radio-checked.png');
+}
+.testimonial__radio{
+    background-image: url('../img/radiobottom-unchecked.png');
+}
+.testimonial__radio:checked{
+    background-image: url('../img/radiobottom-checked.png');
+}

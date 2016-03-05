@@ -170,31 +170,47 @@
     position: relative;
     overflow: hidden;
     padding: 0 30%;
-    /* height: 36%; */
     background-image: linear-gradient(#745083 0%,#6a4a78 20%,#50395a 60%,#38293f 90%,#33253a 100%);
 }
 .blurbs__column{
     position: relative;
-    width: 33.333%;
-    height: 30%;
+    margin-top: 8%;
 }
-.blurbs__column--left,.blurbs__column--center{
+.blurbs__column--left{
     float:left;
-    width: 35%;
+    width: 33.3%;
+}
+.blurbs__column--center{
+    float:left;
+    width: 33.4%;
 }
 .blurbs__column--right{
     float:right;
-    width: 29.5%;
+    width: 33.3%;
 }
-.content:after,blurbs:after{
-    clear:both;
-    content: '';
-    display:block;
-}
-.blurbs__picture{
+/*.blurbs__pictograph {
+    position:relative;
     float:left;
     width: 10%;
+    height: auto;
     margin-top: 4%;
+}*/
+.blurbs__picture{
+    float:left;
+    width: 13px;
+    height: 13px;
+    background-image: url('../img/sprite.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.blurbs__picture--wrench{
+    background-position-x: left;
+}
+.blurbs__picture--footnote{
+    background-position-x: center;
+}
+.blurbs__picture--note{
+    background-position-x: right;
 }
 .blurbs__text{
     float: right;
@@ -203,18 +219,141 @@
 .blurbs__text--header {
     font-family: 'League Gothic Regular', sans-serif;
     font-size: 110%;
+    color: white;
+    text-shadow: 0.5px 0.9px 0 #0f1518;
 }
 .blurbs__text--content {
     font-family: 'Open Sans Light', sans-serif;
     font-size: 60%;
-    width: 100%;
+    line-height: 1;
+    margin-top: 4%;
+    color: white;
+    text-shadow: 0.5px 0.9px 0 #0f1518; 
 }
 .blurbs__text--footer {
     font-family: 'League Gothic Regular', sans-serif;
     font-size: 65%;
     text-align: right;
+    margin-top: 11%;
+    margin-right: 14%;
+    color: white;
+    text-shadow: 0.5px 0.9px 0 #0f1518;
 }
 
+.feedback{
+    position: relative;
+    overflow: hidden;
+    padding: 0 30%;
+    background-color: #f9f9f9;
+}
+.feedback__opacitystrip{
+    position: absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height: 1%;
+    background-color: rgba(217,217,217,0.5);
+}
+.testimonials{
+    float:left;
+    width: 45%;
+    margin-top: 11%;
+    z-index: 0;
+}
+.testimonials__foto{
+    position:absolute;
+    width: 2%;
+    left: 29%;
+    top: 15%;       
+    z-index: 5;
+}
+.testimonial{
+    position: relative;
+    padding-left: 7%;
+    background-color: white;
+    z-index:1;
+}
+.testimonial__header{
+    font-family: 'League Gothic Regular', sans-serif;
+    font-size: 135%;
+    margin-top: 3%;
+}
+.testimonial__text{
+    font-family: 'Open Sans Light', sans-serif;
+    font-size: 70%;
+    line-height: 1.2;
+}
+.testimonial__header--begin{
+    display: inline;
+    color: #454545;
+}
+.testimonial__header--end{
+    display: inline;
+    color: #edbfff;
+}
+.testimonial__navigation{
+    list-style: none;
+    margin: 5% auto;
+    width: 40%;
+}
+.testimonial__point{    
+    position: relative;
+    display: inline-block;
+    width: 18%;
+}
+.blogs{
+    float: right;
+    width: 50%;
+    color: #454545;
+    margin-top: 11.7%;
+}
+.blogs__header {
+    text-shadow: 0.5px 0.9px 0 white;
+    color: #454545;
+    font-family: 'League Gothic Regular', sans-serif;
+    font-size: 106%;
+    font-weight: 400;
+    line-height: 2;
+}
+.blog {
+    position: relative;
+    margin-top: 3%;
+}
+.blog__foto {
+    position: absolute;
+    width: 10%;
+    left: -3%;
+    top: -15%;
+}
+.blog__header{
+    font-family: 'Open Sans Extra Bold', sans-serif;
+    font-size: 55%;
+    margin-left: 12%;
+    line-height: 0.2;
+}
+.blog__text{
+    font-family: 'Open Sans Light', sans-serif;
+    font-size: 47%;
+    color: #454545;
+    letter-spacing: -0.3px;
+    margin-left: 12%;
+}
+.blogs__footer{
+    font-family: 'League Gothic Regular', sans-serif;
+    font-size: 70%;
+    margin-top: 5%;
+    margin-right: 20%;
+    text-align: right;
+}
+
+
+
+
+.content:after,blurbs:after,feedback:after{
+    clear:both;
+    content: '';
+    display:block;
+}
 
 /*
 @media screen and (min-width: 960px) {
