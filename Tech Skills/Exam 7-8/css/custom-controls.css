@@ -1,8 +1,8 @@
 ﻿/*  radio   */
-input[type="radio"]{
- -webkit-appearance: none;
+input[type="radio"] {
+    -webkit-appearance: none;
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
     width: 8px;
     height: 8px;
     position: absolute;
