@@ -11,15 +11,6 @@
     color: black;
     background: white;
 }
-
-.content:after,blurbs:after,feedback:after,recentnews:after{
-    clear:both;
-    content: '';
-    display:block;
-}
-/*@media screen and (min-width: 1200px)  {
-}*/
-@media screen and (min-width: 960px) {
     .wrapper{
         max-width:1050px;
         margin: 0 auto;
@@ -28,25 +19,21 @@
     .header{
         position:relative;
         width: 100%;
-        height: auto !important;
-    /*    background-color:red;*/
     }
     .header__container{
         width: 100%;
-        background-image: url("../img/bgr_landscape.jpg");
+        height: 100%;
         position: relative;
-        overflow: hidden;
+        background-image: url("../img/bgr_landscape.jpg");
         background-repeat: no-repeat;
-        background-size: 100%;
+        background-size: cover;
         background-position: 0% 0%;
-        height: 379px;
+        overflow: hidden;
     }
     .logo-text{
         position:absolute;
         font-family: 'League Gothic Regular', 'Arial Regular', Arial, sans-serif;
         font-size: 165%;
-        top: 8%;
-        left: 30%;
     }    
     .begin-logo{
         color: white;
@@ -59,8 +46,27 @@
     }
     .main-nav--header {
         position:absolute;
+    }
+
+.content:after,blurbs:after,feedback:after,recentnews:after{
+    clear:both;
+    content: '';
+    display:block;
+}
+/*@media screen and (min-width: 1200px)  {
+}*/
+@media screen and (min-width: 960px) {
+    .header{
+        height: 379px;
+    }
+    .logo-text{
+        top: 8%;
+        left: 30%;
+    }    
+    .main-nav--header {
         left: 43%;
         top: 7%;
+        width: 50%;
     }
     .main-nav__menuitem{
         font-family: 'League Gothic Regular', 'Arial Regular', Arial, sans-serif;
@@ -68,8 +74,8 @@
     }
     .main-nav__menuitem--header{
         font-size: 110%;
-        margin-right: 1.5%;
-        margin-left: 3.4%;
+        margin-right: 2.5%;
+        margin-left: 0.4%;
     }
     .main-nav__menuitem:hover{
         cursor: pointer;
@@ -474,46 +480,17 @@
     }
 }
 @media screen and (min-width: 768px) and (max-width: 959px){
-    .wrapper{
-        max-width:1050px;
-        margin: 0 auto;
-        overflow: hidden;
-    }
     .header{
-        position:relative;
-        width: 100%;
-        height: auto !important;
-    }
-    .header__container{
-        width: 100%;
-        background-image: url("../img/bgr_landscape.jpg");
-        position: relative;
-        overflow: hidden;
-        background-repeat: no-repeat;
-        background-size: 100%;
-        background-position: 0% 0%;
         height: 360px;
     }
     .logo-text{
-        position: absolute;
-        font-family: 'League Gothic Regular', 'Arial Regular', Arial, sans-serif;
-        font-size: 165%;
         top: 8%;
         left: 35%;
     }    
-    .begin-logo{
-        color: white;
-        text-shadow: 0 0.5px 0.5px rgba(0, 0, 0, 0.3);
-    }
-    .end-logo{
-        background: linear-gradient(0deg, rgb(50, 37, 57) 0%,rgb(83, 59, 94) 50% , rgb(116, 80, 131) 100%);
-        -webkit-background-clip: text;  
-        color: transparent;
-    }
     .main-nav--header {
-        position: absolute;
         left: 34.1%;
         top: 16%;
+        width:60%;
     }
     .main-nav__menuitem{
         font-family: 'League Gothic Regular', 'Arial Regular', Arial, sans-serif;
@@ -931,44 +908,14 @@
     }
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
-    .wrapper{
-        max-width:1050px;
-        margin: 0 auto;
-        overflow: hidden;
-    }
     .header{
-        position:relative;
-        width: 100%;
-        height: auto !important;
-    }
-    .header__container{
-        width: 100%;
-        background-image: url("../img/bgr_landscape.jpg");
-        position: relative;
-        overflow: hidden;
-        background-repeat: no-repeat;
-        background-size: 100%;
-        background-position: 0% 0%;
         height: 250px;
     }
     .logo-text{
-        position: absolute;
-        font-family: 'League Gothic Regular', 'Arial Regular', Arial, sans-serif;
-        font-size: 165%;
         top: 12%;
         left: 47%;
     }    
-    .begin-logo{
-        color: white;
-        text-shadow: 0 0.5px 0.5px rgba(0, 0, 0, 0.3);
-    }
-    .end-logo{
-        background: linear-gradient(0deg, rgb(50, 37, 57) 0%,rgb(83, 59, 94) 50% , rgb(116, 80, 131) 100%);
-        -webkit-background-clip: text;  
-        color: transparent;
-    }
     .main-nav--header {
-        position: absolute;
         left: 45%;
         top: 23%;
         width: 10.2%;
@@ -1393,42 +1340,13 @@
     }
 }
 @media screen and (min-width: 320px) and (max-width: 479px) {
-    .wrapper{
-        max-width:1050px;
-        margin: 0 auto;
-        overflow: hidden;
-    }
     .header{
-        position:relative;
-        width: 100%;
-        height: auto !important;
-    }
-    .header__container{
-        width: 100%;
-        background-image: url("../img/bgr_landscape.jpg");
-        position: relative;
-        overflow: hidden;
-        background-repeat: no-repeat;
-        background-size: 100%;
-        background-position: 0% 0%;
         height: 235px;
     }
     .logo-text{
-        position: absolute;
-        font-family: 'League Gothic Regular', 'Arial Regular', Arial, sans-serif;
-        font-size: 165%;
         top: 13%;
         left: 46.8%;
     }    
-    .begin-logo{
-        color: white;
-        text-shadow: 0 0.5px 0.5px rgba(0, 0, 0, 0.3);
-    }
-    .end-logo{
-        background: linear-gradient(0deg, rgb(50, 37, 57) 0%,rgb(83, 59, 94) 50% , rgb(116, 80, 131) 100%);
-        -webkit-background-clip: text;  
-        color: transparent;
-    }
     .main-nav--header {
         position: absolute;
         left: 45%;
