@@ -1,0 +1,27 @@
+﻿/*  radio   */
+input[type="radio"] {
+    -webkit-appearance: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+input[type="radio"]:disabled
+{
+ opacity: .3;
+}
+.sliders__radio{
+    background-image: url('../img/radio-unchecked.png');
+}
+.sliders__radio:checked{
+    background-image: url('../img/radio-checked.png');
+}
+.testimonial__radio{
+    background-image: url('../img/radiobottom-unchecked.png');
+}
+.testimonial__radio:checked{
+    background-image: url('../img/radiobottom-checked.png');
+}
