@@ -10,6 +10,7 @@
     height: 100%;
     color: black;
     background: white;
+    min-width: 320px;
 }
     .wrapper{
         max-width:1050px;
@@ -42,7 +43,8 @@
     .end-logo{
         background: linear-gradient(0deg, rgb(50, 37, 57) 0%,rgb(83, 59, 94) 50% , rgb(116, 80, 131) 100%);
         -webkit-background-clip: text;  
-        color: transparent;
+        color: transparent;  
+        
     }
     .main-nav--header {
         position:absolute;
@@ -434,7 +436,7 @@
         width: 32%;
         margin-left: 1%;
     }
-    .news--second,news--third{
+    .news--second,.news--third{
         display: none;
     }
 

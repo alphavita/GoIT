@@ -1,0 +1,7 @@
+﻿@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .end-logo{
+        background: none;
+        background-color: transparent; 
+        color: rgb(50, 37, 57);
+    }
+}

@@ -1,0 +1,7 @@
+﻿@-moz-document url-prefix() {
+    .end-logo{
+        background: none;
+        background-color: transparent; 
+        color: rgb(50, 37, 57);
+    }
+}

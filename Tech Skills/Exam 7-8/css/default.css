@@ -1,4 +1,4 @@
-﻿body {
+﻿D:\Projects\GoIT\Tech Skills\Exam 7-8\css\default.cssbody {
     font: 12px/18px Tahoma, Arial, Verdana, sans-serif;
     font-style: normal;
     font-variant: normal;
@@ -434,7 +434,7 @@
         width: 32%;
         margin-left: 1%;
     }
-    .news--second,news--third{
+    .news--second,.news--third{
         display: none;
     }
 
