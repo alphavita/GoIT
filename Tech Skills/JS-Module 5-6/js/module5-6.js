@@ -4,30 +4,28 @@
     _isTimerWorking : false,
     _displayTime: function () {
         document.getElementsByClassName('time-value')[0].innerHTML = 'sdasdads';
-        document.getElementsByClassName('msec')[0].innerHTML = (_currentMsecValue % 1000) + '';
+        document.getElementsByClassName('msec')[0].innerHTML = (this._currentMsecValue % 1000) + '';
     },
-    _btnStart : document.getElementsByClassName('btn')[0],
-    _btnClear : document.getElementsByClassName('btn')[1],
     setTimeValue : function(msec){
-        _currentMsecValue=msec;
-        _displayTime();
+        this._currentMsecValue=msec;
+        this._displayTime();
     },
     getFlagWorking: function () {
-        return _isTimerWorking;
+        return this._isTimerWorking;
     },
     setFlagWorking: function (isWork) {
-        _isTimerWorking = isWork;
+        this._isTimerWorking = isWork;
     },
     reverseFlagWorking: function () {
-        _isTimerWorking = !_isTimerWorking;
+        this._isTimerWorking = !this._isTimerWorking;
     },
     incrementTime : function() {
-        _currentMsecValue++;
-        _displayTime();
+        this._currentMsecValue++;
+        this._displayTime();
     },
     startTimer: function () {
-        _timer = setInterval(incrementTime, 1);
-        _btnStart.innerHTML = 'Pause';
+        this._timer = setInterval(this.incrementTime, 1);
+        document.getElementsByClassName('btn')[0].innerHTML = 'Pause';
     },
     suspendTimer: function () {
 
@@ -37,13 +35,13 @@
     },
     clearTimer : function () {
         this.setTimeValue(0);
-        setFlagWorking(false);
+        this.setFlagWorking(false);
     },
     initTimer : function () {
         this.setTimeValue(0);
-        setFlagWorking(false);
-        this.btnStart.addEventListener('click', startTimer);
-        this.btnClear.addEventListener('click', clearTimer);
+        this.setFlagWorking(false);
+        document.getElementsByClassName('btn')[0].addEventListener('click', this.startTimer);
+        document.getElementsByClassName('btn')[1].addEventListener('click', this.clearTimer);
     }
 }
 timerObj.initTimer();
