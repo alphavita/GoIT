@@ -33,9 +33,11 @@
             $('.show-all')[0].innerHTML = $buttonText.replace('Hide', 'Show');
         }
     });
-    $('.questionnaire__control').on('focus', function () {
+    $('.questionnaire__control').on('mouseover', function () {
         $('.questionnaire__tooltip').hide();
         $('.show-all')[0].innerHTML = $('.show-all')[0].innerHTML.replace('Hide', 'Show'); // если было Show оно и останется
-                    
-    })
+        $(this).next().show(500);
+    }).on('mouseout', function () {
+        $(this).next().hide(500);
+    });
 });
