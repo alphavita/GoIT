@@ -9,21 +9,41 @@
     <script src="js/module7-8.js" type="text/javascript"></script>
 </head>
 <body>
-        <div class="container">
-            <div class="header">
-                <ul class="tabs">
-                    <li><a href="#" class="tabs__tab" id="head-tab-first">Закладка 1</a></li>
-                    <li><a href="#" class="tabs__tab" id="head-tab-second">Закладка 2</a></li>
-                    <li><a href="#" class="tabs__tab" id="head-tab-third">Закладка 3</a></li>
-                    <li><a href="#" class="tabs__tab" id="head-tab-fourth">Закладка 4</a></li>
-                </ul>
-            </div>
-            <div class="content">
-                <p class="pane" id="content-tab-first">Сейчас активна закладка 1</p>
-                <p class="pane" id="content-tab-second">Сейчас активна закладка 2</p>
-                <p class="pane" id="content-tab-third">Сейчас активна закладка 3</p>
-                <p class="pane" id="content-tab-fourth">Сейчас активна закладка 4</p>
-            </div>
+    <div class="container">
+        <div class="header">
+            <ul class="tabs">
+                <li><a href="#" class="tabs__tab" id="head-tab-first">Закладка 1</a></li>
+                <li><a href="#" class="tabs__tab" id="head-tab-second">Закладка 2</a></li>
+                <li><a href="#" class="tabs__tab" id="head-tab-third">Закладка 3</a></li>
+                <li><a href="#" class="tabs__tab" id="head-tab-fourth">Закладка 4</a></li>
+            </ul>
         </div>
+        <div class="content">
+            <p class="pane" id="content-tab-first">Сейчас активна закладка 1</p>
+            <p class="pane" id="content-tab-second">Сейчас активна закладка 2</p>
+            <p class="pane" id="content-tab-third">Сейчас активна закладка 3</p>
+            <p class="pane" id="content-tab-fourth">Сейчас активна закладка 4</p>
+        </div>
+    </div>
+    <form class="questionnaire">
+        <fieldset>
+            <label class="questionnaire__question">
+                <p class="questionnaire__name">Firstname</p>
+                <input class="questionnaire__control" type="text" id="firstname" name="firstname" />
+                <p class="questionnaire__tooltip">Please provide your firstname.</p>
+            </label>
+            <label class="questionnaire__question">
+                <p class="questionnaire__name">Lastname</p>
+                <input class="questionnaire__control" type="text" id="lastname" name="lastname" />
+                <p class="questionnaire__tooltip">Please provide also your lastname.</p>
+            </label>
+            <label class="questionnaire__question">
+                <p class="questionnaire__name">Address</p>
+                <input class="questionnaire__control" type="text" id="address" name="address" />
+                <p class="questionnaire__tooltip">Your home or work address.</p>
+            </label>
+        </fieldset>
+        <a href="#" class="show-all">Show tooltips</a>
+    </form>
 </body>
 </html>

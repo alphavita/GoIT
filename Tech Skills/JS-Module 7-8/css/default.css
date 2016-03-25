@@ -9,6 +9,9 @@ body {
     font-size: 16px;
     width:100%;
 }
+
+/* ДЗ 7-8, часть 1*/
+
 .container {
     width: 800px;
     margin-left: auto;
@@ -79,4 +82,88 @@ body {
 }
 .selected-pane{
     display: block; 
+}
+
+
+
+/* ДЗ 7-8, часть 2*/
+
+.questionnaire{
+    margin: 80px auto;
+    width: 500px;
+}
+.questionnaire fieldset {
+    padding-top: 10px;
+    background-color: white;
+}
+.questionnaire__question {
+    display: block;
+    width: 500px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    clear: both;
+    overflow: hidden;
+    text-align: right;
+}
+.questionnaire__name{
+    float: left;
+    text-align: left;
+    width: 80px;
+    font-style: oblique;
+}
+.questionnaire__control{
+    float: left;
+    border-radius: 5px;
+}
+.questionnaire__tooltip {
+    float: left;
+    border: 1px solid grey;
+    border-radius: 7px;
+    margin-left: 30px;
+    padding: 0 9px;
+    font-size: 12px;
+    color: darkblue;
+    box-shadow: 5px 11px 2px 0px black;
+    background-color: lightgrey;
+    opacity: 0.7;
+    display: none;
+}
+.show-all {
+  display: inline-block;
+    text-shadow: 1px 1px #fff;
+    text-decoration: none;
+    padding: 3px 17px;
+    border: 1px solid #aaa;
+    border-radius: 100px;
+    outline: none;
+    background: #d6dbbf no-repeat;
+    background-image: linear-gradient(to left, #aaa, #aaa), linear-gradient(to left, #feffe8, #feffe8), linear-gradient(#feffe8, #d6dbbf);
+    background-position: calc(100% - 43px) 0, calc(100% - 42px) 0, 0 0;
+    background-size: 1px 100%, 1px 100%, auto auto;
+    overflow: hidden;
+}
+.show-all:after {
+  content: "\bb";
+  position: relative;
+  bottom: 0;
+  display: inline-block;
+  margin-left: 1.4em;
+  vertical-align: middle;
+  font-family: "Times","Times New Roman","serif","sans-serif","EmojiSymbols";
+  font-weight: 700;
+  font-size: 140%;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.show-all:hover {
+  background-color: #fdfd9f;
+  background-image:
+   linear-gradient(to left, #aaa, #aaa),
+   linear-gradient(to left, #feffe8, #feffe8),
+   linear-gradient(#fffce7, #fdfd9f);
+}
+.show-all:active:after {
+/*  bottom: -1.2em; */
+    content: "O";
+    transition: .3s;
 }
