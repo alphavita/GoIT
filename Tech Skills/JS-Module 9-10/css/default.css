@@ -1,0 +1,52 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+.wrapper_jcarousel{
+    width: 500px;
+    margin: 10px auto;
+    position: relative;
+}
+.jcarousel {
+    margin:0 auto;
+    width: 500px;
+    height: 500px;
+    overflow:hidden;
+}
+.jcarousel ul {
+    width: 20000em;
+    position: relative;
+
+    /* Optional, required in this case since it's a <ul> element */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.jcarousel li {
+    /* Required only for block elements like <li>'s */
+    float: left;
+    z-index: 1;
+}
+.jcarousel-prev,
+.jcarousel-next{
+  position: absolute;
+    z-index: 5;
+    top: 250px;
+    background-color: dimgrey;
+    color: white;
+    border: 1px solid lightblue;
+    width: 20px;
+    text-align: center;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.jcarousel-prev{
+    left: 10px;
+}
+.jcarousel-next {
+    right: 10px;
+}
+.jcarousel-prev,
+.jcarousel-next.inactive{
+    cursor: default;
+}
