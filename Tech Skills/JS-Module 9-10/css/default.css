@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
 }
-.wrapper_jcarousel{
+.wrapper-jcarousel{
     width: 500px;
     margin: 10px auto;
     position: relative;
@@ -13,40 +13,70 @@
     height: 500px;
     overflow:hidden;
 }
-.jcarousel ul {
+.jcarousel__list {
     width: 20000em;
     position: relative;
 
-    /* Optional, required in this case since it's a <ul> element */
     list-style: none;
     margin: 0;
     padding: 0;
 }
-.jcarousel li {
+.jcarousel__item {
     /* Required only for block elements like <li>'s */
     float: left;
     z-index: 1;
 }
-.jcarousel-prev,
-.jcarousel-next{
-  position: absolute;
+
+
+.jcarousel__prev,
+.jcarousel__next{
+    position: absolute;
     z-index: 5;
     top: 250px;
-    background-color: dimgrey;
+    background-color: black;
     color: white;
-    border: 1px solid lightblue;
-    width: 20px;
+    border: 2px solid lightblue;
+    border-radius: 56px;
+    height: 30px;
+    width: 30px;
     text-align: center;
-    border-radius: 10px;
     text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
 }
-.jcarousel-prev{
+.jcarousel__prev{
     left: 10px;
 }
-.jcarousel-next {
+.jcarousel__next {
     right: 10px;
 }
-.jcarousel-prev,
-.jcarousel-next.inactive{
+.jcarousel__prev,
+.jcarousel__next.inactive{
     cursor: default;
+}
+.jcarousel__paginator {
+    position: absolute;
+    top: 470px;
+    left: 177px;
+}
+.paginator__list{
+    display: inline-block;
+}
+.paginator__item{
+    display: inline-block;
+    margin: 0 5px 5px 0;
+    width: 12px;
+    height: 12px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: white;
+    cursor: pointer;
+}
+.paginator__item--active{
+    border: 2px solid white;
+    background-color: black;
+}
+.paginator__item:active {
+    border: 2px solid yellow;
+    background-color: black;
 }

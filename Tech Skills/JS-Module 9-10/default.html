@@ -6,23 +6,33 @@
     <title>ДЗ Tech Skills JS Module 9-10</title>
     <link href="css/default.css" rel="stylesheet" />
     <script src="js/jquery-1.12.2.min.js" type="text/javascript"></script>
-    <script type="text/javascript" src="/path/to/jquery.jcarousel.min.js"></script>
+    <script src="js/jquery.jcarousel.js" type="text/javascript"></script>
     <script src="js/module9-10.js" type="text/javascript"></script>
 </head>
-<body
-    <div class="wrapper_jcarousel">
+<body>
+    <div class="wrapper-jcarousel">
         <div class="jcarousel">
-            <ul>
-                <li><img src="img/foto1.jpg" width="500" height="500" alt="" /></li>
-                <li><img src="img/foto2.jpg" width="500" height="500" alt="" /></li>
-                <li><img src="img/foto3.jpg" width="500" height="500" alt="" /></li>
-                <li><img src="img/foto4.jpg" width="500" height="500" alt="" /></li>
-                <li><img src="img/foto5.jpg" width="500" height="500" alt="" /></li>
-                <li><img src="img/foto6.jpg" width="500" height="500" alt="" /></li>
+            <ul class="jcarousel__list">
+                <li class="jcarousel__item"><img src="img/foto1.jpg" width="500" height="500" alt="" /></li>
+                <li class="jcarousel__item"><img src="img/foto2.jpg" width="500" height="500" alt="" /></li>
+                <li class="jcarousel__item"><img src="img/foto3.jpg" width="500" height="500" alt="" /></li>
+                <li class="jcarousel__item"><img src="img/foto4.jpg" width="500" height="500" alt="" /></li>
+                <li class="jcarousel__item"><img src="img/foto5.jpg" width="500" height="500" alt="" /></li>
+                <li class="jcarousel__item"><img src="img/foto6.jpg" width="500" height="500" alt="" /></li>
             </ul>
+            <a class="jcarousel__prev" href="#">&lsaquo;</a>
+            <a class="jcarousel__next" href="#">&rsaquo;</a>
+            <nav class="jcarousel__paginator">
+                <ul class="paginator__list">
+                    <li class="paginator__item"></li>
+                    <li class="paginator__item"></li>
+                    <li class="paginator__item"></li>
+                    <li class="paginator__item"></li>
+                    <li class="paginator__item"></li>
+                    <li class="paginator__item"></li>
+                </ul>
+            </nav>
         </div>
-        <a class="jcarousel-prev" href="#">&lsaquo;</a>
-        <a class="jcarousel-next" href="#">&rsaquo;</a>
     </div>
 </body>
 </html>
