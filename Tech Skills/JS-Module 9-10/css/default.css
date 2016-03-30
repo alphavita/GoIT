@@ -86,10 +86,11 @@
 
 /*   выпадающий список         */
 .wrapper-select{
-    margin-left: 500px;
+    margin: 10px auto;
+    width: 500px;
+    text-align: center;
 }
 .new-sumoselect {
-    margin: 10px auto;
     display: block;
 }
 .SumoSelect.open > .optWrapper{
@@ -97,4 +98,37 @@
 }
 .SumoSelect > .CaptionCont{
     background-color: aqua;
+}
+
+
+
+.form-variant-jquery {
+    margin: 50px;
+    background: #99CCFF;
+    padding: 10px;
+    width: 500px;
+}
+.with-jquery{
+    width: 150px;
+}
+.form-variant-jquery div {
+    margin-bottom: 10px;
+}
+
+.niceCheck {
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    cursor: pointer;
+    background: url(../img/checkbox.png);
+    overflow: hidden;
+}
+.niceCheckDisabled {
+    background-image: url(../img/checkbox-disabled.png);
+}
+.niceChecked {
+    background-position: 0 -17px;
+}
+.niceCheck input {
+    margin-left: -100px;
 }

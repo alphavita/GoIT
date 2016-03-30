@@ -50,7 +50,30 @@
                 <option value="item4">Пункт 5</option>
                 <option value="item5">Пункт 6</option>
             </optgroup>
-</select>
+        </select>
     </div>
+    <form class="form-variant-jquery" action="#">
+        <fieldset class="with-jquery">
+            <legend align="center">С помощью jquery:</legend>
+            <div class="chk-variant-jquery">
+                <label for="ch1">label 1</label>
+                <span class="niceCheck">
+                    <input type="checkbox" name="" id="ch1" value="on" tabindex="1">
+                </span>
+            </div>
+            <div class="chk-variant-jquery">
+                <label for="ch2">label 2</label>
+                <span class="niceCheck niceChecked">
+                    <input type="checkbox" name="" id="ch2" checked value="2" tabindex="2">
+                </span>
+            </div>
+            <div class="chk-variant-jquery">
+                <label for="ch3">label 3</label>
+                <span class="niceCheck niceChecked niceCheckDisabled">
+                    <input type="checkbox" name="" id="ch3" checked value="on" tabindex="0" disabled="">
+                </span>
+            </div>
+        </fieldset>
+</form>
 </body>
 </html>
