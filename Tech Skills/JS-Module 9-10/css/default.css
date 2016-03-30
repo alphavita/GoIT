@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
 }
+
+/*       элементы карусели     */
 .wrapper-jcarousel{
     width: 500px;
     margin: 10px auto;
@@ -27,7 +29,7 @@
     z-index: 1;
 }
 
-
+/*        управление каруселью       */
 .jcarousel__prev,
 .jcarousel__next{
     position: absolute;
@@ -79,4 +81,20 @@
 .paginator__item:active {
     border: 2px solid yellow;
     background-color: black;
+}
+
+
+/*   выпадающий список         */
+.wrapper-select{
+    margin-left: 500px;
+}
+.new-sumoselect {
+    margin: 10px auto;
+    display: block;
+}
+.SumoSelect.open > .optWrapper{
+    background-color: lightgray;
+}
+.SumoSelect > .CaptionCont{
+    background-color: aqua;
 }

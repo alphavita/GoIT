@@ -6,7 +6,6 @@
         scroll: 1,
         visible: 1,
 /*        animation: 1500,*/
-        wrap: 'circular'
     });
     $('.jcarousel__prev').on('click', function () {
         if (--_currentItem < 0)                                     // Марианна, цикличность реализую сам, хотя можно
@@ -31,4 +30,19 @@
 
     var _currentItem = 0;
     $('.paginator__item:first').trigger('click');   // поджигаем событие нажатия на первую картинку из 6-ти имеющихся
-});
+
+
+    $selectObj = $(".new-sumoselect").SumoSelect({
+        placeholder: 'Сделайте выбор',
+        csvDispCount: 0,
+        floatWidth: 500,
+        forceCustomRendering: false,
+        nativeOnDevice: ['Android', 'BlackBerry', 'iPhone', 'iPad', 'iPod', 'Opera Mini', 'IEMobile', 'Silk'],
+        multiple: true,
+        csvSepChar: ',',
+        okCancelInMulti: true,
+        selectAll: true,      
+        triggerChangeCombined: true
+    });
+    $('.SumoSelect > .CaptionCont').css("background-color", "aqua");
+ });

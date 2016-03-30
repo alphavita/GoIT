@@ -3,10 +3,14 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="faviconka_ru_381.gif" type="image/x-icon" />
+    <link rel="shortcut icon" href="faviconka_ru_381.gif" type="image/x-icon" />
     <title>ДЗ Tech Skills JS Module 9-10</title>
     <link href="css/default.css" rel="stylesheet" />
+    <link href="css/sumoselect.css" rel="stylesheet" />
     <script src="js/jquery-1.12.2.min.js" type="text/javascript"></script>
     <script src="js/jquery.jcarousel.js" type="text/javascript"></script>
+    <script src="js/jquery.sumoselect.js" type="text/javascript"></script>
     <script src="js/module9-10.js" type="text/javascript"></script>
 </head>
 <body>
@@ -33,6 +37,20 @@
                 </ul>
             </nav>
         </div>
+    </div>
+    <div class="wrapper-select">
+        <select class="new-sumoselect" name="slt_services[]" multiple="multiple">
+            <optgroup label="Группа 1">
+                <option value="item0">Пункт 1</option>
+                <option value="item1">Пункт 2</option>
+            </optgroup>
+                <option value="item2">Пункт 3(без группы)</option>
+                <option value="item3">Пункт 4(без группы)</option>
+            <optgroup label="Группа 2">
+                <option value="item4">Пункт 5</option>
+                <option value="item5">Пункт 6</option>
+            </optgroup>
+</select>
     </div>
 </body>
 </html>
