@@ -55,21 +55,27 @@
     <form class="form-variant-jquery" action="#">
         <fieldset class="with-jquery">
             <legend align="center">С помощью jquery:</legend>
-            <div class="chk-variant-jquery">
+            <label class="niceCheck"><input type="checkbox" name="ch1" value="off" />checkbox1</label>
+            <label class="niceCheck"><input type="checkbox" name="ch2" value="on" checked="checked"/>checkbox2</label>
+            <label class="niceCheck"><input type="checkbox" name="ch2" value="on" disabled />checkbox3</label>
+        </fieldset>
+        <fieldset class="without-jquery">
+            <legend align="center">Без jquery:</legend>
+            <div class="chk-variant-without-jquery">
                 <label for="ch1">label 1</label>
-                <span class="niceCheck">
+                <span class="css-checkbox">
                     <input type="checkbox" name="" id="ch1" value="on" tabindex="1">
                 </span>
             </div>
             <div class="chk-variant-jquery">
                 <label for="ch2">label 2</label>
-                <span class="niceCheck niceChecked">
-                    <input type="checkbox" name="" id="ch2" checked value="2" tabindex="2">
+                <span class="css-checkbox css-checked">
+                    <input type="checkbox" name="" id="ch2" checked value="on" tabindex="2">
                 </span>
             </div>
             <div class="chk-variant-jquery">
                 <label for="ch3">label 3</label>
-                <span class="niceCheck niceChecked niceCheckDisabled">
+                <span class="css-checkbox css-checked css-disabled">
                     <input type="checkbox" name="" id="ch3" checked value="on" tabindex="0" disabled="">
                 </span>
             </div>
