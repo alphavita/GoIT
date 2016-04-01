@@ -55,27 +55,26 @@
 
 /*****************    begin  chkBox          *********************/
    
-    $(".niceCheck").on('mousedown',function() {
-    /* при клике на чекбоксе меняем его вид и значение */
-        input = $(this).find("input").eq(0);
-        if (!input.attr("checked")) {
-            $(this).addClass('niceChecked');
-            input.attr("checked", true)
+    $(".jq-niceCheck").on('mousedown', function () {
+        /* при клике на чекбоксе меняем его вид и значение */
+        if ($(this).hasClass('jq-niceCheckDisabled'))
+            return;
+        if ($(this).hasClass('jq-niceChecked')) {
+            $(this).removeClass('jq-niceChecked');
         } else {
-            $(this).removeClass('niceChecked');
-            input.attr("checked", false)
+            $(this).addClass('jq-niceChecked');
         }
-        return true;
     });
 
-    $(".niceCheck").each(function() {
+    $(".jq-niceCheck").each(function () {
         input = $(this).find("input").eq(0);
         if (input.attr("checked")) {
-            $(this).addClass('niceChecked');
+            $(this).addClass('jq-niceChecked');
         }
-//        $(this)[0].innerText = '&nbsp;&nbsp;&nbsp;' + ($(this)[0].innerText);
-        $(this).text('&nbsp;&nbsp;&nbsp;' + $(this).text());
-        return true;
+        if (input.attr("disabled")) {
+            $(this).addClass('jq-niceCheckDisabled');
+        }
+        $(this).text('      ' + $(this).text());
     });
 
 /*****************    end  chkBox          *********************/

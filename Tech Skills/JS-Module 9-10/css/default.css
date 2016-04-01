@@ -101,31 +101,37 @@
 }
 
 
+/*   checkBox         */
 
 .form-variant-jquery {
-    margin: 50px;
+    margin: 50px auto;
     background: #99CCFF;
     padding: 10px;
-    width: 500px;
+    width: 340px;
 }
-.with-jquery{
+.with-jquery,.without-jquery{
     width: 150px;
+    display: inline-block;
+    margin-left: 10px;
 }
-.form-variant-jquery div {
+.form-variant-jquery label {
     margin-bottom: 10px;
 }
-
-.niceCheck {
+.jq-niceCheck, .css-niceCheck{
     width: 17px;
     height: 17px;
     display: block;
     cursor: pointer;
     background: url(../img/checkbox.png);
     background-position: 0 0;
+    white-space: pre;
 }
-.niceCheck input {
+.jq-niceCheck input,.css-niceCheck input {
     display: none;
 }
-.niceChecked {
+.jq-niceCheckDisabled, .css-niceCheck input:disabled{
+    background: url(../img/checkbox-disabled.png);
+}
+.jq-niceChecked, .css-niceCheck input:checked:before{
     background-position: 0 -17px;
 }
