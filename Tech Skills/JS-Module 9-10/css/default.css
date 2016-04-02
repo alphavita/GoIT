@@ -114,24 +114,122 @@
     display: inline-block;
     margin-left: 10px;
 }
-.form-variant-jquery label {
-    margin-bottom: 10px;
-}
-.jq-niceCheck, .css-niceCheck{
+.jq-niceCheck{
     width: 17px;
     height: 17px;
     display: block;
+    margin-bottom: 10px;
+    margin-left: 5px;
     cursor: pointer;
     background: url(../img/checkbox.png);
     background-position: 0 0;
     white-space: pre;
 }
-.jq-niceCheck input,.css-niceCheck input {
+.jq-niceCheck input {
     display: none;
 }
-.jq-niceCheckDisabled, .css-niceCheck input:disabled{
+.jq-niceCheckDisabled{
     background: url(../img/checkbox-disabled.png);
 }
-.jq-niceChecked, .css-niceCheck input:checked:before{
+.jq-niceChecked {
     background-position: 0 -17px;
 }
+.css-niceCheck {
+    display: block;
+    margin-left: 5px;
+    margin-bottom: 8px;
+}
+.css-niceCheck input[type="checkbox"] {
+     -webkit-appearance: none;
+     background: url('../img/checkbox.png') no-repeat;
+     background-position: 0 0;   
+     width: 17px;
+     height: 17px;
+     vertical-align: middle;
+}
+.css-niceCheck input[type="checkbox"]:disabled{
+    background: url(../img/checkbox-disabled.png);
+}
+.css-niceCheck input[type="checkbox"]:checked {
+    background-position: 0 -17px;   
+}
+
+
+/*   menu         */
+.horizontal-menu {
+    background-color: rgb(255,100,100);
+    padding: 10px 0;
+    margin: 50px auto;
+    width: 500px;
+}
+.main-menu{
+     list-style-type: none;
+     list-style-position: outside;
+     position: relative;
+     line-height: 2;
+}
+.menu__menuitem{
+    position:relative;
+}
+.menu__menuitem--main{
+    display: inline-block;
+    margin-left: 40px;
+    text-align: center;
+}
+.sub-menu {
+    position:absolute;
+    width: 120px;
+    background-color: rgb(225,75,75);
+    top: auto;
+}
+.menu__menuitem a{
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+.menu__menuitem--sub{
+    display: block;
+    float:left;
+    width: 100%;
+    text-align: left;
+    padding: 0 5px;
+}
+.menu__menuitem--sub a {
+    border-bottom: solid black 1px;
+    width: 95%;
+}
+.menu__menuitem--sub:last-child a {
+    border-bottom: none;
+}
+
+
+
+
+/*
+
+.menuitem__dropdown > a{
+    background-position: right 7px;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    margin: 0 10px;       */          /*   здесь будет стрелка для субменю*/
+/*    padding: 0 10px;
+}
+.menuitem__dropdown--main > a{
+    background-image: url('../img/arrow-down.png');
+}
+.menuitem__dropdown--sub > a{
+    background-image: url('../img/arrow-right.png');
+
+}
+.menu__menuitem--sub a{
+/*    width: 140px;*/
+}
+
+
+.menu--hidden{
+    opacity: 0;
+}
+.content{
+    margin: 10px auto;
+    width: 500px;
+}*/
