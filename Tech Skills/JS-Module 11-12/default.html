@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="faviconka_ru_381.gif" type="image/x-icon" />
+    <link rel="shortcut icon" href="faviconka_ru_381.gif" type="image/x-icon" />
+    <title>ДЗ Tech Skills JS Module 11-12</title>
+    <link href="css/default.css" rel="stylesheet" />
+    <link href="css/gavPlugin.css" rel="stylesheet" />
+    <script src="js/jquery-1.12.2.min.js" type="text/javascript"></script>
+    <script src="js/template.js" type="text/javascript"></script>
+    <script src="js/module11-12.js" type="text/javascript"></script>
+</head>
+<body>
+    <div class="carousel-arrow-left"><span>Влево</span></div>
+    <div class="carousel-hider" id="template-parent">
+        <script type="text/html" id="item_tmpl">
+            <ul class="carousel-list">
+                <% for(var i=1;i<=12;i++){  %>
+                <li class="carousel-element"><img src="img/img<%=i%>.jpg"><p>Описание <%=i%></p></li>
+                <% } %>
+                <!--    
+                        <li class="carousel-element"><img src="img/img1.jpg"><p>Описание 1</p></li>
+                        <li class="carousel-element"><img src="img/img2.jpg"><p>Описание 2</p></li>
+                        <li class="carousel-element"><img src="img/img3.jpg"><p>Описание 3</p></li>
+                        <li class="carousel-element"><img src="img/img4.jpg"><p>Описание 4</p></li>
+                        <li class="carousel-element"><img src="img/img5.jpg"><p>Описание 5</p></li>
+                        <li class="carousel-element"><img src="img/img6.jpg"><p>Описание 6</p></li>
+                        <li class="carousel-element"><img src="img/img7.jpg"><p>Описание 7</p></li>
+                        <li class="carousel-element"><img src="img/img8.jpg"><p>Описание 8</p></li>
+                        <li class="carousel-element"><img src="img/img9.jpg"><p>Описание 9</p></li>
+                        <li class="carousel-element"><img src="img/img10.jpg"><p>Описание 10</p></li>
+                        <li class="carousel-element"><img src="img/img11.jpg"><p>Описание 11</p></li>
+                        <li class="carousel-element"><img src="img/img12.jpg"><p>Описание 12</p></li>
+                 -->
+            </ul>
+        </script>
+    </div>
+    <div class="carousel-arrow-right"><span>Вправо</span></div>
+</body>
+</html>
