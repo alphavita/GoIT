@@ -6,6 +6,8 @@
     var htmlData = tmpl('item_tmpl',dataTemplate);        // формируем html по шаблону  (часть 2 ДЗ 11-12)
     $('#template-parent').eq(0).append(htmlData);
 
+    
+
     function getXmlImages() {
         var xmlDoc = $($.parseXML('<?xml version="1.0" encoding="windows-1251" ?> <pictures/>'));
         for (var i = 1; i <= 12; i++) {   // наполняем документ "кадбудто" он пришел с сервера
@@ -43,19 +45,9 @@
     var minimumOffset = -((elementsCount - 5) * pixelsOffset);
     var maximumOffset = 0;
 
-    leftUIEl.click(function () {
-        if (currentLeftValue != maximumOffset) {
-            currentLeftValue += 125;
-            elementsList.animate({ left: currentLeftValue + "px" }, 500);
-        }
-    });
+    leftUIEl.click();
 
-    rightUIEl.click(function () {
-        if (currentLeftValue != minimumOffset) {
-            currentLeftValue -= 125;
-            elementsList.animate({ left: currentLeftValue + "px" }, 500);
-        }
-    });*/
+    rightUIEl.click();*/
 
 /*****************       plugin jcarousel          *********************/
 
