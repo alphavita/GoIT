@@ -1,17 +1,30 @@
 ﻿$(function () {
     var xmlDoc = getXmlImages();                          // имитируем приход xml-документа
-    var data = parseXmlImages(xmlDoc);                    // парсим xml для подсовывания шаблонизатору
-                                                          // формируем html по шаблону
-                                                          // запускаем плагин и курим до нажатия на картинку
+    dataTemplate = {
+        data: parseXmlImages(xmlDoc)                      // парсим xml для подсовывания массива картинок шаблонизатору
+    }                    
+    var htmlData = tmpl('item_tmpl',dataTemplate);        // формируем html по шаблону  (часть 2 ДЗ 11-12)
+    $('#template-parent').eq(0).append(htmlData);
 
     function getXmlImages() {
-        var xmlDoc = $($.parseXML('<?xml version="1.0" encoding="windows-1251" ?> <images/>'));
-        for (var i = 1; i <= 12; i++) {
-            $('<image path="img/img'+i+'" description="Картинка '+i+'"</image>').appendTo(xmlDoc.documentElement);
+        var xmlDoc = $($.parseXML('<?xml version="1.0" encoding="windows-1251" ?> <pictures/>'));
+        for (var i = 1; i <= 12; i++) {   // наполняем документ "кадбудто" он пришел с сервера
+            $('<picture path="img/img'+i+'.jpg" description="Картинка '+i+'"/>').appendTo(xmlDoc.find('pictures').eq(0));
         }
         return xmlDoc;
     }
-
+    function parseXmlImages(xmlDoc) {
+        var imageArr = [];          // сделаем массив картинок из xml-документа
+        var pictureArray = $('picture', xmlDoc);
+        for (var i = 0; i < pictureArray.length; i++)
+        {
+            imageArr.push({
+                path: $(pictureArray[i]).attr('path'),
+                description: $(pictureArray[i]).attr('description')
+            });
+        }
+        return imageArr;
+    }
 });
 
     
