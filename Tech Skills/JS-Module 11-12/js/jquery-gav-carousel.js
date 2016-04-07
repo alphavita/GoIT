@@ -1,6 +1,7 @@
 ﻿(function ($) {
     var methods = {
         init: function (params) {                              // инициализация плагина
+            // options в extend нужна для сохранения параметров при многократном вызове
             options = $.extend({}, defaults, options, params);
 
 
@@ -17,7 +18,7 @@
                          + '     </div>'
                          + '</script>';
             // добавляем control для скролирования влево
-            $(this).append('<div class="gav-carousel-arrow-left"><span>Влево</span></div>');
+            $(this).append('<div class="gav-carousel-arrow-left"><span>&nbsp;<&nbsp;</span></div>');
 
             // добавляем по шаблону слайды в карусель 
             $(this).append(contentTemplate);                           // вставляем шаблон, т.к. tmpl его достает из объекта document
@@ -25,7 +26,7 @@
             $(this).append(htmlData);
 
             // добавляем control для скролирования влево
-            $(this).append('<div class="gav-carousel-arrow-right"><span>Вправо</span></div>');
+            $(this).append('<div class="gav-carousel-arrow-right"><span>&nbsp;>&nbsp;</span></div>');
 
             $('#gavCarouselTemplate').remove();                            // мавр сделал свое дело, можно его убивать
 
@@ -48,12 +49,11 @@
             });
             $('.gav-carousel-element img').css({
                 height: $conteinerHeight - 4 /* вертикальный padding */ -  // высота каждого слайда
-                    $('.gav-carousel-element p').outerHeight()  // по хорошему тут надо бы выбрать максимум из всех, но смысл ДЗ не в этом
+                    $('.gav-carousel-element p').outerHeight()  // по хорошему тут надо бы выбрать максимум из всех, но смысл ДЗ 11-12 не в этом
             });
 
 
-            // добавляем обработчики 
-            
+            // добавляем обработчики событий
             
             $('.gav-carousel-arrow-left').on('click', methods.scrollLeft);      //скроллирования
             $('.gav-carousel-arrow-right').on('click', methods.scrollRight);
@@ -61,17 +61,22 @@
             $('.gav-carousel-element').on('click', options.slideClick);                     // и выбора слайда
         },
         scrollLeft: function () {
-            if (_currentLeftValue > 0) {
-                _currentLeftValue += 125;
-                $('.gav-carousel-list').animate({ left: _currentLeftValue + "px" }, 500);
+            if (_currentLeftSlideNumber > 0) {
+                _currentLeftSlideNumber --;
+                $('.gav-carousel-list').animate({
+                    left: -_currentLeftSlideNumber * $('.gav-carousel-element').outerWidth(true) + "px"
+                }, 500);
             }
-            return this
+            return this;
         },
         scrollRight: function () {
-            if (_currentLeftValue != minimumOffset) {
-                _currentLeftValue -= 125;
-                elementsList.animate({ left: _currentLeftValue + "px" }, 500);
+            if (_currentLeftSlideNumber + options.visualListLength < options.slideArray.length) {
+                _currentLeftSlideNumber++;
+                $('.gav-carousel-list').animate({
+                    left: -_currentLeftSlideNumber * $('.gav-carousel-element').outerWidth(true) + "px"
+                }, 500);
             }
+            return this;
         }
     };
     $.fn.gavCarousel = function (method) {
@@ -90,11 +95,8 @@
         visualListLength: 5,                    // к-во одновременно видимых слайдов
         slideClick : function(numSlide) {}      // callback-функция при нажатии на картинку
     };        
-    // options в extend нужна для сохранения параметров при многократном вызове
     var options;
 
-    var _currentLeftValue = 0;
-    var _minimumOffset = 0;
-    var _maximumOffset = 0;
+    var _currentLeftSlideNumber = 0;
 
 })(jQuery);

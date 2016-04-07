@@ -25,6 +25,7 @@
     float: left;
     display: block;
     border: 1px solid grey;
+    border-radius: 58%;
     background-color: lightgrey;
     padding: 5px;
 }
