@@ -2,3 +2,9 @@
     margin: 0;
     padding: 0;
 }
+#container-gav-carousel {
+    margin: 2% auto;
+    border: 2px solid black;
+    width: 600px;
+    height: 200px;
+}

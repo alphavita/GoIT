@@ -2,27 +2,21 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<!--
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="faviconka_ru_381.gif" type="image/x-icon" />
     <link rel="shortcut icon" href="faviconka_ru_381.gif" type="image/x-icon" />
+-->
     <title>ДЗ Tech Skills JS Module 11-12</title>
     <link href="css/default.css" rel="stylesheet" />
-    <link href="css/gavPlugin.css" rel="stylesheet" />
+    <link href="css/gav-carousel.css" rel="stylesheet" />
     <script src="js/jquery-1.12.2.min.js" type="text/javascript"></script>
     <script src="js/template.js" type="text/javascript"></script>
+    <script src="js/jquery-gav-carousel.js" type="text/javascript"></script>
     <script src="js/module11-12.js" type="text/javascript"></script>
 </head>
 <body>
-    <div class="carousel-arrow-left"><span>Влево</span></div>
-    <div class="carousel-hider" id="template-parent">
-        <script type="text/template" id="item_tmpl">
-            <ul class="carousel-list">
-                <% for(var i=1;i<=12;i++){  %>
-                <li class="carousel-element"><img src="img/img<%=i%>.jpg"><p>Описание <%=i%></p></li>
-                <% } %>
-           </ul>
-        </script>
-    </div>
-    <div class="carousel-arrow-right"><span>Вправо</span></div>
+    <!-- контент в контейнер добавит плагин -->
+    <div id="container-gav-carousel"/>     
 </body>
 </html>

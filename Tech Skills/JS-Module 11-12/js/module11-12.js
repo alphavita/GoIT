@@ -1,16 +1,19 @@
 ﻿$(function () {
-    var xmlDoc = getXmlImages();                          // имитируем приход xml-документа
-    dataTemplate = {
-        data: parseXmlImages(xmlDoc)                      // парсим xml для подсовывания массива картинок шаблонизатору
-    }                    
-    var htmlData = tmpl('item_tmpl',dataTemplate);        // формируем html по шаблону  (часть 2 ДЗ 11-12)
-    $('#template-parent').eq(0).append(htmlData);
+    var xmlDoc = getXmlImages();                            // имитируем приход xml-документа
+    var imageArray=parseXmlImages(xmlDoc);                  // парсим xml для подсовывания массива картинок плагину с шаблонизатором
+    var options = {
+        slideArray: imageArray,     // массив объектов {path : путь к картинке, description : подпись под картинкой} 
+        visualListLength: 4,        // к-во одновременно видимых слайдов
+        slideClick : function(numSlide) {       // callback-функция при нажатии на картинку
+                        alert('Нажат слайд '+numSlide);    
+                     }
+    };
+    $('#container-gav-carousel').gavCarousel(options);
 
-    
 
     function getXmlImages() {
         var xmlDoc = $($.parseXML('<?xml version="1.0" encoding="windows-1251" ?> <pictures/>'));
-        for (var i = 1; i <= 12; i++) {   // наполняем документ "кадбудто" он пришел с сервера
+        for (var i = 1; i <= 12; i++) {   // наполняем xml-документ "кадбудто" он пришел с сервера
             $('<picture path="img/img'+i+'.jpg" description="Картинка '+i+'"/>').appendTo(xmlDoc.find('pictures').eq(0));
         }
         return xmlDoc;
