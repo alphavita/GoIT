@@ -14,25 +14,41 @@ $(function () {
     // рендерим объект с использованием шаблонизатора tmpl
         var htmlData = tmpl('questions_template', objQuestions);
         $(htmlData).insertBefore($('.result-button'));
+
+    // по нажатию на кнопку проверяем правильность ответов
+        $('.result-button').on('click', function () {                               // Марианна, понятно, что ответ надо проверять на сервере 
+            var $result = true;                                                     // и в атрибуты не пихать признак правильного ответа,
+            $('.answer__checkbox').each(function () {                                 // "но для учебных целей сойдет и так" (© Олег Змиюк)
+                if ($(this).prop('checked') != ($(this).attr('is-true') == 'true')) {
+                    $result = false;
+                    return false;               // дальше можно не искать
+                }
+            });
+
+    // выдаем результат в модальном окне
+            $('.modalWindow__text')[0].innerHTML=$result ? 'Ответ правильный! Ура!!!' : 'Ответ не правильный!';
+            $('.overlay').fadeIn(800, function () { 
+                $('.modalWindow').css('display', 'block').animate({ opacity: 1, top: '50%' }, 500); 
+            });
+            $('.modalWindow__button').one('click',function () { 
+                $('.modalWindow').animate({ opacity: 0, top: '45%' }, 500,  
+                        function () { // пoсле aнимaции
+                            $(this).css('display', 'none'); 
+                            $('.overlay').fadeOut(800); // убираем пoдлoжку
+                        }
+                    );
+            });
+
+
+
+            $('.answer__checkbox').each(function () {                                 // очищаем галочки в чекбоксах
+                $(this).prop('checked', false);
+            });
+        });
     }
     catch (e) {
         alert('Ошибка ' + e.message);
     }
-
-    // по нажатию на кнопку проверяем правильность ответов
-    $('.result-button').on('click', function () {                               // Марианна, понятно, что ответ надо проверять на сервере 
-        var $result = true;                                                     // и в атрибуты не пихать признак правильного ответа,
-        $('.answer__checkbox').each(function(){                                 // "но для учебных целей сойдет и так" (© Олег Змиюк)
-            if($(this).prop('checked') != ($(this).attr('is-true')=='true') ){     
-                $result = false;                                        
-                return false;               // дальше можно не искать
-            }
-        });
-        $result ? alert('Ответ правильный! Ура!!!') : alert('Ответ не правильный!');
-        $('.answer__checkbox').each(function () {                                 // очищаем галочки в чекбоксах
-            $(this).prop('checked', false);
-        });
-    });
 
 
     // функция формирует JSON-строку, имитируя приход этой строки с сервера
