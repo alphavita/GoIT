@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>ДЗ Tech Skills JS Module 13-14</title>
+    <link href="css/default.css" rel="stylesheet"/>
+    <script src="js/jquery-1.12.2.min.js" type="text/javascript"></script>
+    <script src="js/template.js" type="text/javascript"></script>
+    <script src="js/module13-14.js" type="text/javascript"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <h3 class="title">Тест по программированию</h3>
+        <script type="text/template" id="questions_template">
+            <ol class="questions">
+                <% for(var i=0;i<questions.length;i++) { %>
+                    <li class="question"><%= questions[i].question %>
+                        <ul class="answers">
+                            <% for(var j=0;j<questions[i].answers.length;j++) { var objAnswer=questions[i].answers[j]; %>
+                                <li class="answer">
+                                    <label class="answer__text">
+                                        <input type="checkbox" class="answer__checkbox"  is-true="<%=objAnswer.isTrue%>"/><%=objAnswer.answer.trim()%>
+                                    </label>
+                                </li>
+                            <% } %>
+                        </ul>
+                    </li>
+                <% } %>
+            </ol>
+        </script>
+        <button type="submit" class="result-button">Проверить мои результаты</button>
+    </div>
+</body>
+</html>
+                    
