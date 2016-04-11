@@ -1,0 +1,31 @@
+﻿* {
+    margin: 0;
+    padding:0;
+}
+
+body{
+    background-color: #fff;
+}
+
+form {
+    border: none;
+    margin: 20px auto;
+    height: 50px;
+    width: 600px;
+    position: relative;
+}
+form input[type="text"] {
+    position: absolute;
+    left:0;
+    width: 100%;
+    border: 1px lightblue solid;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+form input[type="submit"] {
+    position: absolute;
+    left: 275px;
+    top: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
