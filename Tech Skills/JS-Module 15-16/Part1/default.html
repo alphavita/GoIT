@@ -14,6 +14,22 @@
         <input type="submit" value="Поиск в Google" name="btnK">
     </form>
     <div class="result-container">
+        <script type="text/template" id="googleTemplate">
+            <% for(var i=0; i < responseData.results.length; i++){ %>
+                <% var $article = responseData.results[i]; %>
+                <div class="article">
+                    <div class="article__content">
+                        <h3 class="article__header"><%=$article.title%></h3>
+                        <div class="article__container">
+                            <div class="article__url">
+                                <cite class="article__cite"><%=$article.url%></cite>
+                            </div>
+                            <div class="article__text"><%=$article.content%></div>
+                        </div>
+                    </div>
+                </div>
+           <% } %>
+        </script>
     </div>
 </body>
 </html>
