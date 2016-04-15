@@ -14,22 +14,37 @@
         <input type="submit" value="Поиск в Google" name="btnK">
     </form>
     <div class="result-container">
-        <script type="text/template" id="googleTemplate">
-            <% for(var i=0; i < responseData.results.length; i++){ %>
-                <% var $article = responseData.results[i]; %>
+        <div class="result-container__data">
+            <script type="text/template" id="googleTemplateData">
+                <% for(var i=0; i < results.length; i++){ %>
                 <div class="article">
                     <div class="article__content">
-                        <h3 class="article__header"><%=$article.title%></h3>
+                        <h3 class="article__header"><a class="article__refer" href="<%=results[i].url%>"><%=results[i].title%></a></h3>
                         <div class="article__container">
                             <div class="article__url">
-                                <cite class="article__cite"><%=$article.url%></cite>
+                                <cite class="article__cite"><%=results[i].url%></cite>
                             </div>
-                            <div class="article__text"><%=$article.content%></div>
+                            <div class="article__text"><%=results[i].content%></div>
                         </div>
                     </div>
                 </div>
-           <% } %>
-        </script>
+                <% } %>
+            </script>
+        </div>
+        <div class="result-container__cursor">
+            <script type="text/template" id="googleTemplateCursor">
+                <% for(var i=0; i < pages.length; i++){ %>
+                    <div class="page">
+                        <a class="current-<%= currentPageIndex+1 == pages[i].label  %>" href="#" onClick="getPage(<%=Number(pages[i].start)%>)">
+                            <%=pages[i].label%>
+                        </a>
+                    </div>
+                <% } %>
+                <div class="page">
+                    <a href="#" <%= currentPageIndex+1 == pages.length && pages.length < 8 ? 'hidden' : '' %> onClick="getPage(<%=(currentPageIndex+1) * 8 %>)">Следующая</a>
+                </div>
+            </script>
+        </div>
     </div>
 </body>
 </html>

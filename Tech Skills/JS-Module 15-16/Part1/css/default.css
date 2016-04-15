@@ -5,6 +5,7 @@
 
 body{
     background-color: #fff;
+    font-family: Arial, sans-serif;
 }
 
 form {
@@ -28,4 +29,82 @@ form input[type="submit"] {
     top: 40px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
+}
+
+.result-container__data{
+    position: relative;
+    margin-left: 120px;
+    width: 528px;
+}
+.article {
+    margin-bottom: 23px;
+    line-height: 1.2;
+    text-align: left;
+    font-size: small;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-text-overflow: ellipsis;
+}
+.article__content {
+    position: relative;
+}
+.article__header{
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.article__header:hover {
+    text-decoration: underline;
+}
+.article__refer, .article__refer b{
+    text-decoration:none;
+    cursor:pointer;
+    color: #609;
+    font-size: 18px;
+    font-weight: 300;
+}
+.article__cite{
+    font-style: normal;
+}    
+.article__container {
+    color: #545454;
+    max-width: 42em;
+}
+.article__url{
+    height: 17px;
+    line-height: 16px;
+    white-space: nowrap;
+    color: #006621;
+    font-style: normal;
+    font-size: 14px;
+}
+.article__text{
+    line-height: 1.4;
+    word-wrap: break-word;
+    color: #6a6a6a;
+}
+
+.result-container__cursor {
+    margin-top: 30px;
+    margin-left: 220px;
+}
+.page{
+    float: left;
+    margin-left: 8px;
+}
+.page a{
+    text-decoration:none;
+    color: #4285f4;
+    font-weight: normal;
+    font-size: small;
+    cursor: pointer;
+}
+.page a:hover{
+    text-decoration:underline;
+    color: #609;
+}
+.page .current-true{
+    color: black;
 }
