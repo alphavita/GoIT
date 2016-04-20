@@ -1357,15 +1357,15 @@
         position: relative;
     }
     .logo-text{
-        top: 11%;
-        left: 40%;
-        font-size: 950%;
+        top: 9.5%;
+        left: 34%;
+        font-size: 800%;
     }    
     .main-nav--header {
-        left: 29%;
-        top: 17%;
-        width: 60%;
-        height: 34%;
+        left: 24.5%;
+        top: 14.5%;
+        width: 51%;
+        height: 29%;
         background-color: rgba(54,41,62,0.9);
         text-align: center;
         z-index: 20;
@@ -1376,9 +1376,9 @@
         color: white;
     }
     .main-nav__menuitem--header{
-        font-size: 520%;
+        font-size: 420%;
         display: block;
-        line-height: 1.67;
+        line-height: 1.73;
         box-shadow: inset 1px 1px 0px -4px rgba(105,82,114,0.6);
         border-bottom: 1px solid rgb(81,62,89);
     }
@@ -1402,8 +1402,8 @@
         z-index: 0;
         background-color: rgba(0,0,0,0.2);
         left: 0;
-        top: 36%;
-        height: 43%;
+        top: 22.5%;
+        height: 27%;
         width: 100%;
     }
     .sliders__arrow {
