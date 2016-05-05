@@ -46,26 +46,28 @@
         height: 1840px;
         position:relative;
         width: 100%;
-    }
+        background-image: url("../img/../img/bgr_landscape.jpg");
+        background-repeat: no-repeat;
+        background-size:  initial;
+        background-position: top center;
+   }
     .header__container{
         width: 100%;
         height: 100%;
         position: relative;
-        background-image: url("../img/bgr_landscape_960.jpg");
-        background-repeat: no-repeat;
-        background-size:  initial;
-        background-position: top center;
         overflow: hidden;
+        margin: 0 auto;
+        max-width: 960px;
     }
     .logo-text{
         top: 4.5%;
-        left: 18%;
+        left: 0%;
         font-size: 385%;
     }    
     .main-nav--header {
-        left: 40%;
+        left: 34%;
         top: 4%;
-        width: 51%;
+        width: 70%;
     }
     .main-nav__menuitem{
         font-family: 'League Gothic Regular', 'Arial Regular', Arial, sans-serif;
@@ -109,8 +111,8 @@
     }
     .sliders__article {
         position: absolute;
-        width: 42%;
-        left: 12.5%;
+        width: 41%;
+        left: 0%;
         top: 20.5%;
     }
     .sliders__article--header {
@@ -139,29 +141,29 @@
         color: #fff;
         display: block;
         position: relative;
-        font-size: 150%;
-        margin-top: 2%;
+        font-size: 140%;
+        margin-top: 4%;
         line-height: 1.43;
-        width: 93%;
+        width: 125%;
     } 
     .sliders__ipfone--back {
         position: absolute;
-        width: 8%;
-        left: 59%;
-        top: 19%;
+        width: 12%;
+        left: 65%;
+        top: 19.1%;
     }
     .sliders__ipfone--front {
         position: absolute;
         z-index: 5;
-        width: 13%;
-        left: 64%;
+        width: 21%;
+        left: 72%;
         top: 14.2%;
     }
     .sliders__play {
         position: absolute;
         z-index: 10;
-        width: 5.2%;
-        left: 68%;
+        width: 8%;
+        left: 78%;
         top: 22%;
     }
     .sliders__points {
@@ -169,13 +171,13 @@
         list-style: none;
         height: 16px;
         top: 41.5%;
-        left: 65.5%;
+        left: 74%;
         width: 17%;
     }
     .sliders__point {
         position: relative;
         display: inline-block;
-        width: 6%;
+        width: 10%;
         height: 100%;
     }
     .sliders__radio{
@@ -183,15 +185,22 @@
     }
 
    .content{
-        margin-top: -1%;
+        margin-top: -995px;
         position: relative;
         width: 100%;
     }
     .blurbs {
         position: relative;
         overflow: hidden;
-        padding: 0px 29%;
         background-image: linear-gradient(#745083 0%,#6a4a78 20%,#50395a 60%,#38293f 90%,#33253a 100%);
+    }
+    .blurbs__container{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+        margin: 0 auto;
+        max-width: 960px;    
     }
     .blurbs__column {
         position: relative;
@@ -200,20 +209,21 @@
     }
     .blurbs__column--left {
         float: left;
-        margin-left: 4%;
+        margin-left: 2%;
     }
     .blurbs__column--center {
         float: left;
-        margin-left: 4%;
+        margin-left: 6.5%;
     }
     .blurbs__column--right {
-        float: left;
-        margin-left: 5%;
+            float: left;
+        margin-left: 6%;
+        width: 27%;
     }
     .blurbs__picture {
         float: left;
         width: 10%;
-        height: 13px;
+        height: 30px;
         margin-top: 4%;
         background-image: url('../img/sprite.png');
         background-repeat: no-repeat;
@@ -230,17 +240,20 @@
     }
     .blurbs__text {
         float: right;
-        width: 83%;
+        width: 87%;
+        margin-top: 5%;
+        margin-right: -7%;
+        letter-spacing: -1px;
     }
     .blurbs__text--header {
         font-family: 'League Gothic Regular', sans-serif;
-        font-size: 110%;
+        font-size: 250%;
         color: white;
         text-shadow: 0.5px 0.9px 0 #0f1518;
     }
     .blurbs__text--content {
         font-family: 'Open Sans Light', sans-serif;
-        font-size: 60%;
+        font-size: 140%;
         line-height: 1.5;
         margin-top: 4%;
         color: white;
@@ -248,11 +261,11 @@
     }
     .blurbs__text--footer {
         font-family: 'League Gothic Regular', sans-serif;
-        font-size: 65%;
+        font-size: 160%;
         text-align: right;
-        margin-top: 3%;
+        margin-top: 7%;
         margin-right: 11%;
-        margin-bottom: 24%;
+        margin-bottom: 29%;
         color: white;
         text-shadow: 0.5px 0.9px 0 #0f1518;
     }
