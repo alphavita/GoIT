@@ -1,0 +1,12 @@
+@import "variables.scss";
+@import "header.scss";
+
+body {
+    font-family: Helvetica,Arial,sans-serif;
+    font-size:  16px;
+}
+.wrapper{
+	width: 100%;
+    max-width: 1161px;
+    margin: 0 auto;
+}

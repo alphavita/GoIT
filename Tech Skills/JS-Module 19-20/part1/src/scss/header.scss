@@ -1,0 +1,74 @@
+﻿
+@import "variables.scss";
+
+.header{
+    background-color:    $backgroundColorHeader;
+    width: 100%;
+}
+.header__title{
+    height: 36px;
+    position: relative;
+    overflow: hidden;
+ }
+.title__logo{
+    float: left;
+    height: 100%;
+    width: 36px;
+    background-image: url("../img/home-logo.jpg");
+    background-repeat: no-repeat;
+    background-size:  cover;
+    background-position: top center;
+}
+.title__text{
+    display: block;
+    margin-left: 6px;
+    float: left;
+    font-family: 'Ubuntu Medium',Arial,sans-serif;
+    font-size: 20px;
+    color: $titleTextFirstColor;
+    width: 160px;
+    text-align:justify;
+
+    span{
+        display: block;
+        font-family: 'Ubuntu Light',Arial,sans-serif;
+        font-size: 15px;
+        color: $titleTextSecondColor;
+        text-align:justify;
+    }
+}
+.title__navigation{
+    float: right;
+
+    li{
+        display: inline-block;
+        padding: 12px 0;
+
+        a{
+            color: $titleNavigationColor;
+        }
+        a:hover{
+            color: $titleNavigationHoverColor;
+        }   
+    }
+}
+
+.header__navigation{
+    margin-top: 36px;
+    height: 56px;
+    position: relative;
+    overflow: hidden;
+    background-color: $backgroundColorHeaderNavigation;
+
+    li{
+        width: 126px;
+        display: inline;
+    }
+}
+.header__menu{
+    float:left;
+}
+.header__search{
+    float: right;
+
+}
