@@ -55,20 +55,77 @@
 
 .header__navigation{
     margin-top: 36px;
-    height: 56px;
     position: relative;
     overflow: hidden;
     background-color: $backgroundColorHeaderNavigation;
 
-    li{
-        width: 126px;
-        display: inline;
-    }
 }
 .header__menu{
     float:left;
+
+    li{
+        width: $widthHeaderMenuItem;
+        display: table-cell;
+        position: relative;
+        height: $heightHeaderMenuItem;
+    }
+    a{
+        text-align: center;
+        border-right: 1px solid $headerMenuItemBorderColor;
+        cursor: pointer;
+        color: $headerMenuItemColor;
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        line-height: $heightHeaderMenuItem;
+    }
+    a:hover{
+        color: $headerMenuItemHoverColor;
+    }
+    a:active{
+        background-color: $headerMenuItemActiveBGColor;
+    }
 }
 .header__search{
     float: right;
+    width: $widthHeaderSearch;
+    position: relative;
 
+    .form__group{
+        position: absolute;
+        width: $widthHeaderSearchForm;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        line-height: $heightHeaderMenuItem;
+    }
+    input{
+        height: $heightHeaderSearchForm;
+        width: $widthHeaderSearchForm;
+        position: absolute;
+        line-height: $heightHeaderMenuItem;
+        left: 5px;
+        right: 5px;
+        top: 5px;
+        bottom: 5px;
+        font-family: 'Arial Regular',Arial, sans-serif;
+        font-size: 12px;
+        color: $headerSearchTextColor;
+        background-color: $headerSearchTextBGColor;
+        padding-left: 2px;
+        border-color: $headerSearchTextBorderColor;
+    }
+    i{
+        position: absolute;
+        right: 0px;
+        color: $headerSearchButtonColor;
+    }
+}
+.header__slider{
+    margin-top: 40px;
+    position: relative;
+    overflow: hidden;
 }
