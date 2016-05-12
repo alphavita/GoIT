@@ -17,10 +17,16 @@ $headerSearchTextColor:             white;
 $headerSearchTextBGColor:           #35383c;
 $headerSearchTextBorderColor:       #2a2d32;
 $headerSearchButtonColor:           #5d6063;
+$headerSliderTextColor:             white;
+$headerSliderTextFirstChildColor:   #f4b60d;
+$headerSliderTextBGColor:           rgba(28,34,39,0.8);
 
 // размеры компонентов сайта
+$widthWrapper:                      1161px;
+
 $widthHeaderMenuItem:               126px;
 $heightHeaderMenuItem:              56px;
 $widthHeaderSearch:                 260px;
 $widthHeaderSearchForm:             240px;
 $heightHeaderSearchForm:            40px;
+$heightSliderItem:                  471px;

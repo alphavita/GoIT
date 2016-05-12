@@ -1,10 +1,12 @@
 ﻿
 @import "variables.scss";
+@import "mixins.scss";
 
 .header{
     background-color:    $backgroundColorHeader;
     width: 100%;
 }
+
 .header__title{
     height: 36px;
     position: relative;
@@ -32,7 +34,8 @@
     span{
         display: block;
         font-family: 'Ubuntu Light',Arial,sans-serif;
-        font-size: 15px;
+        font-size: 10px;
+        letter-spacing: 1.2px;
         color: $titleTextSecondColor;
         text-align:justify;
     }
@@ -65,47 +68,38 @@
 
     li{
         width: $widthHeaderMenuItem;
-        display: table-cell;
+        display: inline-block;
         position: relative;
         height: $heightHeaderMenuItem;
+        border-right: 1px solid $headerMenuItemBorderColor;
     }
+    li:active{
+        background-color: $headerMenuItemActiveBGColor;
+    }
+
     a{
         text-align: center;
-        border-right: 1px solid $headerMenuItemBorderColor;
         cursor: pointer;
         color: $headerMenuItemColor;
-        position: absolute;
-        left: 0;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        line-height: $heightHeaderMenuItem;
+        @include centerer
     }
     a:hover{
         color: $headerMenuItemHoverColor;
     }
-    a:active{
-        background-color: $headerMenuItemActiveBGColor;
-    }
-}
+ }
 .header__search{
     float: right;
     width: $widthHeaderSearch;
+    height: $heightHeaderMenuItem;
     position: relative;
 
     .form__group{
-        position: absolute;
         width: $widthHeaderSearchForm;
-        left: 0;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        line-height: $heightHeaderMenuItem;
+        @include centerer
     }
     input{
         height: $heightHeaderSearchForm;
         width: $widthHeaderSearchForm;
-        position: absolute;
         line-height: $heightHeaderMenuItem;
         left: 5px;
         right: 5px;
@@ -119,13 +113,71 @@
         border-color: $headerSearchTextBorderColor;
     }
     i{
-        position: absolute;
         right: 0px;
         color: $headerSearchButtonColor;
+        @include centerer(false,true)
     }
 }
+
 .header__slider{
     margin-top: 40px;
     position: relative;
     overflow: hidden;
+}
+.slider__list {
+    width: 20000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.slider__item {
+    float: left;
+    z-index: 1;
+    img{
+        width: $widthWrapper;
+        height: $heightSliderItem;
+    }
+}
+.slider__paginator {
+    top: 430px;
+    @include centerer(true,false)
+}
+.paginator__list{
+    display: inline-block;
+}
+.paginator__item{
+    display: inline-block;
+    margin: 0 5px 5px 0;
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    cursor: pointer;
+}
+.paginator__item--active{
+    border: 2px solid white;
+    background-color: black;
+}
+.slider__text{
+    position:absolute;
+    left:  35px;
+    top:   230px;
+    z-index: 10;
+    div{
+        font-family: 'Ubuntu Medium',Arial,sans-serif;
+        font-size: 50px;
+        color: $headerSliderTextColor;
+        background-color: $headerSliderTextBGColor;
+        width: 215px;   
+        line-height: 1.2;
+    }
+    div:first-child{
+        color: $headerSliderTextFirstChildColor;
+    }
+    div:last-child{
+        width: 310px;  
+    }
+    p{
+        margin-left: 30px;
+    }
 }

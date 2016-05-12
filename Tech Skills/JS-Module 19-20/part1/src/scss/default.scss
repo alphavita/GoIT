@@ -1,4 +1,5 @@
 @import "variables.scss";
+@import "mixins.scss";
 @import "header.scss";
 
 body {
@@ -7,6 +8,6 @@ body {
 }
 .wrapper{
 	width: 100%;
-    max-width: 1161px;
+    max-width: $widthWrapper;
     margin: 0 auto;
 }
