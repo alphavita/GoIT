@@ -1,0 +1,17 @@
+﻿@import "variables.scss";
+@import "mixins.scss";
+
+.footer__links{
+    position: relative;
+    overflow: hidden;
+    background-color:    $backgroundLinksColor;
+    width: 100%;
+    margin-bottom: 88px;
+}
+.footer__contacts{
+    position: relative;
+    overflow: hidden;
+    background-color:    $backgroundContactsColor;
+    width: 100%;
+    margin-bottom: 88px;
+}

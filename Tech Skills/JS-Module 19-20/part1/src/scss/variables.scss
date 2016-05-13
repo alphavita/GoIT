@@ -37,6 +37,27 @@ $ourServicesFooterHoverColor:       #be9117;
 $ourServicesOpacityColor:           rgba(46,144,233,0.9);
 $ourServicesOpacityPlusColor:       #fff;
 
+$backgroundNewsBannersColor:        #f7f7f7;
+$latestNewsHeaderColor:             #2a2d32;
+$latestNewsMonthBGColor:            #248cec;
+$latestNewsDayBGColor:              #f4b60d;
+$latestNewsTextHeaderColor:         #616367;
+$latestNewsTextSubeaderFirstColor:  #9d9d9d;
+$latestNewsTextSubeaderSecondColor: #0187f4;
+$latestNewsTextContentColor:        #8a8a8a;
+
+$bannersHeaderColor:                #2a2d32;
+$accordionPanelBGColor:             #fff;
+$accordionPanelTextColor:           #8a8a8a;
+$accordionPanelActiveColor:         #fff;
+$accordionPanelActiveBGColor:       #f4b60d;
+
+$backgroundLogoColor:               #fff;
+$backgroundLinksColor:              #2a2d32;
+
+$backgroundContactsColor:           #35383c;
+
+
 // размеры компонентов сайта
 $widthWrapper:                      1161px;
 
@@ -51,3 +72,13 @@ $widthNew123Article:                240px;
 
 $widthOurSrvicesImage:              260px;
 $heightOurSrvicesImage:             260px;
+
+$widthLatestNewsImage:             152px;
+$heightLatestNewsImage:            152px;
+$widthLatestNewsDate:               40px;
+$heightLatestNewsDate:              80px;
+$widthLatestNewsArticle:           380px;
+
+$widthAccordionPanel:              560px;
+$heightPanelHeader:                 40px;
+$widthPanelToggle:                  38px;

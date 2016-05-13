@@ -1,0 +1,21 @@
+﻿@import "variables.scss";
+@import "mixins.scss";
+
+.logo{
+    position: relative;
+    overflow: hidden;
+    background-color:    $backgroundLogoColor;
+    width: 100%;
+    margin-bottom: 88px;
+}
+.logo__item{
+    margin-left: 86px;
+    margin-top: -5px;
+    margin-bottom: 4px;
+}
+.logo__item:first-child{
+    margin-left: 22px;
+}
+.logo__item:last-child{
+    margin-left: 58px;
+}

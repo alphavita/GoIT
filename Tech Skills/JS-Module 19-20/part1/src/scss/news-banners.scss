@@ -1,0 +1,142 @@
+﻿@import "variables.scss";
+@import "mixins.scss";
+
+.news-banners{
+    position: relative;
+    overflow: hidden;
+    background-color:    $backgroundNewsBannersColor;
+    width: 100%;
+    margin-bottom: 88px;
+}
+
+.latest-news{
+    margin-top: 66px;
+}
+.latest-news__header{
+    font-family: 'Ubuntu Medium',Arial,sans-serif;
+    font-size: 24px;
+    color: $latestNewsHeaderColor;
+}
+.latest-news__new{
+    margin-top:25px;
+    height: $heightLatestNewsImage;
+}
+.latest-news__new:first-of-type{
+    margin-top:46px;
+}
+.latest-news__picture{
+    position: relative;
+    margin-top: -2px;
+
+    img{
+        width: $widthLatestNewsImage;
+        height: $heightLatestNewsImage;
+    }
+}
+.latest-news__date{
+    width: $widthLatestNewsDate;
+    height: $heightLatestNewsDate;
+    position: absolute;
+    top: $heightLatestNewsDate/5;
+    left: -$widthLatestNewsDate/2;
+
+    div{
+        height:   $heightLatestNewsDate/2;
+        position: relative;
+        p{
+            @include centerer
+        }
+    }
+    div:first-child{
+        background-color: $latestNewsMonthBGColor;
+    }
+    div:last-child{
+        background-color: $latestNewsDayBGColor;
+    }
+}
+.latest-news__article{
+    width: $widthLatestNewsArticle;
+    margin-left: 30px;
+}
+.latest-news_text--header{
+    font-family: 'Ubuntu Medium',Arial,sans-serif;
+    font-size: 16px;
+    color: $latestNewsTextHeaderColor;
+    margin-top: 5px;
+}
+.latest-news_text--subheader{
+    font-family: 'Arial Regular',Arial,sans-serif;
+    font-size: 13px;
+    margin-top: 9px;
+
+    span:nth-child(odd){
+        color: $latestNewsTextSubeaderFirstColor;
+    }
+    span:nth-child(even){
+        color: $latestNewsTextSubeaderSecondColor;
+    }
+}
+.latest-news_text--content{
+    font-family: 'Arial Regular',Arial,sans-serif;
+    font-size: 13px;
+    color: $latestNewsTextContentColor;
+    margin-top: 27px;
+    line-height: 1.5;
+}
+
+.banners-place{
+    margin-top: 66px;
+    margin-bottom: 80px;
+}
+.banners__header{
+    font-family: 'Ubuntu Medium',Arial,sans-serif;
+    font-size: 24px;
+    color: $bannersHeaderColor;
+}
+.banners__accordion{
+    margin-top: 42px; 
+}
+.accordion__panel {
+    width: $widthAccordionPanel;
+    padding: 1px;
+}
+.panel__header {
+    height: $heightPanelHeader;
+    background-color: $accordionPanelBGColor;
+    border: 1px solid lightgray;
+    font-family: 'Ubuntu Medium',Arial,sans-serif;
+    font-size: 13px;
+}
+.panel__toggle {
+    display: inline-block;
+    width: $widthPanelToggle;
+    height: $heightPanelHeader;
+    text-align: center;
+    border-right: 2px solid lightgray;
+    font-size: 14pt;
+    font-family: sans-serif;
+    font-weight: 100;
+    line-height: 2;
+    cursor: pointer; 
+}
+.panel__title {
+    display: inline-block;
+    padding-left: 10px;
+}
+.panel__description {
+    padding: 10px;
+    margin: 20px 5px 20px 30px;
+    color: $accordionPanelTextColor;
+    font-family: 'Arial Regular',Arial,sans-serif;
+    font-size: 13px;
+    line-height: 1.35;
+}
+.panel__active .panel__header {
+    background-color: $accordionPanelActiveBGColor;
+    border: 0;
+    color: $accordionPanelActiveColor;
+}
+.panel__active .panel__toggle {
+    border-right: 1px solid white;
+    color: $accordionPanelActiveColor;
+}
