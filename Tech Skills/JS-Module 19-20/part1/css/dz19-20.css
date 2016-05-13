@@ -382,13 +382,135 @@ table {
   .slider__text p {
     margin-left: 30px; }
 
+.news-123 {
+  margin-top: 70px;
+  position: relative;
+  overflow: hidden;
+  background-color: #fff;
+  width: 100%;
+  margin-bottom: 88px; }
+
+.new-123 {
+  margin-left: 34px; }
+
+.new-123:first-child {
+  margin-left: 0; }
+
+.new-123__number {
+  font-family: 'Ubuntu Medium',Arial,sans-serif;
+  font-size: 90px;
+  color: #e9e9ea;
+  margin-top: -14px; }
+
+.new-123__article {
+  width: 240px;
+  margin-left: 20px; }
+
+.new-123__text {
+  text-align: left;
+  margin-top: 12px; }
+
+.new-123__text--header {
+  font-family: 'Ubuntu Medium',Arial,sans-serif;
+  font-size: 20px;
+  color: #2a2b2e; }
+
+.new-123__text--content {
+  font-family: 'ArialRegular',Arial,sans-serif;
+  font-size: 13px;
+  color: #a5a5a5;
+  margin-top: 22px;
+  line-height: 1.5; }
+
+.new-123__text--footer {
+  font-family: 'Ubuntu Medium',Arial,sans-serif;
+  font-size: 13px;
+  margin-top: 18px; }
+  .new-123__text--footer a {
+    text-decoration: none;
+    color: #2a2b2e; }
+  .new-123__text--footer a:hover {
+    color: #5eabf1; }
+  .new-123__text--footer .icon-right-small {
+    color: #3e9aee; }
+  .new-123__text--footer .icon-right-small:hover {
+    color: #989fb3; }
+
+.our-services {
+  position: relative;
+  overflow: hidden;
+  background-color: #2a2d32;
+  width: 100%; }
+
+.our-services__header {
+  display: block;
+  margin-top: 45px;
+  margin-bottom: 53px;
+  color: #f2f2f2;
+  font-family: 'Ubuntu Medium',Arial,sans-serif;
+  font-size: 24px; }
+
+.our-services__item {
+  display: block;
+  margin-left: 40px;
+  text-align: center;
+  margin-bottom: 65px; }
+  .our-services__item p {
+    margin-top: 31px;
+    color: #fff;
+    font-family: 'Ubuntu Medium',Arial,sans-serif;
+    font-size: 16px; }
+
+.our-services__item:first-child {
+  margin-left: 0; }
+
+.our-services__item:hover .our-services__opacityhover {
+  visibility: visible; }
+
+.our-services__item:hover p {
+  color: #be9117; }
+
+.our-services__picture {
+  position: relative; }
+  .our-services__picture img {
+    width: 260px;
+    height: 260px;
+    display: block; }
+
+.our-services__opacityhover {
+  visibility: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  background-color: rgba(46, 144, 233, 0.9); }
+  .our-services__opacityhover span {
+    color: #fff;
+    font-size: 70px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
 body {
   font-family: Helvetica,Arial,sans-serif;
-  font-size: 16px; }
+  font-size: 16px;
+  min-width: 1161px; }
 
 .wrapper {
   width: 100%;
+  margin: 0 auto; }
+
+.container {
   max-width: 1161px;
   margin: 0 auto; }
+
+.position_left {
+  float: left; }
+
+.position_right {
+  float: right; }
 
 /*# sourceMappingURL=default.css.map */

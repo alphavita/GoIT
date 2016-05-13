@@ -1,0 +1,70 @@
+﻿
+@import "variables.scss";
+@import "mixins.scss";
+
+.our-services{
+    position: relative;
+    overflow: hidden;
+    background-color:    $backgroundOurServicesColor;
+    width: 100%;
+}
+.our-services__header{
+    display: block;
+    margin-top: 45px;
+    margin-bottom: 53px;
+    color: $ourServicesHeaderColor;
+    font-family: 'Ubuntu Medium',Arial,sans-serif;
+    font-size: 24px;
+}
+.our-services__item{
+    display: block;
+    margin-left: 40px;
+    text-align: center;
+    margin-bottom: 65px;
+
+    p{
+        margin-top: 31px;
+        color: $ourServicesFooterColor;
+        font-family: 'Ubuntu Medium',Arial,sans-serif;
+        font-size: 16px;
+
+    }
+}
+.our-services__item:first-child{
+    margin-left: 0;
+}
+.our-services__item:hover {
+    .our-services__opacityhover{
+        visibility:visible;
+    }
+    p{
+        color: $ourServicesFooterHoverColor;
+    }
+
+}   
+.our-services__picture{
+    position: relative;
+
+    img{
+        width: $widthOurSrvicesImage;
+        height: $heightOurSrvicesImage;
+        display: block;
+    }
+}
+.our-services__opacityhover{
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    background-color: $ourServicesOpacityColor;
+
+    span{
+        color: $ourServicesOpacityPlusColor;
+        font-size: 70px;
+        @include centerer
+    }
+}
+

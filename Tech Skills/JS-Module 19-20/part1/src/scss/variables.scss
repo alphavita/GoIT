@@ -21,6 +21,22 @@ $headerSliderTextColor:             white;
 $headerSliderTextFirstChildColor:   #f4b60d;
 $headerSliderTextBGColor:           rgba(28,34,39,0.8);
 
+$backgroundNews123Color:            #fff;
+$new123NumberTextColor:             #e9e9ea;
+$new123ArticleHeaderColor:          #2a2b2e;
+$new123ArticleContentColor:         #a5a5a5;
+$new123ArticleFooterColor:          #2a2b2e;
+$new123ArticleFooterArrowColor:     #3e9aee;
+$new123ArticleFooterHoverColor:     #5eabf1;
+$new123ArticleFooterArrowHoverColor:#989fb3;
+
+$backgroundOurServicesColor:        #2a2d32;
+$ourServicesHeaderColor:            #f2f2f2;
+$ourServicesFooterColor:            #fff;
+$ourServicesFooterHoverColor:       #be9117;
+$ourServicesOpacityColor:           rgba(46,144,233,0.9);
+$ourServicesOpacityPlusColor:       #fff;
+
 // размеры компонентов сайта
 $widthWrapper:                      1161px;
 
@@ -30,3 +46,8 @@ $widthHeaderSearch:                 260px;
 $widthHeaderSearchForm:             240px;
 $heightHeaderSearchForm:            40px;
 $heightSliderItem:                  471px;
+
+$widthNew123Article:                240px;
+
+$widthOurSrvicesImage:              260px;
+$heightOurSrvicesImage:             260px;
