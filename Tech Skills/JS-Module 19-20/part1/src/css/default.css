@@ -1,0 +1,494 @@
+.header {
+  background-color: #fff;
+  width: 100%; }
+
+.header__title {
+  height: 36px;
+  position: relative;
+  overflow: hidden; }
+
+.title__logo {
+  float: left;
+  height: 100%;
+  width: 36px;
+  background-image: url("../img/home-logo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center; }
+
+.title__text {
+  display: block;
+  margin-left: 6px;
+  float: left;
+  font-family: 'Ubuntu Medium',Arial,sans-serif;
+  font-size: 20px;
+  color: #434343;
+  width: 160px;
+  text-align: justify; }
+  .title__text span {
+    display: block;
+    font-family: 'Ubuntu Light',Arial,sans-serif;
+    font-size: 10px;
+    letter-spacing: 1.2px;
+    color: #9d9d9d;
+    text-align: justify; }
+
+.title__navigation {
+  float: right; }
+  .title__navigation li {
+    display: inline-block;
+    padding: 12px 0; }
+    .title__navigation li a {
+      color: #cccccc; }
+    .title__navigation li a:hover {
+      color: #248cec; }
+
+.header__navigation {
+  margin-top: 36px;
+  position: relative;
+  overflow: hidden;
+  background-color: #2a2d32; }
+
+.header__menu {
+  float: left; }
+  .header__menu li {
+    width: 126px;
+    display: inline-block;
+    position: relative;
+    height: 56px;
+    border-right: 1px solid #181a1d; }
+  .header__menu li:active {
+    background-color: #248cec; }
+  .header__menu a {
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .header__menu a:hover {
+    color: #be9117; }
+
+.header__search {
+  float: right;
+  width: 260px;
+  height: 56px;
+  position: relative; }
+  .header__search .form__group {
+    width: 240px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .header__search input {
+    height: 40px;
+    width: 240px;
+    line-height: 56px;
+    left: 5px;
+    right: 5px;
+    top: 5px;
+    bottom: 5px;
+    font-family: 'Arial Regular',Arial, sans-serif;
+    font-size: 12px;
+    color: white;
+    background-color: #35383c;
+    padding-left: 2px;
+    border-color: #2a2d32; }
+  .header__search i {
+    right: 0px;
+    color: #5d6063;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%); }
+
+.header__slider {
+  margin-top: 40px;
+  position: relative;
+  overflow: hidden; }
+
+.slider__list {
+  width: 20000em;
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.slider__item {
+  float: left;
+  z-index: 1; }
+  .slider__item img {
+    width: 1161px;
+    height: 471px; }
+
+.slider__paginator {
+  top: 430px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0); }
+
+.paginator__list {
+  display: inline-block; }
+
+.paginator__item {
+  display: inline-block;
+  margin: 0 5px 5px 0;
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  cursor: pointer; }
+
+.paginator__item--active {
+  border: 2px solid white;
+  background-color: black; }
+
+.slider__text {
+  position: absolute;
+  left: 35px;
+  top: 230px;
+  z-index: 10; }
+  .slider__text div {
+    font-family: 'Ubuntu Medium',Arial,sans-serif;
+    font-size: 50px;
+    color: white;
+    background-color: rgba(28, 34, 39, 0.8);
+    width: 215px;
+    line-height: 1.2; }
+  .slider__text div:first-child {
+    color: #f4b60d; }
+  .slider__text div:last-child {
+    width: 310px; }
+  .slider__text p {
+    margin-left: 30px; }
+
+.news-123 {
+  margin-top: 70px;
+  position: relative;
+  overflow: hidden;
+  background-color: #fff;
+  width: 100%;
+  margin-bottom: 88px; }
+
+.new-123 {
+  margin-left: 34px; }
+
+.new-123:first-child {
+  margin-left: 0; }
+
+.new-123__number {
+  font-family: 'Ubuntu Medium',Arial,sans-serif;
+  font-size: 90px;
+  color: #e9e9ea;
+  margin-top: -14px; }
+
+.new-123__article {
+  width: 240px;
+  margin-left: 20px; }
+
+.new-123__text {
+  text-align: left;
+  margin-top: 12px; }
+
+.new-123__text--header {
+  font-family: 'Ubuntu Medium',Arial,sans-serif;
+  font-size: 20px;
+  color: #2a2b2e; }
+
+.new-123__text--content {
+  font-family: 'ArialRegular',Arial,sans-serif;
+  font-size: 13px;
+  color: #a5a5a5;
+  margin-top: 22px;
+  line-height: 1.5; }
+
+.new-123__text--footer {
+  font-family: 'Ubuntu Medium',Arial,sans-serif;
+  font-size: 13px;
+  margin-top: 18px; }
+  .new-123__text--footer a {
+    text-decoration: none;
+    color: #2a2b2e; }
+  .new-123__text--footer a:hover {
+    color: #5eabf1; }
+  .new-123__text--footer .icon-right-small {
+    color: #3e9aee; }
+  .new-123__text--footer .icon-right-small:hover {
+    color: #989fb3; }
+
+.our-services {
+  position: relative;
+  overflow: hidden;
+  background-color: #2a2d32;
+  width: 100%; }
+
+.our-services__header {
+  display: block;
+  margin-top: 45px;
+  margin-bottom: 53px;
+  color: #f2f2f2;
+  font-family: 'Ubuntu Medium',Arial,sans-serif;
+  font-size: 24px; }
+
+.our-services__item {
+  display: block;
+  margin-left: 40px;
+  text-align: center;
+  margin-bottom: 65px; }
+  .our-services__item p {
+    margin-top: 31px;
+    color: #fff;
+    font-family: 'Ubuntu Medium',Arial,sans-serif;
+    font-size: 16px; }
+
+.our-services__item:first-child {
+  margin-left: 0; }
+
+.our-services__item:hover .our-services__opacityhover {
+  visibility: visible; }
+
+.our-services__item:hover p {
+  color: #be9117; }
+
+.our-services__picture {
+  position: relative; }
+  .our-services__picture img {
+    width: 260px;
+    height: 260px;
+    display: block; }
+
+.our-services__opacityhover {
+  visibility: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  background-color: rgba(46, 144, 233, 0.9); }
+  .our-services__opacityhover span {
+    color: #fff;
+    font-size: 70px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.news-banners {
+  position: relative;
+  overflow: hidden;
+  background-color: #f7f7f7;
+  width: 100%;
+  margin-bottom: 88px; }
+
+.latest-news {
+  margin-top: 66px; }
+
+.latest-news__header {
+  font-family: 'Ubuntu Medium',Arial,sans-serif;
+  font-size: 24px;
+  color: #2a2d32; }
+
+.latest-news__new {
+  margin-top: 25px;
+  height: 152px; }
+
+.latest-news__new:first-of-type {
+  margin-top: 46px; }
+
+.latest-news__picture {
+  position: relative;
+  margin-top: -2px; }
+  .latest-news__picture img {
+    width: 152px;
+    height: 152px; }
+
+.latest-news__date {
+  width: 40px;
+  height: 80px;
+  position: absolute;
+  top: 16px;
+  left: -20px; }
+  .latest-news__date div {
+    height: 40px;
+    position: relative; }
+    .latest-news__date div p {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+  .latest-news__date div:first-child {
+    background-color: #248cec; }
+  .latest-news__date div:last-child {
+    background-color: #f4b60d; }
+
+.latest-news__article {
+  width: 380px;
+  margin-left: 30px; }
+
+.latest-news_text--header {
+  font-family: 'Ubuntu Medium',Arial,sans-serif;
+  font-size: 16px;
+  color: #616367;
+  margin-top: 5px;
+  cursor: pointer; }
+
+.latest-news_text--subheader {
+  font-family: 'Arial Regular',Arial,sans-serif;
+  font-size: 13px;
+  margin-top: 9px; }
+  .latest-news_text--subheader span:nth-child(odd) {
+    color: #9d9d9d; }
+  .latest-news_text--subheader span:nth-child(even) {
+    color: #0187f4; }
+
+.latest-news_text--content {
+  font-family: 'Arial Regular',Arial,sans-serif;
+  font-size: 13px;
+  color: #8a8a8a;
+  margin-top: 27px;
+  line-height: 1.5; }
+
+.banners-place {
+  margin-top: 66px;
+  margin-bottom: 80px; }
+
+.banners__header {
+  font-family: 'Ubuntu Medium',Arial,sans-serif;
+  font-size: 24px;
+  color: #2a2d32; }
+
+.banners__accordion {
+  margin-top: 42px; }
+
+.accordion__panel {
+  width: 560px;
+  padding: 1px; }
+
+.panel__header {
+  height: 40px;
+  background-color: #fff;
+  border: 1px solid lightgray;
+  font-family: 'Ubuntu Medium',Arial,sans-serif;
+  font-size: 13px; }
+
+.panel__toggle {
+  display: inline-block;
+  width: 38px;
+  height: 40px;
+  text-align: center;
+  border-right: 2px solid lightgray;
+  font-size: 14pt;
+  font-family: sans-serif;
+  font-weight: 100;
+  line-height: 2;
+  cursor: pointer; }
+
+.panel__title {
+  display: inline-block;
+  padding-left: 10px; }
+
+.panel__description {
+  padding: 10px;
+  margin: 20px 5px 20px 30px;
+  color: #8a8a8a;
+  font-family: 'Arial Regular',Arial,sans-serif;
+  font-size: 13px;
+  line-height: 1.35; }
+
+.panel__active .panel__header {
+  background-color: #f4b60d;
+  border: 0;
+  color: #fff; }
+
+.panel__active .panel__toggle {
+  border-right: 1px solid white;
+  color: #fff; }
+
+.logo {
+  position: relative;
+  overflow: hidden;
+  background-color: #fff;
+  width: 100%;
+  margin-bottom: 88px; }
+
+.logo__item {
+  margin-left: 86px;
+  margin-top: -5px;
+  margin-bottom: 4px; }
+
+.logo__item:first-child {
+  margin-left: 22px; }
+
+.logo__item:last-child {
+  margin-left: 58px; }
+
+.footer__links {
+  position: relative;
+  overflow: hidden;
+  background-color: #2a2d32;
+  width: 100%; }
+
+.links_column {
+  width: 260px;
+  margin-right: 40px; }
+
+.links_column:last-of-type {
+  margin-right: 0; }
+
+.links__header {
+  margin: 60px 0 47px;
+  font-family: 'Ubuntu Medium',Arial,sans-serif;
+  font-size: 16px;
+  color: #fff; }
+
+.links_link {
+  display: block;
+  text-decoration: none;
+  font-family: 'Arial Regular',Arial,sans-serif;
+  font-size: 13px;
+  color: #828385;
+  margin-bottom: 23px; }
+
+.links_link:last-child {
+  margin-bottom: 83px; }
+
+.links_link:hover {
+  color: #248cec; }
+
+.footer__contacts {
+  position: relative;
+  overflow: hidden;
+  background-color: #35383c;
+  width: 100%;
+  font-family: 'Arial Regular',Arial,sans-serif;
+  font-size: 12px;
+  line-height: 4.5;
+  color: #6f7073; }
+
+.contacts_contact {
+  margin-right: 40px; }
+
+.contact_text {
+  margin-left: 3px; }
+
+.contact__picture {
+  font-size: 12px; }
+
+body {
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  min-width: 1161px; }
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto; }
+
+.container {
+  max-width: 1161px;
+  margin: 0 auto; }
+
+.position_left {
+  float: left; }
+
+.position_right {
+  float: right; }

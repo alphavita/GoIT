@@ -54,9 +54,12 @@ $accordionPanelActiveBGColor:       #f4b60d;
 
 $backgroundLogoColor:               #fff;
 $backgroundLinksColor:              #2a2d32;
+$linksHeaderColor:                  #fff;
+$linksLinkColor:                    #828385;
+$linksLinkHoverColor:               #248cec;
 
 $backgroundContactsColor:           #35383c;
-
+$contactsTextColor:                 #6f7073;
 
 // размеры компонентов сайта
 $widthWrapper:                      1161px;
@@ -82,3 +85,6 @@ $widthLatestNewsArticle:           380px;
 $widthAccordionPanel:              560px;
 $heightPanelHeader:                 40px;
 $widthPanelToggle:                  38px;
+
+$widthLinksColumn:                 260px;
+$widthLinksColumnGeneral:          300px;

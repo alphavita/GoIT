@@ -550,7 +550,8 @@ table {
   font-family: 'Ubuntu Medium',Arial,sans-serif;
   font-size: 16px;
   color: #616367;
-  margin-top: 5px; }
+  margin-top: 5px;
+  cursor: pointer; }
 
 .latest-news_text--subheader {
   font-family: 'Arial Regular',Arial,sans-serif;
@@ -646,15 +647,53 @@ table {
   position: relative;
   overflow: hidden;
   background-color: #2a2d32;
-  width: 100%;
-  margin-bottom: 88px; }
+  width: 100%; }
+
+.links_column {
+  width: 260px;
+  margin-right: 40px; }
+
+.links_column:last-of-type {
+  margin-right: 0; }
+
+.links__header {
+  margin: 60px 0 47px;
+  font-family: 'Ubuntu Medium',Arial,sans-serif;
+  font-size: 16px;
+  color: #fff; }
+
+.links_link {
+  display: block;
+  text-decoration: none;
+  font-family: 'Arial Regular',Arial,sans-serif;
+  font-size: 13px;
+  color: #828385;
+  margin-bottom: 23px; }
+
+.links_link:last-child {
+  margin-bottom: 83px; }
+
+.links_link:hover {
+  color: #248cec; }
 
 .footer__contacts {
   position: relative;
   overflow: hidden;
   background-color: #35383c;
   width: 100%;
-  margin-bottom: 88px; }
+  font-family: 'Arial Regular',Arial,sans-serif;
+  font-size: 12px;
+  line-height: 4.5;
+  color: #6f7073; }
+
+.contacts_contact {
+  margin-right: 40px; }
+
+.contact_text {
+  margin-left: 3px; }
+
+.contact__picture {
+  font-size: 12px; }
 
 body {
   font-family: Helvetica,Arial,sans-serif;
@@ -674,5 +713,3 @@ body {
 
 .position_right {
   float: right; }
-
-/*# sourceMappingURL=default.css.map */

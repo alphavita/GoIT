@@ -36,7 +36,8 @@ module.exports = function(grunt) {
 	 },
          sass: {
 		options: {
-			sourceMap: true
+			sourceMap: false,
+                        linefeed : 'crlf'
 		},
 		dist: {
 			files: {

@@ -239,8 +239,39 @@
             </div>
         </div>
         <div class="footer">
-            <div class="footer__links"></div>
-            <div class="footer__contacts"></div>
+            <div class="footer__links">
+                <div class="links__container container">
+                    <script type="text/template" id="footer_links">
+                        <% for(var iCol=0;iCol<columns.length;iCol++) { %>
+                            <div class="links_column position_left">
+                                <p class="links__header"><%= columns[iCol].columnName %></p>
+                                <% for(var iLink=0;iLink<columns[iCol].arrayColumnLinks.length;iLink++) { %>
+                                    <a class="links_link" href="<%= columns[iCol].arrayColumnLinks[iLink].href %>">
+                                        <p><%= columns[iCol].arrayColumnLinks[iLink].name %></p>
+                                    </a>
+                                <% } %>
+                            </div>
+                        <% } %>
+                    </script>
+                </div>
+            </div>
+            <div class="footer__contacts">
+                <div class="contacts__container container">
+                    <div class="contacts_contact position_left">
+                        <div class="contact__picture position_left"><i class="icon-location"></i></div>
+                        <div class="contact_text position_left">BuildHomeLtd.  Street Name 123   23 45 Cityname</div>
+                    </div>
+                    <div class="contacts_contact position_left">
+                        <div class="contact__picture position_left"><i class="icon-mobile"></i></div>
+                        <div class="contact_text position_left">+123 900 123 456</div>
+                    </div>
+                    <div class="contacts_contact position_left">
+                        <div class="contact__picture position_left"><i class="icon-mail"></i></div>
+                        <div class="contact_text position_left">&nbsp;&nbsp;info@buildhome.web</div>
+                    </div>
+                    <p class="footer_copyright position_right">© 2014 Build Home</p>
+                </div>
+            </div>
         </div>
     </div>
 </body>

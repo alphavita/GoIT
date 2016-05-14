@@ -16,8 +16,6 @@
 
 
     // инициализируем аккордеон
-    $('.panel__description').hide();
-    $('.panel__active').find('.panel__description').show();
     $('.panel__toggle').on('click', function () {
         if (!$(this).parent().parent().hasClass('panel__active')) {
             $('.accordion__panel').removeClass('panel__active');
@@ -33,5 +31,55 @@
             $(this).parent().next().slideUp();
         }
     });
+    $('.panel__description').hide();
+    $('.panel__active').find('.panel__description').show(); //  если в html будет одна из панелей открыта
 
+    // заполняем линки шаблонизатором
+    var contentLinks =
+        {
+            columns: [
+                           {
+                               columnName: 'SOCIALS',
+                               arrayColumnLinks: [{ name: 'Facebook', href: '#' },
+                                                  { name: 'Flickr', href: '#' },
+                                                  { name: 'Twitter', href: '#' },
+                                                  { name: 'Vimeo', href: '#' }]
+                           },
+                           {
+                               columnName: 'LINKS',
+                               arrayColumnLinks: [{ name: 'How to Write a Blog', href: '#' },
+                                                  { name: 'Create a Blog in 4 Steps', href: '#' },
+                                                  { name: '15 Tips to Increase Traffic', href: '#' },
+                                                  { name: '20 Blog Post Ideas', href: '#' }]
+                           },
+                           {
+                               columnName: 'BLOGROLL',
+                               arrayColumnLinks: [{ name: 'Blogs Blog', href: '#' },
+                                                  { name: 'Roll Up Roll Up', href: '#' },
+                                                  { name: 'Blog Free', href: '#' },
+                                                  { name: 'Wordpress Blog', href: '#' }]
+                           },
+                           {
+                               columnName: 'ABOUT AS',
+                               arrayColumnLinks: [{ name: 'Agriculture', href: '#' },
+                                                  { name: 'Harvest', href: '#' },
+                                                  { name: 'Company news', href: '#' },
+                                                  { name: 'Investor relations', href: '#' }]
+                           }
+            ]
+        };
+    
+    var htmlData = tmpl('footer_links', contentLinks);
+    $(htmlData).insertBefore($('#footer_links'));
 });
+
+
+
+
+
+
+
+
+
+
+

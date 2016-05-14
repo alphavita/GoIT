@@ -6,12 +6,51 @@
     overflow: hidden;
     background-color:    $backgroundLinksColor;
     width: 100%;
-    margin-bottom: 88px;
 }
+.links_column{
+    width: $widthLinksColumn;
+    margin-right: $widthLinksColumnGeneral - $widthLinksColumn;
+}
+.links_column:last-of-type{
+    margin-right: 0;
+}
+.links__header{
+        margin:60px 0 47px;
+        font-family: 'Ubuntu Medium',Arial,sans-serif;
+        font-size: 16px;
+        color: $linksHeaderColor;
+}
+.links_link{
+    display: block;
+    text-decoration:none;
+    font-family: 'Arial Regular',Arial,sans-serif;
+    font-size: 13px;
+    color: $linksLinkColor;  
+    margin-bottom: 23px;   
+}
+.links_link:last-child{
+    margin-bottom: 83px;
+}
+.links_link:hover{
+    color: $linksLinkHoverColor;     
+}
+
 .footer__contacts{
     position: relative;
     overflow: hidden;
     background-color:    $backgroundContactsColor;
     width: 100%;
-    margin-bottom: 88px;
+    font-family: 'Arial Regular',Arial,sans-serif;
+    font-size: 12px;
+    line-height: 4.5;
+    color: $contactsTextColor;
+}
+.contacts_contact{
+    margin-right: 40px;
+}
+.contact_text{
+    margin-left: 3px;
+}
+.contact__picture{
+    font-size:12px;
 }
