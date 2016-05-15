@@ -1,0 +1,93 @@
+﻿* {
+    margin: 0;
+    padding:0;
+}
+
+body{
+    background-color: #dddddd;
+}
+
+.wrapper{
+    margin: 2% 20%;
+    padding: 1%;
+    background-color: white;
+    color: black;
+}
+.title {
+    margin: 5% auto 5%;
+    text-align: center;
+}
+.question {
+    list-style-type: decimal;
+    margin-left: 10%;
+    margin-top: 3%;
+}
+.answer{
+    list-style: none;
+    margin-top: 0.5%;
+    margin-left: 1%;
+}
+.answer__checkbox{
+    margin-right: 1%;
+}
+.result-button{
+    margin: 7% auto;
+    border: 1px solid black;
+    border-radius: 14px;
+    font-size: 120%;
+    padding: 1%;
+    display: block;
+    background-color: lightgrey;
+}
+.result-button:hover {
+    cursor: pointer;
+    background-color: grey;
+}
+
+
+
+.modalWindow {
+    width: 200px;
+    height: 100px; 
+    border-radius: 5px;
+    border: 2px solid black;
+    background: white;
+    position: fixed; /* позиционируем на экране, а не на странице */
+    top: 50%; 
+    left: 50%; 
+    margin-top: -150px;
+    margin-left: -150px; /* центровка  как у Олега в видеоуроке*/
+    display: none; 
+    opacity: 0; /* для aнимирoвaния */
+    z-index: 5; 
+}
+
+.modalWindow__button {
+	width: 40px;
+	height: 20px;
+	position: absolute;
+	top: 60px;
+	left: 80px;
+	cursor: pointer;
+}
+.modalWindow__text{
+	position: absolute;
+	top: 25px;
+    width : 100%;
+    left: 0;
+    text-align: center;
+    display: block;
+}
+.overlay {
+	z-index:3; /* пoдлoжкa между  элементами страницы и мoдaльным oкном */
+	position:fixed; 
+	background-color: black;
+	opacity:0.8; 
+	-moz-opacity:0.8; /* для старых браузеров */
+	filter:alpha(opacity=80);
+	width:100%;                 /* вo весь экрaн */
+	height:100%; 
+	top:0; 
+	left:0;
+	display:none; 
+}
