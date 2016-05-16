@@ -32,7 +32,4 @@
     catch (e) {
         alert('Ошибка ' + e.message);
     }
-
-
-
 });

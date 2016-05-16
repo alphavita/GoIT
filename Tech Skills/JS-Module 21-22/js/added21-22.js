@@ -6,7 +6,7 @@ var obj21_22 = {
         var str = localStorage.getItem(key);
         // если объекта нет, имитируем запрос к серверу и сохраняем объект в localStorage
         if ($.isEmptyObject(str)) {
-            str = imitateQuestions();
+            str = this.imitateQuestions();
             localStorage.setItem(key, str);
         }
         return str;
