@@ -23,11 +23,17 @@
                 return listData;
             },
             editItem: function (guidEdited, newName) {
-                var index = _.findIndex(listData, function (o) { return o.guid == guidDeleted; });
+                var index = _.findIndex(listData, function (o) { return o.guid == guidEdited; });
                 if (index < 0)
                     return;
                 listData[index].name=newName;
                 return listData;
+            },
+            getValue: function (guid) {
+                var index = _.findIndex(listData, function (o) { return o.guid == guid; });
+                if (index < 0)
+                    return;
+                return listData[index].name;
             },
             getItemsList: function () {
                 return listData;

@@ -12,13 +12,15 @@
         <div class="items__container">
             <ul class="items__list" />
         </div>
-        <input type="text" class="items__input" />
+        <input type="text" class="items__input items__input--edited items__input--added"  />
         <button class="add__button">Add</button>
         <script type="text/template" id="items_template">
                 <% for(var i=0;i<data.length;i++) { %>
                     <li class="items__item">
                         <input class="items__input" type="text" value="<%= data[i].name %>" readonly="readonly"  data-guid="<%= data[i].guid %>"/>
-                        <i class="icon-delete"></i><i class="icon-edit"></i><i class="icon-ok hidden"></i>
+                        <a class="btn-delete"><i class="icon-delete" title="Delete"></i></a>
+                        <a class="btn-edit"><i class="icon-edit" title="Edit"></i></a>
+                        <a class="btn-ok hidden"><i class="icon-ok" title="Save"></i></a>
                     </li>
                 <% } %>
         </script>

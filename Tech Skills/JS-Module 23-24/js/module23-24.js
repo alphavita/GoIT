@@ -23,11 +23,9 @@ require(
         'module23-24_controller'
     ],
 
-    function (model,view,controller) {
-        model.addItem('adsfsdfsdf');
-        model.addItem('adsfsdfsdf');
-        model.addItem('adsfsdfsdf');
-        model.removeItem('sfgdfgdfgfg');
-        view.showData(model.getItemsList());
+    function (model, view, controller) {
+        $(function () {
+            controller.initCallbacks();
+        });
     }
 );
