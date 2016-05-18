@@ -1,0 +1,297 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>ДЗ Tech Skills JS Module 19-20</title>
+    <link rel="stylesheet" href="css/dz19-20.min.css" />
+    <script src="js/jquery-1.12.2.min.js" type="text/javascript"></script>
+    <script src="js/dz19-20.min.js" type="text/javascript"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <section id="promo">
+            <header class="promo__header">
+                <a class="promo__logo">URLAUBSGLÜCK</a>
+                <div class="promo__autorization">
+                    <a href="#" class="promo__login">Log in</a>
+                    <a href="#" class="promo__signup promo__active">Sign up</a>
+                </div>
+            </header>
+            <h1 class="promo_title">Share your<br />holiday dreams</h1>
+            <h3 class="promo_subtitle">And find the perfect partner to fullfill it</h3>
+            <a href="#" class="promo__find">Find your holiday partner</a>
+        </section>
+        <section id="tutorial">
+            <h3 class="tutorial__header">How Urlaubsglück works?</h3>
+        </section>
+    </div>
+        <!--
+            <div class="wrapper">
+                <div class="header">
+                    <div class="header__container container">
+                        <div class="header__title">
+                            <div class="title__logo"></div>
+                            <p class="title__text">Build Home<span>INDUSTRIAL THEME</span></p>
+                            <div class="title__navigation">
+                                <ul>
+                                    <li class="title__navitem"><a href="#"><i class="icon-facebook"></i></a></li>
+                                    <li class="title__navitem"><a href="#"><i class="icon-twitter"></i></a></li>
+                                    <li class="title__navitem"><a href="#"><i class="icon-rss"></i></a></li>
+                                    <li class="title__navitem"><a href="#"><i class="icon-linkedin"></i></a></li>
+                                    <li class="title__navitem"><a href="#"><i class="icon-skype"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="header__navigation">
+                            <div class="header__menu">
+                                <ul>
+                                    <li><a>HOME</a></li>
+                                    <li><a>FEATURES</a></li>
+                                    <li><a>SERVICES</a></li>
+                                    <li><a>NEWS</a></li>
+                                    <li><a>SHOP</a></li>
+                                </ul>
+                            </div>
+                            <div class="header__search">
+                                <form class="form__search">
+                                    <div class="form__group">
+                                        <input type="text" class="form-control" placeholder="Search... "/>
+                                        <a href="#"><i class="icon-search"></i></a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="header__slider">
+                            <ul class="slider__list">
+                                <li class="slider__item"><img src="img/carusel-1.jpg" alt="" /></li>
+                                <li class="slider__item"><img src="img/carusel-2.jpg" alt="" /></li>
+                                <li class="slider__item"><img src="img/carusel-3.jpg" alt="" /></li>
+                            </ul>
+                            <div class="slider__paginator">
+                                <ul class="paginator__list">
+                                    <li class="paginator__item"></li>
+                                    <li class="paginator__item"></li>
+                                    <li class="paginator__item"></li>
+                                </ul>
+                            </div>
+                            <div class="slider__text">
+                                <div><p>BUILD</p></div>
+                                <div><p>YOUR</p></div>
+                                <div><p>BUSINESS</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-123">
+                    <div class="news-123__container container">
+                        <div class="new-123 position_left">
+                            <div class="new-123__number position_left">01</div>
+                            <div class="new-123__article position_right">
+                                <img src="img/settings.jpg" alt="" />
+                                <div class="new-123__text">
+                                    <p class="new-123__text--header">Power Inside</p>
+                                    <p class="new-123__text--content">Cum sociis natoque penatibus et magnis dis parturient montesmus. Pro vel nibh et elit mollis commodo et nec augueique </p>
+                                    <p class="new-123__text--footer"><a href="#">Read More&nbsp;<span class="icon-right-small"></span></a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="new-123 position_left">
+                            <div class="new-123__number position_left">02</div>
+                            <div class="new-123__article position_right">
+                                <img src="img/params.jpg" alt="" />
+                                <div class="new-123__text">
+                                    <p class="new-123__text--header">New Technologies</p>
+                                    <p class="new-123__text--content">Cum sociis natoque penatibus et magnis dis parturient montesmus. Pro vel nibh et elit mollis commodo et nec augueique </p>
+                                    <p class="new-123__text--footer"><a href="#">Read More&nbsp;<span class="icon-right-small"></span></a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="new-123 position_right">
+                            <div class="new-123__number position_left">03</div>
+                            <div class="new-123__article position_right">
+                                <img src="img/truck.jpg" alt="" />
+                                <div class="new-123__text">
+                                    <p class="new-123__text--header">Fast Supportes</p>
+                                    <p class="new-123__text--content">Cum sociis natoque penatibus et magnis dis parturient montesmus. Pro vel nibh et elit mollis commodo et nec augueique </p>
+                                    <p class="new-123__text--footer"><a href="#">Read More&nbsp;<span class="icon-right-small"></span></a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="our-services">
+                    <div class="our-services__container container">
+                        <p class="our-services__header">Our Services</p>
+                        <div class="our-services__items">
+                            <div class="our-services__item position_left">
+                                <div class="our-services__picture">
+                                    <a href="#">
+                                        <img src="img/ourservices-1.jpg" alt="" />
+                                        <div class="our-services__opacityhover">
+                                            <span>+</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <p>Schedule Services</p>
+                            </div>
+                            <div class="our-services__item position_left">
+                                <div class="our-services__picture">
+                                    <a href="#">
+                                        <img src="img/ourservices-2.jpg" alt="" />
+                                        <div class="our-services__opacityhover">
+                                            <span>+</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <p>Preventive Maintence</p>
+                            </div>
+                            <div class="our-services__item position_left">
+                                <div class="our-services__picture">
+                                    <a href="#">
+                                        <img src="img/ourservices-3.jpg" alt="" />
+                                        <div class="our-services__opacityhover">
+                                            <span>+</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <p>Tire & Wheel Services</p>
+                            </div>
+                            <div class="our-services__item position_left">
+                                <div class="our-services__picture">
+                                    <a href="#">
+                                        <img src="img/ourservices-4.jpg" alt="" />
+                                        <div class="our-services__opacityhover">
+                                            <span>+</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <p>Repair Services</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-banners">
+                    <div class="news-banners__container container">
+                        <div class="latest-news position_left">
+                            <p class="latest-news__header">Latest News</p>
+                            <div class="latest-news__new">
+                                <div class="latest-news__picture position_left">
+                                    <img src="img/latestnews-1.jpg" alt="" />
+                                    <div class="latest-news__date">
+                                        <div><p>Jan</p></div>
+                                        <div><p>23</p></div>
+                                    </div>
+                                </div>
+                                <div class="latest-news__article position_right">
+                                    <p class="latest-news_text--header">Advanced Machinery Helps Improve Quality</p>
+                                    <p class="latest-news_text--subheader"><span>by&nbsp;</span><span>cmsmasters</span>&nbsp;&nbsp;<span>Comments (</span><span>6</span><span>)</span></p>
+                                    <p class="latest-news_text--content">Cum sociis natoque penatibus et magnis dis parturient ontesmus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem.</p>
+                                </div>
+                            </div>
+                            <div class="latest-news__new">
+                                <div class="latest-news__picture position_left">
+                                    <img src="img/latestnews-2.jpg" alt="" />
+                                    <div class="latest-news__date">
+                                        <div><p>Jan</p></div>
+                                        <div><p>21</p></div>
+                                    </div>
+                                </div>
+                                <div class="latest-news__article position_right">
+                                    <p class="latest-news_text--header">Powerful Techniques for Advanced Service</p>
+                                    <p class="latest-news_text--subheader"><span>by&nbsp;</span><span>cmsmasters</span>&nbsp;&nbsp;<span>Comments (</span><span>3</span><span>)</span></p>
+                                    <p class="latest-news_text--content">Cum sociis natoque penatibus et magnis dis parturient ontesmus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="banners-place position_right">
+                            <p class="banners__header">Banners Place</p>
+                            <div class="banners__accordion">
+                                <div class="accordion__panel panel__active">
+                                    <div class="panel__header">
+                                        <div class="panel__toggle">-</div>
+                                        <div class="panel__title">ACCORDION PANEL 1</div>
+                                    </div>
+                                    <div class="panel__description">
+                                        Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus. Nemo enim ipsam voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem.
+                                    </div>
+                                </div>
+                                <div class="accordion__panel">
+                                    <div class="panel__header">
+                                        <div class="panel__toggle">+</div>
+                                        <div class="panel__title">ACCORDION PANEL 2</div>
+                                    </div>
+                                    <div class="panel__description">
+                                        Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus. Nemo enim ipsam voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo et nec augueique
+                                    </div>
+                                </div>
+                                <div class="accordion__panel">
+                                    <div class="panel__header">
+                                        <div class="panel__toggle">+</div>
+                                        <div class="panel__title">ACCORDION PANEL 3</div>
+                                    </div>
+                                    <div class="panel__description">
+                                        Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus.
+                                    </div>
+                                </div>
+                                <div class="accordion__panel">
+                                    <div class="panel__header">
+                                        <div class="panel__toggle">+</div>
+                                        <div class="panel__title">ACCORDION PANEL 4</div>
+                                    </div>
+                                    <div class="panel__description">
+                                        Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus. Nemo enim ipsam voluptatem quia ptas sit aspernatur
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="logo">
+                    <div class="logo__container container">
+                        <img class="logo__item" src="img/logo-1.jpg" alt=""/>
+                        <img class="logo__item" src="img/logo-2.jpg" alt="" />
+                        <img class="logo__item" src="img/logo-3.jpg" alt="" />
+                        <img class="logo__item" src="img/logo-4.jpg" alt="" />
+                        <img class="logo__item" src="img/logo-5.jpg" alt="" />
+                        <img class="logo__item" src="img/logo-6.jpg" alt="" />
+                    </div>
+                </div>
+                <div class="footer">
+                    <div class="footer__links">
+                        <div class="links__container container">
+                            <script type="text/template" id="footer_links">
+                                <% for(var iCol=0;iCol<columns.length;iCol++) { %>
+                                    <div class="links_column position_left">
+                                        <p class="links__header"><%= columns[iCol].columnName %></p>
+                                        <% for(var iLink=0;iLink<columns[iCol].arrayColumnLinks.length;iLink++) { %>
+                                            <a class="links_link" href="<%= columns[iCol].arrayColumnLinks[iLink].href %>">
+                                                <p><%= columns[iCol].arrayColumnLinks[iLink].name %></p>
+                                            </a>
+                                        <% } %>
+                                    </div>
+                                <% } %>
+                            </script>
+                        </div>
+                    </div>
+                    <div class="footer__contacts">
+                        <div class="contacts__container container">
+                            <div class="contacts_contact position_left">
+                                <div class="contact__picture position_left"><i class="icon-location"></i></div>
+                                <div class="contact_text position_left">BuildHomeLtd.  Street Name 123   23 45 Cityname</div>
+                            </div>
+                            <div class="contacts_contact position_left">
+                                <div class="contact__picture position_left"><i class="icon-mobile"></i></div>
+                                <div class="contact_text position_left">+123 900 123 456</div>
+                            </div>
+                            <div class="contacts_contact position_left">
+                                <div class="contact__picture position_left"><i class="icon-mail"></i></div>
+                                <div class="contact_text position_left">&nbsp;&nbsp;info@buildhome.web</div>
+                            </div>
+                            <p class="footer_copyright position_right">© 2014 Build Home</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        -->
+</body>
+</html>
