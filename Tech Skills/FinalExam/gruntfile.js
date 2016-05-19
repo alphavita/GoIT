@@ -4,14 +4,14 @@ module.exports = function(grunt) {
 	  concat: {
             js: {
                 src: ['src/js/*.js','src/js/plagins/*.js'],
-                dest: 'js/dz19-20.min.js',
+                dest: 'js/final-exam.min.js',
                 options: {
                     separator: ';'
                 }
             },
             css: {
-                src: ['src/css/reset.css','src/css/fontello_dz_19-20.css','src/css/fontubuntu.css','src/css/default.css'],
-                dest: 'css/dz19-20.css',
+                src: ['src/css/reset.css','src/css/fonts.css','src/css/promo.css'],
+                dest: 'css/final-exam.min.css',
                 options: {
                     separator: '\n\r'
                 }
@@ -41,14 +41,14 @@ module.exports = function(grunt) {
 		},
 		dist: {
 			files: {
-				'src/css/default.css': 'src/scss/default.scss'
+				'src/css/promo.css': 'src/scss/promo.scss'
 			}
 		}
 	},
          watch: {
                 css: {
                      files: ['src/scss/*.scss','src/js/*.js'],
-                     tasks: ['sass','concat','cssmin'/*,'uglify'*/],
+                     tasks: ['sass','concat'/*,'cssmin','uglify'*/],
                 },
          }   
 	});
@@ -58,5 +58,5 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-watch');                   
 	grunt.loadNpmTasks('grunt-sass');	
 	
-grunt.registerTask('default',['sass','concat','cssmin','uglify']);
+grunt.registerTask('default',['sass','concat'/*,'cssmin','uglify'*/]);
 }

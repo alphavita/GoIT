@@ -1,0 +1,32 @@
+﻿@mixin centerer($horizontal: true, $vertical: true) {
+  position: absolute;
+  @if ($horizontal and $vertical) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  } @else if ($horizontal) {
+    left: 50%;
+    transform: translate(-50%, 0);
+  } @else if ($vertical) {
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+}
+@mixin breakpoint($point) {
+  @if $point == desktop {
+    @media (min-width: 940px) { @content; }
+  }
+  @if $point == tablet {
+    @media (max-width: 939px) and (min-width: 768px) { @content; }
+  }
+  @if $point == mobile {
+    @media (max-width: 767px),(max-device-width: 767px) { @content; }
+  }
+}
+@mixin border-radius($radius) {
+  border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  -o-border-radius: $radius;
+}

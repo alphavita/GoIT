@@ -1,0 +1,185 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain) */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Montserrat */
+@font-face {
+    font-family: 'Montserrat Bold';
+    src: url('../fonts/montserrat/montserrat-bold-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat/montserrat-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat Regular';
+    src: url('../fonts/montserrat/montserrat-regular-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat/montserrat-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Roboto */
+@font-face {
+    font-family: 'Roboto Black';
+    src: url('../fonts/roboto/roboto-black-webfont.woff2') format('woff2'),
+         url('../fonts/roboto/roboto-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto Black Italic';
+    src: url('../fonts/roboto/roboto-blackitalic-webfont.woff2') format('woff2'),
+         url('../fonts/roboto/roboto-blackitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto Bold';
+    src: url('../fonts/roboto/roboto-bold-webfont.woff2') format('woff2'),
+         url('../fonts/roboto/roboto-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto Bold Italic';
+    src: url('../fonts/roboto/roboto-bolditalic-webfont.woff2') format('woff2'),
+         url('../fonts/roboto/roboto-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto Italic';
+    src: url('../fonts/roboto/roboto-italic-webfont.woff2') format('woff2'),
+         url('../fonts/roboto/roboto-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto Light';
+    src: url('../fonts/roboto/roboto-light-webfont.woff2') format('woff2'),
+         url('../fonts/roboto/roboto-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto Light Italic';
+    src: url('../fonts/roboto/roboto-lightitalic-webfont.woff2') format('woff2'),
+         url('../fonts/roboto/roboto-lightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto Medium';
+    src: url('../fonts/roboto/roboto-medium-webfont.woff2') format('woff2'),
+         url('../fonts/roboto/roboto-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto Medium Italic';
+    src: url('../fonts/roboto/roboto-mediumitalic-webfont.woff2') format('woff2'),
+         url('../fonts/roboto/roboto-mediumitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto Regular';
+    src: url('../fonts/roboto/roboto-regular-webfont.woff2') format('woff2'),
+         url('../fonts/roboto/roboto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto Thin';
+    src: url('../fonts/roboto/roboto-thin-webfont.woff2') format('woff2'),
+         url('../fonts/roboto/roboto-thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto Thin Italic';
+    src: url('../fonts/roboto/roboto-thinitalic-webfont.woff2') format('woff2'),
+         url('../fonts/roboto/roboto-thinitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container {
+  margin: 0 auto; }
+
+#promo {
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 700px; }
+  @media (max-width: 767px), (max-device-width: 767px) {
+    #promo {
+      background-image: url("../img/bg/promomobile.jpg"); } }
+
+.promo__container {
+  position: relative; }
+
+.logo {
+  font-family: "Montserrat Bold", sans-serif; }
+
+.logo--header {
+  font-size: 1em; }
+  @media (max-width: 767px), (max-device-width: 767px) {
+    .logo--header {
+      top: 40px;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, 0); } }
+
+@media (max-width: 767px), (max-device-width: 767px) {
+  .promo__autorization {
+    top: 10px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0); } }
+
+.logo--footer {
+  font-size: 0.8em; }

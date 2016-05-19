@@ -1,0 +1,40 @@
+﻿@import "variables.scss";
+@import "mixins.scss";
+
+.container{
+    margin: 0 auto;
+}
+#promo{
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 700px;
+    @include breakpoint(mobile){
+        background-image: url("../img/bg/promomobile.jpg");
+    }
+}
+.promo__container{
+    position: relative;
+}
+.logo{
+    font-family: $fontLogo;
+}
+.logo--header{
+    font-size: 1em;
+    @include breakpoint(mobile){
+        top: 40px;
+        @include centerer(true,false)
+    }
+}
+.promo__autorization{
+    @include breakpoint(mobile){
+        top: 10px;
+        @include centerer(true,false)
+    }
+}
+
+
+
+.logo--footer{
+    font-size: 0.8em;
+}
