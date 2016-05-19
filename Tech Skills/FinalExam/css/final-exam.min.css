@@ -45,7 +45,9 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
+a{
+    text-decoration: none;
+}
 /* Montserrat */
 @font-face {
     font-family: 'Montserrat Bold';
@@ -150,6 +152,9 @@ table {
 .container {
   margin: 0 auto; }
 
+.border-around-22 {
+  border-radius: 22px; }
+
 #promo {
   background-position: center top;
   background-repeat: no-repeat;
@@ -157,7 +162,8 @@ table {
   min-height: 700px; }
   @media (max-width: 767px), (max-device-width: 767px) {
     #promo {
-      background-image: url("../img/bg/promomobile.jpg"); } }
+      background-image: url("../img/bg/promomobile.jpg");
+      min-height: 540px; } }
 
 .promo__container {
   position: relative; }
@@ -166,20 +172,91 @@ table {
   font-family: "Montserrat Bold", sans-serif; }
 
 .logo--header {
-  font-size: 1em; }
+  font-size: 20px;
+  letter-spacing: 1px; }
   @media (max-width: 767px), (max-device-width: 767px) {
     .logo--header {
-      top: 40px;
+      top: 173px;
+      color: white;
       position: absolute;
       left: 50%;
       transform: translate(-50%, 0); } }
 
 @media (max-width: 767px), (max-device-width: 767px) {
   .promo__autorization {
-    top: 10px;
+    top: 23px;
+    font-family: "Montserrat Bold", sans-serif;
+    font-size: 14px;
+    line-height: 2.3;
+    width: 80%;
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0); } }
+
+.promo__login {
+  color: white; }
+  @media (max-width: 767px), (max-device-width: 767px) {
+    .promo__login {
+      width: 84px;
+      text-align: center;
+      float: left;
+      margin-left: 30px; } }
+
+.promo__signup {
+  color: white; }
+  @media (max-width: 767px), (max-device-width: 767px) {
+    .promo__signup {
+      margin-right: 54px;
+      width: 84px;
+      float: right;
+      text-align: center;
+      margin-top: -2px; } }
+
+.promo_title {
+  text-align: center;
+  font-family: "Montserrat Bold", sans-serif;
+  font-size: 30px;
+  width: 100%;
+  color: white;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0); }
+  @media (max-width: 767px), (max-device-width: 767px) {
+    .promo_title {
+      top: 223px;
+      line-height: 1.2; } }
+
+.promo_subtitle {
+  text-align: center;
+  font-family: "Roboto Light", sans-serif;
+  font-size: 18px;
+  width: 70%;
+  color: white;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0); }
+  @media (max-width: 767px), (max-device-width: 767px) {
+    .promo_subtitle {
+      top: 304px;
+      line-height: 1.2; } }
+
+.promo__find {
+  text-align: center;
+  font-family: "Montserrat Bold", sans-serif;
+  font-size: 14px;
+  width: 88%;
+  color: white;
+  background-color: #ff4e50;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0); }
+  @media (max-width: 767px), (max-device-width: 767px) {
+    .promo__find {
+      top: 363px;
+      line-height: 2.9; } }
+
+.promo__active {
+  border: white solid 2px; }
 
 .logo--footer {
   font-size: 0.8em; }
