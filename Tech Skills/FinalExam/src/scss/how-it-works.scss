@@ -1,46 +1,58 @@
 ﻿@import "variables.scss";
 @import "mixins.scss";
 
+#howitworks{
+    @include breakpoint(mobile){
+        margin-top: 37px;
+    }
+}
 .howitworks__header{
-    position: relative;
+    text-align: center;
+    @include breakpoint(mobile){
+        margin-bottom: 15px;
+    }
 
     h2{
+        font-family: $fontHowitworksHeader;
         font-size: 22px;
-        letter-spacing: 1px;
         @include breakpoint(mobile){
-            color: $colorLogoHeader;
-            @include centerer(true,false);
+            color: $colorHowitworksHeader;
         }
 
     }
 }
 .howitworks__slider {
-  margin-top: 3px;
-  position: relative;
-  overflow: hidden; 
+    position: relative;
+    overflow: hidden; 
+    @include breakpoint(mobile){
+        margin: 3px auto;
+        width: 300px;
+    }
 }
 .howitworks__list{
-  width: 20000em;
-  position: relative;
-  list-style: none;
-  margin: 0;
-  padding: 0; 
+    width: 20000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0; 
 }
 .howitworks__item{
-  float: left;
-  z-index: 1; 
+    float: left;
+    z-index: 1; 
   
-  img {
-    width: 320px;
-    height: 320px; 
-  }
+    img {
+        @include breakpoint(mobile){
+            width: 300px;
+            height: 240px; 
+        }
+    }
 }
-
 .howitworks__paginator {  // not used in FinalExam
   top: 430px;
   position: absolute;
   left: 50%;
-  transform: translate(-50%, 0); }
+  transform: translate(-50%, 0); 
+}
 .paginator__list {
   display: inline-block; 
 }
@@ -57,8 +69,44 @@
 
 .howitworks__text {
   position: absolute;
-  left: 35px;
-  top: 230px;
+  left: 20px;
+  top: 70px;
+  width: 88%;
   z-index: 10; 
 }
-  
+.howitworks__step{
+    font-family:$fontHowitworksStep;
+    font-size: 10px;
+    color: $colorHowitworksStep;
+    background-color: $colorHowitworksStepBG;
+    line-height: 2;
+    width: 75px;
+    display: inline-block;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.howitworks__title{
+    font-family:$fontHowitworksTitle;
+    font-size: 24px;
+    color: $colorHowitworksTitle;
+    margin-top: 16px;
+    line-height: 1.2;
+}
+.howitworks__description{
+    font-family:$fontHowitworksDescription;
+    font-size: 14px;
+    color: $colorHowitworksDescription;
+    margin-top: 13px;
+    line-height: 1.2;
+}
+.howitworks__prev,.howitworks__next{
+    color: $colorHowitworksArrow;
+    position: absolute;
+    top: 100px;
+}
+.howitworks__prev{
+    left:0;
+}
+.howitworks__next{
+    right:0;
+}

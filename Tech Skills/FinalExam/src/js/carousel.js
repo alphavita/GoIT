@@ -1,7 +1,7 @@
 ﻿function initCarousels(){
 
     // create content of carousels
-    var titleSliders = ['Sed leo enim,condimentum', 'Morbi velit risus', 'Sed leo enim,condimentum'];
+    var titleSliders = ['Sed leo enim, condimentum', 'Morbi velit risus', 'Sed leo enim, condimentum'];
     var textSliders = ['Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.',
         'Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.',
         'Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.'];
