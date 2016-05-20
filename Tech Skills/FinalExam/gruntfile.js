@@ -3,14 +3,14 @@ module.exports = function(grunt) {
 	grunt.initConfig({
 	  concat: {
             js: {
-                src: ['src/js/*.js','src/js/plagins/*.js'],
+                src: ['src/js/*.js','src/js/plugins/*.js'],
                 dest: 'js/final-exam.min.js',
                 options: {
                     separator: ';'
                 }
             },
             css: {
-                src: ['src/css/reset.css','src/css/fonts.css','src/css/promo.css'],
+                src: ['src/css/reset.css','src/css/fonts.css','src/css/promo.css','src/css/how-it-works.css'],
                 dest: 'css/final-exam.min.css',
                 options: {
                     separator: '\n\r'
@@ -19,8 +19,8 @@ module.exports = function(grunt) {
 	  },
 	  uglify: {
 	    dist: {
-	      src: ['js/dz19-20.min.js'],
-	      dest: 'js/dz19-20.min.js',
+	      src: ['js/final-exam.min.js'],
+	      dest: 'js/final-exam.min.js',
 	    },
 	  } ,
 	  cssmin: {
@@ -28,7 +28,7 @@ module.exports = function(grunt) {
     	      files: [{
       	      	expand: true,
       		cwd: 'css',
-      		src: ['dz19-20.css'],
+      		src: ['final-exam.min.css'],
       		dest: 'css',
       		ext: '.min.css'
     	     }]
@@ -41,7 +41,8 @@ module.exports = function(grunt) {
 		},
 		dist: {
 			files: {
-				'src/css/promo.css': 'src/scss/promo.scss'
+				'src/css/promo.css': 'src/scss/promo.scss',
+				'src/css/how-it-works.css': 'src/scss/how-it-works.scss'
 			}
 		}
 	},

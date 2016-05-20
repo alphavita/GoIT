@@ -149,7 +149,10 @@ a{
     font-style: normal;
 }
 
-.container {
+.wrapper {
+  background-color: white; }
+
+.container {
   margin: 0 auto; }
 
 .border-around-22 {
@@ -230,7 +233,7 @@ a{
   text-align: center;
   font-family: "Roboto Light", sans-serif;
   font-size: 18px;
-  width: 70%;
+  width: 75%;
   color: white;
   position: absolute;
   left: 50%;
@@ -258,5 +261,60 @@ a{
 .promo__active {
   border: white solid 2px; }
 
-.logo--footer {
-  font-size: 0.8em; }
+.howitworks__header {
+  position: relative; }
+  .howitworks__header h2 {
+    font-size: 22px;
+    letter-spacing: 1px; }
+    @media (max-width: 767px), (max-device-width: 767px) {
+      .howitworks__header h2 {
+        color: white;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0); } }
+
+.howitworks__slider {
+  margin-top: 3px;
+  position: relative;
+  overflow: hidden; }
+
+.howitworks__list {
+  width: 20000em;
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.howitworks__item {
+  float: left;
+  z-index: 1; }
+  .howitworks__item img {
+    width: 320px;
+    height: 320px; }
+
+.howitworks__paginator {
+  top: 430px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0); }
+
+.paginator__list {
+  display: inline-block; }
+
+.paginator__item {
+  display: inline-block;
+  margin: 0 5px 5px 0;
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  cursor: pointer; }
+
+.paginator__item--active {
+  border: 2px solid white;
+  background-color: black; }
+
+.howitworks__text {
+  position: absolute;
+  left: 35px;
+  top: 230px;
+  z-index: 10; }
