@@ -16,8 +16,7 @@ footer {
 
 .footer__company {
   margin-top: 16px;
-  position: relative;
-  overflow: hidden; }
+  position: relative; }
   .footer__company p {
     display: block;
     text-align: center;
@@ -26,12 +25,42 @@ footer {
     color: #333333; }
   .footer__company ul {
     margin-top: 5px;
+    width: 196px;
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0); }
   .footer__company li {
     display: inline-block;
-    width: 40px;
     font-family: "Roboto Light", sans-serif;
     font-size: 14px;
+    margin-left: 9px;
     color: #666666; }
+  .footer__company li:first-child {
+    margin-left: 0; }
+
+.footer__partners {
+  font-family: "Montserrat Bold", sans-serif;
+  font-size: 16px;
+  color: #333333; }
+  @media (max-width: 767px) {
+    .footer__partners {
+      text-align: center;
+      margin-top: 35px;
+      letter-spacing: -1px; } }
+
+@media (max-width: 767px) {
+  .footer__copyright {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-top: 15px;
+    margin-bottom: 18px;
+    text-align: center; } }
+
+.footer__copyright p {
+  font-family: "Montserrat Bold", sans-serif;
+  font-size: 10px;
+  color: #cccccc; }
+
+.footer__copyright img {
+  margin-top: 8px; }
