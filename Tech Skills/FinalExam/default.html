@@ -15,7 +15,7 @@
                 <a href="#" class="logo logo--header">URLAUBSGLÜCK</a>
                 <div class="promo__autorization">
                     <a href="#" class="promo__login border-around-22">Log in</a>
-                    <a href="#" class="promo__signup border-around-22 promo__active">Sign up</a>
+                    <a href="#" class="promo__signup border-around-22">Sign up</a>
                 </div>
                 <h1 class="promo_title">SHARE YOUR<br/>HOLIDAY DREAMS</h1>
                 <h3 class="promo_subtitle">And find the perfect partner to fullfill it</h3>
@@ -35,7 +35,7 @@
                                     </li>
                                 <% } %>
                             </ul>
-                            <div class="howitworks__text">
+                            <div class="howitworks__text  howitworks__text--<%=sliders[i].text_high_or_low%>">
                                 <a href="#" class="howitworks__step border-around-22">STEP&nbsp;<%=i+1%></a>
                                 <p class="howitworks__title"><%= sliders[i].title %></p>
                                 <p class="howitworks__description"><%= sliders[i].text %></p>
@@ -49,40 +49,45 @@
         </section>
         <section id="partners">
             <div class="partners__container container">
-                <h2 class="partners__header">Meet a partner for your best holiday</h2>
+                <div class="partners__header"><h2>Meet a partner for your best holiday</h2></div>
                 <script type="text/template" id="partners__template">
                     <% for(var i=0;i<partners.length ;i++) { %>
                         <div class="partners__partner partners__partner--<%=i+1%>">
-                            <img class="partners__foto" src="img/partners/partner-<%=i+1%>" alt="" />
-                            <img class="partners__foto" src="img/partners/label-<%=i+1%>" alt="" />
+                            <div class="partners__picture">
+                                <img class="partners__foto" src="<%=partners[i].imageName%>" alt="" />
+                                <img class="partners__thumbnail" src="<%=partners[i].thumbnailName%>" alt="" />
+                            </div>
                             <p class="partners__name"><%= partners[i].name %></p>
-                            <p class="partners__text"><%= partners[i].text %></p>
+                            <p class="partners__description"><%= partners[i].description %></p>
                         </div>
-                    <% } %>
+                        <% } %>
                 </script>
                 <a href="#" class="partners__other border-around-22">See other partners</a>
             </div>
         </section>
         <section id="ideas">
             <div class="ideas__container container">
-                <h2 class="ideas__header">Discover holiday activity ideas</h2>
+                <div class="ideas__header"><h2>Discover holiday activity ideas</h2></div>
+                <div class="ideas__pictures"></div>
                 <script type="text/template" id="ideas__template">
-                    <% for(var i=0;i<ideas.length ;i++) { %>
-                        <div class="ideas__picture ideas__picture--isbig<%=ideas[i].isbig%>">
-                            <img class="ideas__foto" src="img/ideas/idea-<%=i+1%>" alt="" />
-                            <p class="ideas__text"><%= ideas[i].text%></p>
+                    <% for(var i=0;i<count;i++) { %> 
+                        <div class="ideas__picture">
+                            <img class="ideas__foto" src="<%=images[i].imageurl%>" alt="" />
+                            <p class="ideas__text"><%= images[i].word %></p>
                         </div>
                     <% } %>
                 </script>
             </div>
         </section>
-        <section class="searcher">
+        <section id="searcher">
             <div class="searcher__container container">
-                <h2 class="ideas__header">Discover holiday activity ideas</h2>
-                <h3 class="ideas__subheader">Hi! What are your holiday interests?</h3>
-                <div class="ideas__controls">
-                    <input class="ideas__input" type="text" placeholder="Enter your interests" />
-                    <a href="#" class="ideas__search border-around-22">Search partners</a>
+                <div class="searcher__header">
+                    <h2>Discover holiday activity ideas</h2>
+                    <h3>Hi! What are your holiday interests?</h3>
+                </div>
+                <div class="searcher__controls">
+                    <input class="searcher__input" type="text" name="search-picture" placeholder="Enter your interests" />
+                    <a href="#" class="searcher__search border-around-22">Search partners</a>
                 </div>
             </div>
         </section>

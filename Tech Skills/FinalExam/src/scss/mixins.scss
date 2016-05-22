@@ -20,7 +20,7 @@
     @media (max-width: 939px) and (min-width: 768px) { @content; }
   }
   @if $point == mobile {
-    @media (max-width: 767px),(max-device-width: 767px) { @content; }
+    @media (max-width: 767px)/*,(max-device-width: 767px)*/ { @content; }
   }
 }
 @mixin border-radius($radius) {

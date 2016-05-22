@@ -1,0 +1,62 @@
+﻿@import "variables.scss";
+@import "mixins.scss";
+
+#searcher{
+    @include breakpoint(mobile){
+        margin-top: 27px;
+    }
+}
+.searcher__header{
+    text-align: center;
+    @include breakpoint(mobile){
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    h2{
+        font-family: $fontSearcherHeader;
+        font-size: 22px;
+        @include breakpoint(mobile){
+            color: $colorSearcherHeader;
+            line-height: 1.2;
+        }
+    }
+
+    h3{
+        font-family: $fontSearcherSubHeader;
+        font-size: 18px;
+        @include breakpoint(mobile){
+            color: $colorSearcherSubHeader;
+            margin-top: 11px;
+        }
+    }
+}
+.searcher__controls{
+    @include breakpoint(mobile){
+        width: 284px;
+        margin: 19px auto 39px;
+    }
+}
+.searcher__input{
+        font-family: $fontSearcherInput;
+        font-size: 14px;
+        padding-left: 13px;
+        @include breakpoint(mobile){
+            color: $colorSearcherInput;
+            line-height: 2.5;
+            width: 93%;
+        }
+}
+.searcher__search{
+        font-family: $fontSearcherSearch;
+        font-size: 14px;
+        text-align: center;
+        @include breakpoint(mobile){
+            color: $colorSearcherSearch;
+            background-color: $colorSearcherSearchBG;
+            line-height: 3;
+            width: 99%;
+            display: block;
+            margin-top: 8px;
+        }
+}

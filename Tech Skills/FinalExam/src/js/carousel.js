@@ -1,4 +1,4 @@
-﻿function initCarousels(){
+﻿function populateCarousels(){
 
     // create content of carousels
     var titleSliders = ['Sed leo enim, condimentum', 'Morbi velit risus', 'Sed leo enim, condimentum'];
@@ -9,15 +9,18 @@
                     sliders: [{
                         images: [ 'img/sliders/foto-1.png', 'img/sliders/foto-2.png','img/sliders/foto-3.png'],
                         title: titleSliders[0], 
-                        text: textSliders[0] 
+                        text: textSliders[0],
+                        text_high_or_low: 'high'
                     },        {
                         images: [ 'img/sliders/foto-2.png', 'img/sliders/foto-3.png'],
                         title: titleSliders[1], 
-                        text: textSliders[1] 
+                        text: textSliders[1],
+                        text_high_or_low: 'low'
                     },        {
                         images: [ 'img/sliders/foto-3.png','img/sliders/foto-1.png'],
                         title: titleSliders[2], 
-                        text: textSliders[2] 
+                        text: textSliders[2],
+                        text_high_or_low: 'high'
                     }
                   ]
                 };

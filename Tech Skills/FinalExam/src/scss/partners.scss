@@ -1,0 +1,80 @@
+﻿@import "variables.scss";
+@import "mixins.scss";
+
+#partners{
+    @include breakpoint(mobile){
+        margin-top: 32px;
+    }
+}
+.partners__header{
+    text-align: center;
+    @include breakpoint(mobile){
+        margin-bottom: 10px;
+        width: 98%;
+    }
+
+    h2{
+        font-family: $fontPartnersHeader;
+        font-size: 22px;
+        @include breakpoint(mobile){
+            color: $colorPartnersHeader;
+            line-height: 1.2;
+        }
+    }
+}
+.partners__partner{
+    @include breakpoint(mobile){
+        margin-bottom: 25px;
+    }
+}
+.partners__picture{
+    @include breakpoint(mobile){
+        height: 130px;
+        width: 130px;
+    }
+    @include centerer(true,false);
+    position: relative;
+}
+.partners__foto{
+    @include centerer;
+}
+.partners__thumbnail{
+position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.partners__name{
+    text-align: center;
+    font-family: $fontPartnersName;
+    font-size: 14px;
+    @include breakpoint(mobile){
+        color: $colorPartnersName;
+        margin-top: 14px;
+    }
+}
+.partners__description{
+    text-align: center;
+    font-family: $fontPartnersDescription;
+    font-size: 14px;
+    @include breakpoint(mobile){
+        color: $colorPartnersDescription;
+        line-height: 1.2;
+        margin: 14px auto;
+        width: 70%;
+    }
+}
+.partners__other{
+    display: block;
+    text-align:center;
+    font-family: $fontPartnersOther;
+    font-size: 14px;
+    width: 86%;
+    margin: 30px auto;
+    color: #ff4e50;
+    border: 2px solid #ff4e50;
+    @include breakpoint(mobile){
+        line-height: 36px;
+    }
+
+}
+

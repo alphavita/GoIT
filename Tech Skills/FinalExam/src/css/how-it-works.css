@@ -1,25 +1,25 @@
-@media (max-width: 767px), (max-device-width: 767px) {
+@media (max-width: 767px) {
   #howitworks {
     margin-top: 37px; } }
 
 .howitworks__header {
   text-align: center; }
-  @media (max-width: 767px), (max-device-width: 767px) {
+  @media (max-width: 767px) {
     .howitworks__header {
       margin-bottom: 15px; } }
   .howitworks__header h2 {
     font-family: "Montserrat Bold", sans-serif;
     font-size: 22px; }
-    @media (max-width: 767px), (max-device-width: 767px) {
+    @media (max-width: 767px) {
       .howitworks__header h2 {
         color: #333333; } }
 
 .howitworks__slider {
   position: relative;
   overflow: hidden; }
-  @media (max-width: 767px), (max-device-width: 767px) {
+  @media (max-width: 767px) {
     .howitworks__slider {
-      margin: 3px auto;
+      margin: 3px auto 8px;
       width: 300px; } }
 
 .howitworks__list {
@@ -32,7 +32,7 @@
 .howitworks__item {
   float: left;
   z-index: 1; }
-  @media (max-width: 767px), (max-device-width: 767px) {
+  @media (max-width: 767px) {
     .howitworks__item img {
       width: 300px;
       height: 240px; } }
@@ -60,10 +60,15 @@
 
 .howitworks__text {
   position: absolute;
-  left: 20px;
-  top: 70px;
+  left: 19px;
   width: 88%;
   z-index: 10; }
+
+.howitworks__text--high {
+  top: 70px; }
+
+.howitworks__text--low {
+  top: 98px; }
 
 .howitworks__step {
   font-family: "Montserrat Regular", sans-serif;
@@ -93,7 +98,9 @@
 .howitworks__prev, .howitworks__next {
   color: white;
   position: absolute;
-  top: 100px; }
+  top: 70px;
+  font-size: 60px;
+  font-family: "Roboto Thin", sans-serif; }
 
 .howitworks__prev {
   left: 0; }

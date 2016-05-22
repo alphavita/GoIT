@@ -1,0 +1,51 @@
+﻿@import "variables.scss";
+@import "mixins.scss";
+
+#ideas{
+    @include breakpoint(mobile){
+        margin-top: 34px;
+    }
+}
+.ideas__header{
+    text-align: center;
+    @include breakpoint(mobile){
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    h2{
+        font-family: $fontIdeasHeader;
+        font-size: 22px;
+        @include breakpoint(mobile){
+            color: $colorIdeasHeader;
+            line-height: 1.2;
+        }
+    }
+}
+.ideas__pictures{
+    @include breakpoint(mobile){
+        width: 300px;
+        margin: 13px auto;
+    }
+}
+.ideas__picture{
+    @include breakpoint(mobile){
+        margin-bottom: 10px;
+    }
+}
+.ideas__foto{
+    display: block;
+    @include breakpoint(mobile){
+        width: 300px;
+        height:120px;
+    }
+}
+.ideas__text{
+    display: block;
+    @include centerer;
+    @include breakpoint(mobile){
+       font-family: $fontIdeasText;
+       font-size: 22px;
+       color: $colorIdeasText;
+    }
+}

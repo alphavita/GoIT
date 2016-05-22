@@ -10,7 +10,8 @@ module.exports = function(grunt) {
                 }
             },
             css: {
-                src: ['src/css/reset.css','src/css/fonts.css','src/css/promo.css','src/css/how-it-works.css'],
+                src: ['src/css/reset.css','src/css/fonts.css','src/css/promo.css','src/css/how-it-works.css',
+				'src/css/partners.css','src/css/ideas.css','src/css/searcher.css','src/css/footer.css'],
                 dest: 'css/final-exam.min.css',
                 options: {
                     separator: '\n\r'
@@ -42,7 +43,11 @@ module.exports = function(grunt) {
 		dist: {
 			files: {
 				'src/css/promo.css': 'src/scss/promo.scss',
-				'src/css/how-it-works.css': 'src/scss/how-it-works.scss'
+				'src/css/how-it-works.css': 'src/scss/how-it-works.scss',
+				'src/css/partners.css': 'src/scss/partners.scss',
+				'src/css/ideas.css': 'src/scss/ideas.scss',
+				'src/css/searcher.css': 'src/scss/searcher.scss',
+				'src/css/footer.css': 'src/scss/footer.scss',
 			}
 		}
 	},

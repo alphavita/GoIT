@@ -1,0 +1,37 @@
+footer {
+  border-top: 4px solid #ff4e50; }
+  @media (max-width: 767px) {
+    footer {
+      margin-top: 27px; } }
+
+.logo--footer {
+  display: block;
+  font-size: 16px;
+  color: #ff4e50;
+  text-align: center; }
+  @media (max-width: 767px) {
+    .logo--footer {
+      margin-top: 17px;
+      letter-spacing: 1px; } }
+
+.footer__company {
+  margin-top: 16px;
+  position: relative;
+  overflow: hidden; }
+  .footer__company p {
+    display: block;
+    text-align: center;
+    font-family: "Montserrat Bold", sans-serif;
+    font-size: 14px;
+    color: #333333; }
+  .footer__company ul {
+    margin-top: 5px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0); }
+  .footer__company li {
+    display: inline-block;
+    width: 40px;
+    font-family: "Roboto Light", sans-serif;
+    font-size: 14px;
+    color: #666666; }

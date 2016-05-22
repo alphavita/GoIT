@@ -1,6 +1,6 @@
 ﻿// Simple JavaScript Templating
 // John Resig – http://ejohn.org/ – MIT Licensed
-(function(){
+function initTemplates(){       //  пока только шаблонизатор Джона Ресига, потом еще добавим
     var cache = {};
 
     this.tmpl = function tmpl(str, data){
@@ -32,4 +32,4 @@
         // Provide some basic currying to the user
         return data ? fn( data ) : fn;
     };
-})();
+}

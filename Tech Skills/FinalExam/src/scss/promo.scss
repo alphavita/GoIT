@@ -40,7 +40,7 @@
         font-family: $fontAutorization;
         font-size: 14px;
         line-height: 2.3;
-        width: 80%;
+        width: 256px;
         @include centerer(true,false)
     }
 }
@@ -79,7 +79,7 @@
     text-align:center;
     font-family: $fontSubTitle;
     font-size: 18px;
-    width: 75%;
+    width: 70%;
     color: $colorSubTitle;
     @include centerer(true,false);
     @include breakpoint(mobile){

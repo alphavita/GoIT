@@ -1,3 +1,42 @@
-﻿.logo--footer{
+﻿@import "variables.scss";
+@import "mixins.scss";
+
+footer{
+    border-top: 4px solid $colorFooterBorder;
+    @include breakpoint(mobile){
+        margin-top: 27px;
+    }
+}
+.logo--footer{
+    display: block;
     font-size: 16px;
+    color: $colorFooterLogo;
+    text-align: center;
+    @include breakpoint(mobile){
+        margin-top: 17px;
+        letter-spacing: 1px;
+    }
+}
+.footer__company{
+    margin-top: 16px;
+    position: relative;
+    overflow: hidden;
+    p{
+        display: block;
+        text-align: center;
+        font-family: $fontFooterCompany;
+        font-size: 14px;
+        color: $colorFooterCompany;
+    }
+    ul{
+        margin-top: 5px;
+        @include centerer(true,false);
+    }
+    li{
+        display: inline-block;
+        width: 40px;
+        font-family: $fontFooterItem;
+        font-size: 14px;
+        color: $colorFooterItem;
+    }
 }

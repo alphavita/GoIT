@@ -12,7 +12,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 700px; }
-  @media (max-width: 767px), (max-device-width: 767px) {
+  @media (max-width: 767px) {
     #promo {
       background-image: url("../img/bg/promomobile.jpg");
       min-height: 540px; } }
@@ -26,7 +26,7 @@
 .logo--header {
   font-size: 20px;
   letter-spacing: 1px; }
-  @media (max-width: 767px), (max-device-width: 767px) {
+  @media (max-width: 767px) {
     .logo--header {
       top: 173px;
       color: white;
@@ -34,20 +34,20 @@
       left: 50%;
       transform: translate(-50%, 0); } }
 
-@media (max-width: 767px), (max-device-width: 767px) {
+@media (max-width: 767px) {
   .promo__autorization {
     top: 23px;
     font-family: "Montserrat Bold", sans-serif;
     font-size: 14px;
     line-height: 2.3;
-    width: 80%;
+    width: 256px;
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0); } }
 
 .promo__login {
   color: white; }
-  @media (max-width: 767px), (max-device-width: 767px) {
+  @media (max-width: 767px) {
     .promo__login {
       width: 84px;
       text-align: center;
@@ -56,7 +56,7 @@
 
 .promo__signup {
   color: white; }
-  @media (max-width: 767px), (max-device-width: 767px) {
+  @media (max-width: 767px) {
     .promo__signup {
       margin-right: 54px;
       width: 84px;
@@ -73,7 +73,7 @@
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0); }
-  @media (max-width: 767px), (max-device-width: 767px) {
+  @media (max-width: 767px) {
     .promo_title {
       top: 223px;
       line-height: 1.2; } }
@@ -82,12 +82,12 @@
   text-align: center;
   font-family: "Roboto Light", sans-serif;
   font-size: 18px;
-  width: 75%;
+  width: 70%;
   color: white;
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0); }
-  @media (max-width: 767px), (max-device-width: 767px) {
+  @media (max-width: 767px) {
     .promo_subtitle {
       top: 304px;
       line-height: 1.2; } }
@@ -102,7 +102,7 @@
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0); }
-  @media (max-width: 767px), (max-device-width: 767px) {
+  @media (max-width: 767px) {
     .promo__find {
       top: 363px;
       line-height: 2.9; } }

@@ -1,5 +1,9 @@
 ﻿$(function () {
-    initCarousels();
+    initTemplates();
+    populateCarousels();
+    initAutorization();
+    populatePartners();
+    initSearchPictures();
 });
 
 
