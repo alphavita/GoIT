@@ -5,20 +5,26 @@
     @include breakpoint(mobile){
         margin-top: 34px;
     }
+    @include breakpoint(tablet){
+        margin-top: 97px;
+    }
 }
 .ideas__header{
     text-align: center;
+    width: 100%;
     @include breakpoint(mobile){
         margin-bottom: 10px;
-        width: 100%;
+    }
+    @include breakpoint(tablet){
+        margin-bottom: 10px;
     }
 
     h2{
         font-family: $fontIdeasHeader;
         font-size: 22px;
+        color: $colorIdeasHeader;
+        line-height: 1.2;
         @include breakpoint(mobile){
-            color: $colorIdeasHeader;
-            line-height: 1.2;
         }
     }
 }
@@ -27,10 +33,22 @@
         width: 300px;
         margin: 13px auto;
     }
+    @include breakpoint(tablet){
+        width: 748px;
+        margin: 33px auto;
+    }
 }
 .ideas__picture{
     @include breakpoint(mobile){
         margin-bottom: 10px;
+    }
+    @include breakpoint(tablet){
+        margin-bottom: 20px;
+    }
+}
+.ideas__picture--width2{
+     @include breakpoint(tablet){
+        margin-bottom: 20px;
     }
 }
 .ideas__foto{
@@ -39,13 +57,20 @@
         width: 300px;
         height:120px;
     }
+    @include breakpoint(tablet){
+        width: 236px;
+        height:310px;
+    }
+}
+.ideas__foto--width2{
+    @include breakpoint(tablet){
+        width: 492px;
+    }
 }
 .ideas__text{
     display: block;
     @include centerer;
-    @include breakpoint(mobile){
-       font-family: $fontIdeasText;
-       font-size: 22px;
-       color: $colorIdeasText;
-    }
+    font-family: $fontIdeasText;
+    font-size: 22px;
+    color: $colorIdeasText;
 }

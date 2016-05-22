@@ -5,6 +5,9 @@
     @include breakpoint(mobile){
         margin-top: 32px;
     }
+    @include breakpoint(tablet){
+        margin-top: 94px;
+    }
 }
 .partners__header{
     text-align: center;
@@ -12,7 +15,10 @@
         margin-bottom: 10px;
         width: 98%;
     }
-
+    @include breakpoint(tablet){
+        margin-bottom: 25px;
+        width: 98%;
+    }
     h2{
         font-family: $fontPartnersHeader;
         font-size: 22px;
@@ -20,19 +26,35 @@
             color: $colorPartnersHeader;
             line-height: 1.2;
         }
-    }
+         @include breakpoint(tablet){
+            color: $colorPartnersHeader;
+            line-height: 1.2;
+        }
+   }
 }
 .partners__partner{
     @include breakpoint(mobile){
         margin-bottom: 25px;
     }
-}
-.partners__picture{
-    @include breakpoint(mobile){
-        height: 130px;
-        width: 130px;
+    @include breakpoint(tablet){
+        display: inline-block;
+        width: 300px;
+        height: 260px;
+        margin-left: 104px;
+        margin-right: -148px;
+        position: relative;
     }
-    @include centerer(true,false);
+} 
+.partners__picture{
+    height: 130px;
+    width: 130px;
+    @include breakpoint(mobile){
+        @include centerer(true,false);
+    }
+    @include breakpoint(tablet){
+        left: 50%;
+        transform: translate(-50%, 0);    
+    }
     position: relative;
 }
 .partners__foto{
@@ -47,20 +69,30 @@ position: absolute;
     text-align: center;
     font-family: $fontPartnersName;
     font-size: 14px;
+    color: $colorPartnersName;
     @include breakpoint(mobile){
-        color: $colorPartnersName;
         margin-top: 14px;
+    }
+    @include breakpoint(tablet){
+        margin-top: 16px;
     }
 }
 .partners__description{
     text-align: center;
     font-family: $fontPartnersDescription;
     font-size: 14px;
+    color: $colorPartnersDescription;
+    line-height: 1.2;
     @include breakpoint(mobile){
-        color: $colorPartnersDescription;
-        line-height: 1.2;
         margin: 14px auto;
         width: 70%;
+    }
+    @include breakpoint(tablet){
+        width: 230px;
+        height: 70px;
+        display: block;
+        margin-top: 15px;
+        @include centerer(true,false);
     }
 }
 .partners__other{
@@ -68,12 +100,17 @@ position: absolute;
     text-align:center;
     font-family: $fontPartnersOther;
     font-size: 14px;
-    width: 86%;
-    margin: 30px auto;
+    margin: 0 auto;
     color: #ff4e50;
     border: 2px solid #ff4e50;
     @include breakpoint(mobile){
         line-height: 36px;
+        width: 86%;
+    }
+    @include breakpoint(tablet){
+        line-height: 36px;
+        width: 190px;
+        margin-top: 16px;
     }
 
 }

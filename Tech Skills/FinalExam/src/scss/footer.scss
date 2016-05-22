@@ -6,6 +6,9 @@ footer{
     @include breakpoint(mobile){
         margin-top: 27px;
     }
+    @include breakpoint(tablet){
+        margin-top: 27px;
+    }
 }
 .logo--footer{
     display: block;
@@ -13,6 +16,10 @@ footer{
     color: $colorFooterLogo;
     text-align: center;
     @include breakpoint(mobile){
+        margin-top: 17px;
+        letter-spacing: 1px;
+    }
+    @include breakpoint(tablet){
         margin-top: 17px;
         letter-spacing: 1px;
     }
@@ -55,9 +62,20 @@ footer{
         margin-top: 35px;
         letter-spacing: -1px;
     }
+    @include breakpoint(tablet){
+        text-align: center;
+        margin-top: 35px;
+        letter-spacing: -1px;
+    }
 }
 .footer__copyright{
     @include breakpoint(mobile){
+        @include centerer(true,false);
+        margin-top: 15px;
+        margin-bottom: 18px;
+        text-align: center;
+    }
+    @include breakpoint(tablet){
         @include centerer(true,false);
         margin-top: 15px;
         margin-bottom: 18px;

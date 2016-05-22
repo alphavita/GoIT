@@ -2,11 +2,19 @@
   #partners {
     margin-top: 32px; } }
 
+@media (max-width: 939px) and (min-width: 768px) {
+  #partners {
+    margin-top: 94px; } }
+
 .partners__header {
   text-align: center; }
   @media (max-width: 767px) {
     .partners__header {
       margin-bottom: 10px;
+      width: 98%; } }
+  @media (max-width: 939px) and (min-width: 768px) {
+    .partners__header {
+      margin-bottom: 25px;
       width: 98%; } }
   .partners__header h2 {
     font-family: "Montserrat Bold", sans-serif;
@@ -15,20 +23,37 @@
       .partners__header h2 {
         color: #333333;
         line-height: 1.2; } }
+    @media (max-width: 939px) and (min-width: 768px) {
+      .partners__header h2 {
+        color: #333333;
+        line-height: 1.2; } }
 
 @media (max-width: 767px) {
   .partners__partner {
     margin-bottom: 25px; } }
 
+@media (max-width: 939px) and (min-width: 768px) {
+  .partners__partner {
+    display: inline-block;
+    width: 300px;
+    height: 260px;
+    margin-left: 104px;
+    margin-right: -148px;
+    position: relative; } }
+
 .partners__picture {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0);
+  height: 130px;
+  width: 130px;
   position: relative; }
   @media (max-width: 767px) {
     .partners__picture {
-      height: 130px;
-      width: 130px; } }
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, 0); } }
+  @media (max-width: 939px) and (min-width: 768px) {
+    .partners__picture {
+      left: 50%;
+      transform: translate(-50%, 0); } }
 
 .partners__foto {
   position: absolute;
@@ -44,32 +69,49 @@
 .partners__name {
   text-align: center;
   font-family: "Montserrat Bold", sans-serif;
-  font-size: 14px; }
+  font-size: 14px;
+  color: #333333; }
   @media (max-width: 767px) {
     .partners__name {
-      color: #333333;
       margin-top: 14px; } }
+  @media (max-width: 939px) and (min-width: 768px) {
+    .partners__name {
+      margin-top: 16px; } }
 
 .partners__description {
   text-align: center;
   font-family: "Roboto Light", sans-serif;
-  font-size: 14px; }
+  font-size: 14px;
+  color: #666666;
+  line-height: 1.2; }
   @media (max-width: 767px) {
     .partners__description {
-      color: #666666;
-      line-height: 1.2;
       margin: 14px auto;
       width: 70%; } }
+  @media (max-width: 939px) and (min-width: 768px) {
+    .partners__description {
+      width: 230px;
+      height: 70px;
+      display: block;
+      margin-top: 15px;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, 0); } }
 
 .partners__other {
   display: block;
   text-align: center;
   font-family: "Montserrat Bold", sans-serif;
   font-size: 14px;
-  width: 86%;
-  margin: 30px auto;
+  margin: 0 auto;
   color: #ff4e50;
   border: 2px solid #ff4e50; }
   @media (max-width: 767px) {
     .partners__other {
-      line-height: 36px; } }
+      line-height: 36px;
+      width: 86%; } }
+  @media (max-width: 939px) and (min-width: 768px) {
+    .partners__other {
+      line-height: 36px;
+      width: 190px;
+      margin-top: 16px; } }

@@ -2,51 +2,72 @@
   #searcher {
     margin-top: 27px; } }
 
+@media (max-width: 939px) and (min-width: 768px) {
+  #searcher {
+    margin-top: 44px; } }
+
 .searcher__header {
   text-align: center; }
   @media (max-width: 767px) {
     .searcher__header {
       margin-bottom: 10px;
       width: 100%; } }
+  @media (max-width: 939px) and (min-width: 768px) {
+    .searcher__header {
+      margin-bottom: 10px;
+      width: 100%; } }
   .searcher__header h2 {
     font-family: "Montserrat Bold", sans-serif;
-    font-size: 22px; }
-    @media (max-width: 767px) {
-      .searcher__header h2 {
-        color: #333333;
-        line-height: 1.2; } }
+    font-size: 22px;
+    color: #333333;
+    line-height: 1.2; }
   .searcher__header h3 {
     font-family: "Roboto Light", sans-serif;
-    font-size: 18px; }
+    font-size: 18px;
+    color: #333333; }
     @media (max-width: 767px) {
       .searcher__header h3 {
-        color: #333333;
         margin-top: 11px; } }
+    @media (max-width: 939px) and (min-width: 768px) {
+      .searcher__header h3 {
+        margin-top: 31px; } }
 
 @media (max-width: 767px) {
   .searcher__controls {
     width: 284px;
     margin: 19px auto 39px; } }
 
+@media (max-width: 939px) and (min-width: 768px) {
+  .searcher__controls {
+    width: 400px;
+    margin: 40px auto; } }
+
 .searcher__input {
   font-family: "Roboto Light", sans-serif;
   font-size: 14px;
-  padding-left: 13px; }
+  padding-left: 13px;
+  color: #999999;
+  line-height: 2.5; }
   @media (max-width: 767px) {
     .searcher__input {
-      color: #999999;
-      line-height: 2.5;
       width: 93%; } }
+  @media (max-width: 939px) and (min-width: 768px) {
+    .searcher__input {
+      width: 218px; } }
 
 .searcher__search {
   font-family: "Montserrat Bold", sans-serif;
   font-size: 14px;
-  text-align: center; }
+  text-align: center;
+  color: white;
+  background-color: #ff4e50;
+  line-height: 3; }
   @media (max-width: 767px) {
     .searcher__search {
-      color: white;
-      background-color: #ff4e50;
-      line-height: 3;
-      width: 99%;
       display: block;
+      width: 99%;
       margin-top: 8px; } }
+  @media (max-width: 939px) and (min-width: 768px) {
+    .searcher__search {
+      width: 160px;
+      display: inline-block; } }

@@ -5,20 +5,23 @@
     @include breakpoint(mobile){
         margin-top: 37px;
     }
+    @include breakpoint(tablet){
+        margin-top: 97px;
+    }
 }
 .howitworks__header{
     text-align: center;
     @include breakpoint(mobile){
         margin-bottom: 15px;
     }
+    @include breakpoint(tablet){
+        margin-bottom: 35px;
+    }
 
     h2{
         font-family: $fontHowitworksHeader;
         font-size: 22px;
-        @include breakpoint(mobile){
-            color: $colorHowitworksHeader;
-        }
-
+        color: $colorHowitworksHeader;
     }
 }
 .howitworks__slider {
@@ -27,6 +30,11 @@
     @include breakpoint(mobile){
         margin: 3px auto 8px;
         width: 300px;
+    }
+    @include breakpoint(tablet){
+        float: left;
+        margin: 0 10px;
+        width: 236px;
     }
 }
 .howitworks__list{
@@ -44,6 +52,10 @@
         @include breakpoint(mobile){
             width: 300px;
             height: 240px; 
+        }
+        @include breakpoint(tablet){
+            width: 236px;
+            height: 402px; 
         }
     }
 }
@@ -74,10 +86,20 @@
   z-index: 10; 
 }
 .howitworks__text--high {
-  top: 70px;
+    @include breakpoint(mobile){
+            top: 70px;
+    }
+    @include breakpoint(tablet){
+            top: 214px;
+    }
 }
 .howitworks__text--low {
-  top: 98px;
+    @include breakpoint(mobile){
+            top: 98px;
+    }
+    @include breakpoint(tablet){
+            top: 260px;
+    }
 }
 
 .howitworks__step{
@@ -108,13 +130,29 @@
 .howitworks__prev,.howitworks__next{
     color: $colorHowitworksArrow;
     position: absolute;
-    top: 70px;
-    font-size: 60px;
     font-family: $fontHowitworksArrow;
+    @include breakpoint(mobile){
+        top: 70px;
+        font-size: 60px;
+    }
+    @include breakpoint(tablet){
+        top: -17px;
+        font-size: 140px;
+    }
 }
 .howitworks__prev{
-    left:0;
+    @include breakpoint(mobile){
+        left:0;
+    }
+    @include breakpoint(tablet){
+        left:10px;
+    }
 }
 .howitworks__next{
-    right:0;
+    @include breakpoint(mobile){
+        right:0;
+    }
+    @include breakpoint(tablet){
+        right:10px;
+    }
 }

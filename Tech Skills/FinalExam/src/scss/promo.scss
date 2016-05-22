@@ -5,6 +5,8 @@
 }
 .container{
     margin: 0 auto;
+    position: relative;
+    overflow: hidden;
 }
 .border-around-22{
     border-radius: 22px;
@@ -18,9 +20,13 @@
         background-image: url("../img/bg/promomobile.jpg");
         min-height: 540px;
     }
+    @include breakpoint(tablet){
+        background-image: url("../img/bg/promotablet.jpg");
+        min-height: 700px;
+    }
 }
 .promo__container{
-    position: relative;
+    overflow: visible;
 }
 .logo{
     font-family: $fontLogo;
@@ -28,76 +34,111 @@
 .logo--header{
     font-size: 20px;
     letter-spacing: 1px;
+    color: $colorLogoHeader;
     @include breakpoint(mobile){
         top: 173px;
-        color: $colorLogoHeader;
         @include centerer(true,false);
+    }
+    @include breakpoint(tablet){
+        position:absolute;
+        top: 50px;
+        left: 50px;
     }
 }
 .promo__autorization{
+    font-family: $fontAutorization;
+    font-size: 14px;
     @include breakpoint(mobile){
         top: 23px;
-        font-family: $fontAutorization;
-        font-size: 14px;
         line-height: 2.3;
         width: 256px;
         @include centerer(true,false)
     }
+    @include breakpoint(tablet){
+        position: absolute;
+        top: 40px;
+        right: 50px;
+        line-height: 2.3;
+        width: 204px;
+    }
 }
 .promo__login{
     color: $colorLogin;
+    text-align: center;
+    float: left;
     @include breakpoint(mobile){
         width: 84px;
-        text-align: center;
-        float: left;
+        margin-left: 30px;
+    }
+    @include breakpoint(tablet){
+        width: 84px;
         margin-left: 30px;
     }
 }
 .promo__signup{
     color: $colorSignUp;
+    float: right;
+    text-align: center;
     @include breakpoint(mobile){
         margin-right: 54px;
         width: 84px;
-        float: right;
-        text-align: center;
+        margin-top: -2px;
+    }
+    @include breakpoint(tablet){
+        width: 84px;
         margin-top: -2px;
     }
 }
 .promo_title{
     text-align:center;
     font-family: $fontTitle;
-    font-size: 30px;
     width: 100%;
     color: $colorTitle;
     @include centerer(true,false);
     @include breakpoint(mobile){
         top: 223px;
         line-height: 1.2;
+        font-size: 30px;
+    }
+    @include breakpoint(tablet){
+        top: 216px;
+        line-height: 1.2;
+        font-size: 52px;
     }
 }
 .promo_subtitle{
     text-align:center;
     font-family: $fontSubTitle;
-    font-size: 18px;
     width: 70%;
     color: $colorSubTitle;
     @include centerer(true,false);
     @include breakpoint(mobile){
         top: 304px;
         line-height: 1.2;
+        font-size: 18px;
+    }
+    @include breakpoint(tablet){
+        top: 364px;
+        line-height: 1.2;
+        font-size: 24px;
     }
 }
 .promo__find{
     text-align:center;
     font-family: $fontPromoFind;
     font-size: 14px;
-    width: 88%;
     color: $colorPromoFind;
     background-color: $colorPromoFindBG;
     @include centerer(true,false);
     @include breakpoint(mobile){
         top: 363px;
         line-height: 2.9;
+        width: 282px;
+    }
+    @include breakpoint(tablet){
+        top: 426px;
+        line-height: 2.9;
+        width: 224px;
     }
 }
 .promo__active{

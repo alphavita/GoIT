@@ -5,6 +5,9 @@
     @include breakpoint(mobile){
         margin-top: 27px;
     }
+    @include breakpoint(tablet){
+        margin-top: 44px;
+    }
 }
 .searcher__header{
     text-align: center;
@@ -12,22 +15,27 @@
         margin-bottom: 10px;
         width: 100%;
     }
+    @include breakpoint(tablet){
+        margin-bottom: 10px;
+        width: 100%;
+    }
 
     h2{
         font-family: $fontSearcherHeader;
         font-size: 22px;
-        @include breakpoint(mobile){
-            color: $colorSearcherHeader;
-            line-height: 1.2;
-        }
+        color: $colorSearcherHeader;
+        line-height: 1.2;
     }
 
     h3{
         font-family: $fontSearcherSubHeader;
         font-size: 18px;
+        color: $colorSearcherSubHeader;
         @include breakpoint(mobile){
-            color: $colorSearcherSubHeader;
             margin-top: 11px;
+        }
+        @include breakpoint(tablet){
+            margin-top: 31px;
         }
     }
 }
@@ -36,27 +44,38 @@
         width: 284px;
         margin: 19px auto 39px;
     }
+    @include breakpoint(tablet){
+        width: 400px;
+        margin: 40px auto;
+    }
 }
 .searcher__input{
         font-family: $fontSearcherInput;
         font-size: 14px;
         padding-left: 13px;
+        color: $colorSearcherInput;
+        line-height: 2.5;
         @include breakpoint(mobile){
-            color: $colorSearcherInput;
-            line-height: 2.5;
             width: 93%;
+        }
+        @include breakpoint(tablet){
+            width: 218px;
         }
 }
 .searcher__search{
         font-family: $fontSearcherSearch;
         font-size: 14px;
         text-align: center;
+        color: $colorSearcherSearch;
+        background-color: $colorSearcherSearchBG;
+        line-height: 3;
         @include breakpoint(mobile){
-            color: $colorSearcherSearch;
-            background-color: $colorSearcherSearchBG;
-            line-height: 3;
-            width: 99%;
             display: block;
+            width: 99%;
             margin-top: 8px;
+        }
+        @include breakpoint(tablet){
+            width: 160px;
+            display: inline-block;   
         }
 }
