@@ -7,6 +7,15 @@
     margin: 0 auto;
     position: relative;
     overflow: hidden;
+    @include breakpoint(mobile){
+        width: 320px;
+    }
+    @include breakpoint(tablet){
+        width: 768px;
+    }
+    @include breakpoint(desktop){
+        width: 940px;
+    }
 }
 .border-around-22{
     border-radius: 22px;
@@ -22,6 +31,10 @@
     }
     @include breakpoint(tablet){
         background-image: url("../img/bg/promotablet.jpg");
+        min-height: 700px;
+    }
+    @include breakpoint(desktop){
+        background-image: url("../img/bg/promodesktop.jpg");
         min-height: 700px;
     }
 }
@@ -44,6 +57,11 @@
         top: 50px;
         left: 50px;
     }
+    @include breakpoint(desktop){
+        position:absolute;
+        top: 48px;
+        left: 0 ;
+    }
 }
 .promo__autorization{
     font-family: $fontAutorization;
@@ -61,32 +79,29 @@
         line-height: 2.3;
         width: 204px;
     }
+    @include breakpoint(desktop){
+        position: absolute;
+        top: 40px;
+        right: 0;
+        line-height: 2.3;
+        width: 204px;
+    }
 }
 .promo__login{
     color: $colorLogin;
     text-align: center;
     float: left;
-    @include breakpoint(mobile){
-        width: 84px;
-        margin-left: 30px;
-    }
-    @include breakpoint(tablet){
-        width: 84px;
-        margin-left: 30px;
-    }
+    width: 84px;
+    margin-left: 30px;
 }
 .promo__signup{
     color: $colorSignUp;
     float: right;
     text-align: center;
+    width: 84px;
+    margin-top: -2px;
     @include breakpoint(mobile){
         margin-right: 54px;
-        width: 84px;
-        margin-top: -2px;
-    }
-    @include breakpoint(tablet){
-        width: 84px;
-        margin-top: -2px;
     }
 }
 .promo_title{
@@ -94,15 +109,18 @@
     font-family: $fontTitle;
     width: 100%;
     color: $colorTitle;
+    line-height: 1.2;
     @include centerer(true,false);
     @include breakpoint(mobile){
         top: 223px;
-        line-height: 1.2;
         font-size: 30px;
     }
     @include breakpoint(tablet){
         top: 216px;
-        line-height: 1.2;
+        font-size: 52px;
+    }
+    @include breakpoint(desktop){
+        top: 216px;
         font-size: 52px;
     }
 }
@@ -111,15 +129,18 @@
     font-family: $fontSubTitle;
     width: 70%;
     color: $colorSubTitle;
+    line-height: 1.2;
     @include centerer(true,false);
     @include breakpoint(mobile){
         top: 304px;
-        line-height: 1.2;
         font-size: 18px;
     }
     @include breakpoint(tablet){
         top: 364px;
-        line-height: 1.2;
+        font-size: 24px;
+    }
+    @include breakpoint(desktop){
+        top: 364px;
         font-size: 24px;
     }
 }
@@ -129,15 +150,18 @@
     font-size: 14px;
     color: $colorPromoFind;
     background-color: $colorPromoFindBG;
+    line-height: 2.9;
     @include centerer(true,false);
     @include breakpoint(mobile){
         top: 363px;
-        line-height: 2.9;
         width: 282px;
     }
     @include breakpoint(tablet){
         top: 426px;
-        line-height: 2.9;
+        width: 224px;
+    }
+    @include breakpoint(desktop){
+        top: 426px;
         width: 224px;
     }
 }

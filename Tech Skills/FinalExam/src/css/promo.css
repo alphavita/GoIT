@@ -5,6 +5,15 @@
   margin: 0 auto;
   position: relative;
   overflow: hidden; }
+  @media (max-width: 767px) {
+    .container {
+      width: 320px; } }
+  @media (max-width: 939px) and (min-width: 768px) {
+    .container {
+      width: 768px; } }
+  @media (min-width: 940px) {
+    .container {
+      width: 940px; } }
 
 .border-around-22 {
   border-radius: 22px; }
@@ -21,6 +30,10 @@
   @media (max-width: 939px) and (min-width: 768px) {
     #promo {
       background-image: url("../img/bg/promotablet.jpg");
+      min-height: 700px; } }
+  @media (min-width: 940px) {
+    #promo {
+      background-image: url("../img/bg/promodesktop.jpg");
       min-height: 700px; } }
 
 .promo__container {
@@ -44,6 +57,11 @@
       position: absolute;
       top: 50px;
       left: 50px; } }
+  @media (min-width: 940px) {
+    .logo--header {
+      position: absolute;
+      top: 48px;
+      left: 0; } }
 
 .promo__autorization {
   font-family: "Montserrat Bold", sans-serif;
@@ -63,51 +81,51 @@
       right: 50px;
       line-height: 2.3;
       width: 204px; } }
+  @media (min-width: 940px) {
+    .promo__autorization {
+      position: absolute;
+      top: 40px;
+      right: 0;
+      line-height: 2.3;
+      width: 204px; } }
 
 .promo__login {
   color: white;
   text-align: center;
-  float: left; }
-  @media (max-width: 767px) {
-    .promo__login {
-      width: 84px;
-      margin-left: 30px; } }
-  @media (max-width: 939px) and (min-width: 768px) {
-    .promo__login {
-      width: 84px;
-      margin-left: 30px; } }
+  float: left;
+  width: 84px;
+  margin-left: 30px; }
 
 .promo__signup {
   color: white;
   float: right;
-  text-align: center; }
+  text-align: center;
+  width: 84px;
+  margin-top: -2px; }
   @media (max-width: 767px) {
     .promo__signup {
-      margin-right: 54px;
-      width: 84px;
-      margin-top: -2px; } }
-  @media (max-width: 939px) and (min-width: 768px) {
-    .promo__signup {
-      width: 84px;
-      margin-top: -2px; } }
+      margin-right: 54px; } }
 
 .promo_title {
   text-align: center;
   font-family: "Montserrat Bold", sans-serif;
   width: 100%;
   color: white;
+  line-height: 1.2;
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0); }
   @media (max-width: 767px) {
     .promo_title {
       top: 223px;
-      line-height: 1.2;
       font-size: 30px; } }
   @media (max-width: 939px) and (min-width: 768px) {
     .promo_title {
       top: 216px;
-      line-height: 1.2;
+      font-size: 52px; } }
+  @media (min-width: 940px) {
+    .promo_title {
+      top: 216px;
       font-size: 52px; } }
 
 .promo_subtitle {
@@ -115,18 +133,21 @@
   font-family: "Roboto Light", sans-serif;
   width: 70%;
   color: white;
+  line-height: 1.2;
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0); }
   @media (max-width: 767px) {
     .promo_subtitle {
       top: 304px;
-      line-height: 1.2;
       font-size: 18px; } }
   @media (max-width: 939px) and (min-width: 768px) {
     .promo_subtitle {
       top: 364px;
-      line-height: 1.2;
+      font-size: 24px; } }
+  @media (min-width: 940px) {
+    .promo_subtitle {
+      top: 364px;
       font-size: 24px; } }
 
 .promo__find {
@@ -135,18 +156,21 @@
   font-size: 14px;
   color: white;
   background-color: #ff4e50;
+  line-height: 2.9;
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0); }
   @media (max-width: 767px) {
     .promo__find {
       top: 363px;
-      line-height: 2.9;
       width: 282px; } }
   @media (max-width: 939px) and (min-width: 768px) {
     .promo__find {
       top: 426px;
-      line-height: 2.9;
+      width: 224px; } }
+  @media (min-width: 940px) {
+    .promo__find {
+      top: 426px;
       width: 224px; } }
 
 .promo__active {

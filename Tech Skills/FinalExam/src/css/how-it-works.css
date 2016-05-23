@@ -6,12 +6,19 @@
   #howitworks {
     margin-top: 97px; } }
 
+@media (min-width: 940px) {
+  #howitworks {
+    margin-top: 97px; } }
+
 .howitworks__header {
   text-align: center; }
   @media (max-width: 767px) {
     .howitworks__header {
       margin-bottom: 15px; } }
   @media (max-width: 939px) and (min-width: 768px) {
+    .howitworks__header {
+      margin-bottom: 35px; } }
+  @media (min-width: 940px) {
     .howitworks__header {
       margin-bottom: 35px; } }
   .howitworks__header h2 {
@@ -31,6 +38,15 @@
       float: left;
       margin: 0 10px;
       width: 236px; } }
+  @media (min-width: 940px) {
+    .howitworks__slider {
+      float: left;
+      margin-left: 20px;
+      width: 300px; } }
+
+@media (min-width: 940px) {
+  .howitworks__slider:first-of-type {
+    margin-left: 0; } }
 
 .howitworks__list {
   width: 20000em;
@@ -50,6 +66,10 @@
     .howitworks__item img {
       width: 236px;
       height: 402px; } }
+  @media (min-width: 940px) {
+    .howitworks__item img {
+      width: 300px;
+      height: 400px; } }
 
 .howitworks__paginator {
   top: 430px;
@@ -86,11 +106,19 @@
   .howitworks__text--high {
     top: 214px; } }
 
+@media (min-width: 940px) {
+  .howitworks__text--high {
+    top: 214px; } }
+
 @media (max-width: 767px) {
   .howitworks__text--low {
     top: 98px; } }
 
 @media (max-width: 939px) and (min-width: 768px) {
+  .howitworks__text--low {
+    top: 260px; } }
+
+@media (min-width: 940px) {
   .howitworks__text--low {
     top: 260px; } }
 
@@ -131,6 +159,10 @@
     .howitworks__prev, .howitworks__next {
       top: -17px;
       font-size: 140px; } }
+  @media (min-width: 940px) {
+    .howitworks__prev, .howitworks__next {
+      top: -17px;
+      font-size: 140px; } }
 
 @media (max-width: 767px) {
   .howitworks__prev {
@@ -140,10 +172,18 @@
   .howitworks__prev {
     left: 10px; } }
 
+@media (min-width: 940px) {
+  .howitworks__prev {
+    left: 10px; } }
+
 @media (max-width: 767px) {
   .howitworks__next {
     right: 0; } }
 
 @media (max-width: 939px) and (min-width: 768px) {
+  .howitworks__next {
+    right: 10px; } }
+
+@media (min-width: 940px) {
   .howitworks__next {
     right: 10px; } }

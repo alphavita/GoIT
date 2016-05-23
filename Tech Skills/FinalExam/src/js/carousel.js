@@ -29,7 +29,7 @@
 
     // init carousels
     var carouselSelectors = {
-        carouselSelector: '.howitworks__slider--number',
+        carouselSelector: '.howitworks__slider:nth(number)',
         listSelector: '.howitworks__list',
         itemSelector: '.howitworks__item',
         btnPrevSelector: '.howitworks__prev--number',
@@ -40,7 +40,7 @@
     var arrSliders=[];
     for (var i = 1; i <= 3; i++) {
         var obj = $.extend({},carouselSelectors);
-        obj.carouselSelector = obj.carouselSelector.replace('number',i+'');
+        obj.carouselSelector = obj.carouselSelector.replace('number',(i-1)+'');
         obj.btnPrevSelector = obj.btnPrevSelector.replace('number',i+'');
         obj.btnNextSelector = obj.btnNextSelector.replace('number',i+'');
         arrSliders.push(new gavCarousel(0, 1, 1,obj))

@@ -156,6 +156,15 @@ a{
   margin: 0 auto;
   position: relative;
   overflow: hidden; }
+  @media (max-width: 767px) {
+    .container {
+      width: 320px; } }
+  @media (max-width: 939px) and (min-width: 768px) {
+    .container {
+      width: 768px; } }
+  @media (min-width: 940px) {
+    .container {
+      width: 940px; } }
 
 .border-around-22 {
   border-radius: 22px; }
@@ -172,6 +181,10 @@ a{
   @media (max-width: 939px) and (min-width: 768px) {
     #promo {
       background-image: url("../img/bg/promotablet.jpg");
+      min-height: 700px; } }
+  @media (min-width: 940px) {
+    #promo {
+      background-image: url("../img/bg/promodesktop.jpg");
       min-height: 700px; } }
 
 .promo__container {
@@ -195,6 +208,11 @@ a{
       position: absolute;
       top: 50px;
       left: 50px; } }
+  @media (min-width: 940px) {
+    .logo--header {
+      position: absolute;
+      top: 48px;
+      left: 0; } }
 
 .promo__autorization {
   font-family: "Montserrat Bold", sans-serif;
@@ -214,51 +232,51 @@ a{
       right: 50px;
       line-height: 2.3;
       width: 204px; } }
+  @media (min-width: 940px) {
+    .promo__autorization {
+      position: absolute;
+      top: 40px;
+      right: 0;
+      line-height: 2.3;
+      width: 204px; } }
 
 .promo__login {
   color: white;
   text-align: center;
-  float: left; }
-  @media (max-width: 767px) {
-    .promo__login {
-      width: 84px;
-      margin-left: 30px; } }
-  @media (max-width: 939px) and (min-width: 768px) {
-    .promo__login {
-      width: 84px;
-      margin-left: 30px; } }
+  float: left;
+  width: 84px;
+  margin-left: 30px; }
 
 .promo__signup {
   color: white;
   float: right;
-  text-align: center; }
+  text-align: center;
+  width: 84px;
+  margin-top: -2px; }
   @media (max-width: 767px) {
     .promo__signup {
-      margin-right: 54px;
-      width: 84px;
-      margin-top: -2px; } }
-  @media (max-width: 939px) and (min-width: 768px) {
-    .promo__signup {
-      width: 84px;
-      margin-top: -2px; } }
+      margin-right: 54px; } }
 
 .promo_title {
   text-align: center;
   font-family: "Montserrat Bold", sans-serif;
   width: 100%;
   color: white;
+  line-height: 1.2;
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0); }
   @media (max-width: 767px) {
     .promo_title {
       top: 223px;
-      line-height: 1.2;
       font-size: 30px; } }
   @media (max-width: 939px) and (min-width: 768px) {
     .promo_title {
       top: 216px;
-      line-height: 1.2;
+      font-size: 52px; } }
+  @media (min-width: 940px) {
+    .promo_title {
+      top: 216px;
       font-size: 52px; } }
 
 .promo_subtitle {
@@ -266,18 +284,21 @@ a{
   font-family: "Roboto Light", sans-serif;
   width: 70%;
   color: white;
+  line-height: 1.2;
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0); }
   @media (max-width: 767px) {
     .promo_subtitle {
       top: 304px;
-      line-height: 1.2;
       font-size: 18px; } }
   @media (max-width: 939px) and (min-width: 768px) {
     .promo_subtitle {
       top: 364px;
-      line-height: 1.2;
+      font-size: 24px; } }
+  @media (min-width: 940px) {
+    .promo_subtitle {
+      top: 364px;
       font-size: 24px; } }
 
 .promo__find {
@@ -286,18 +307,21 @@ a{
   font-size: 14px;
   color: white;
   background-color: #ff4e50;
+  line-height: 2.9;
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0); }
   @media (max-width: 767px) {
     .promo__find {
       top: 363px;
-      line-height: 2.9;
       width: 282px; } }
   @media (max-width: 939px) and (min-width: 768px) {
     .promo__find {
       top: 426px;
-      line-height: 2.9;
+      width: 224px; } }
+  @media (min-width: 940px) {
+    .promo__find {
+      top: 426px;
       width: 224px; } }
 
 .promo__active {
@@ -311,12 +335,19 @@ a{
   #howitworks {
     margin-top: 97px; } }
 
+@media (min-width: 940px) {
+  #howitworks {
+    margin-top: 97px; } }
+
 .howitworks__header {
   text-align: center; }
   @media (max-width: 767px) {
     .howitworks__header {
       margin-bottom: 15px; } }
   @media (max-width: 939px) and (min-width: 768px) {
+    .howitworks__header {
+      margin-bottom: 35px; } }
+  @media (min-width: 940px) {
     .howitworks__header {
       margin-bottom: 35px; } }
   .howitworks__header h2 {
@@ -336,6 +367,15 @@ a{
       float: left;
       margin: 0 10px;
       width: 236px; } }
+  @media (min-width: 940px) {
+    .howitworks__slider {
+      float: left;
+      margin-left: 20px;
+      width: 300px; } }
+
+@media (min-width: 940px) {
+  .howitworks__slider:first-of-type {
+    margin-left: 0; } }
 
 .howitworks__list {
   width: 20000em;
@@ -355,6 +395,10 @@ a{
     .howitworks__item img {
       width: 236px;
       height: 402px; } }
+  @media (min-width: 940px) {
+    .howitworks__item img {
+      width: 300px;
+      height: 400px; } }
 
 .howitworks__paginator {
   top: 430px;
@@ -391,11 +435,19 @@ a{
   .howitworks__text--high {
     top: 214px; } }
 
+@media (min-width: 940px) {
+  .howitworks__text--high {
+    top: 214px; } }
+
 @media (max-width: 767px) {
   .howitworks__text--low {
     top: 98px; } }
 
 @media (max-width: 939px) and (min-width: 768px) {
+  .howitworks__text--low {
+    top: 260px; } }
+
+@media (min-width: 940px) {
   .howitworks__text--low {
     top: 260px; } }
 
@@ -436,6 +488,10 @@ a{
     .howitworks__prev, .howitworks__next {
       top: -17px;
       font-size: 140px; } }
+  @media (min-width: 940px) {
+    .howitworks__prev, .howitworks__next {
+      top: -17px;
+      font-size: 140px; } }
 
 @media (max-width: 767px) {
   .howitworks__prev {
@@ -445,11 +501,19 @@ a{
   .howitworks__prev {
     left: 10px; } }
 
+@media (min-width: 940px) {
+  .howitworks__prev {
+    left: 10px; } }
+
 @media (max-width: 767px) {
   .howitworks__next {
     right: 0; } }
 
 @media (max-width: 939px) and (min-width: 768px) {
+  .howitworks__next {
+    right: 10px; } }
+
+@media (min-width: 940px) {
   .howitworks__next {
     right: 10px; } }
 
@@ -499,16 +563,9 @@ a{
 .partners__picture {
   height: 130px;
   width: 130px;
-  position: relative; }
-  @media (max-width: 767px) {
-    .partners__picture {
-      position: absolute;
-      left: 50%;
-      transform: translate(-50%, 0); } }
-  @media (max-width: 939px) and (min-width: 768px) {
-    .partners__picture {
-      left: 50%;
-      transform: translate(-50%, 0); } }
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0); }
 
 .partners__foto {
   position: absolute;
@@ -682,8 +739,8 @@ a{
 
 @media (max-width: 939px) and (min-width: 768px) {
   .searcher__controls {
-    width: 400px;
-    margin: 40px auto; } }
+    width: 412px;
+    margin: 40px auto 70px; } }
 
 .searcher__input {
   font-family: "Roboto Light", sans-serif;
@@ -696,7 +753,7 @@ a{
       width: 93%; } }
   @media (max-width: 939px) and (min-width: 768px) {
     .searcher__input {
-      width: 218px; } }
+      width: 222px; } }
 
 .searcher__search {
   font-family: "Montserrat Bold", sans-serif;
@@ -712,7 +769,8 @@ a{
       margin-top: 8px; } }
   @media (max-width: 939px) and (min-width: 768px) {
     .searcher__search {
-      width: 160px;
+      width: 163px;
+      margin-left: 5px;
       display: inline-block; } }
 
 footer {
@@ -725,57 +783,79 @@ a{
       margin-top: 27px; } }
 
 .logo--footer {
-  display: block;
   font-size: 16px;
   color: #ff4e50;
-  text-align: center; }
+  text-align: center;
+  letter-spacing: 1px; }
   @media (max-width: 767px) {
     .logo--footer {
-      margin-top: 17px;
-      letter-spacing: 1px; } }
+      display: block;
+      margin-top: 17px; } }
   @media (max-width: 939px) and (min-width: 768px) {
     .logo--footer {
-      margin-top: 17px;
-      letter-spacing: 1px; } }
+      margin-top: 39px;
+      display: block;
+      margin-left: 39px;
+      float: left; } }
 
-.footer__company {
-  margin-top: 16px;
-  position: relative; }
-  .footer__company p {
-    display: block;
-    text-align: center;
-    font-family: "Montserrat Bold", sans-serif;
-    font-size: 14px;
-    color: #333333; }
+@media (max-width: 767px) {
+  .footer__company {
+    margin-top: 16px;
+    position: relative; } }
+
+@media (max-width: 939px) and (min-width: 768px) {
+  .footer__company {
+    float: left;
+    display: inline-block;
+    margin: 39px 0 40px 81px; } }
+
+.footer__company p {
+  display: block;
+  text-align: center;
+  font-family: "Montserrat Bold", sans-serif;
+  font-size: 14px;
+  color: #333333; }
+
+@media (max-width: 767px) {
   .footer__company ul {
     margin-top: 5px;
     width: 196px;
     position: absolute;
     left: 50%;
-    transform: translate(-50%, 0); }
-  .footer__company li {
-    display: inline-block;
-    font-family: "Roboto Light", sans-serif;
-    font-size: 14px;
-    margin-left: 9px;
-    color: #666666; }
+    transform: translate(-50%, 0); } }
+
+.footer__company li {
+  font-family: "Roboto Light", sans-serif;
+  font-size: 14px;
+  color: #666666; }
+  @media (max-width: 767px) {
+    .footer__company li {
+      display: inline-block;
+      margin-left: 9px; } }
+  @media (max-width: 939px) and (min-width: 768px) {
+    .footer__company li {
+      display: block;
+      margin-top: 11.8px; } }
+
+@media (max-width: 767px) {
   .footer__company li:first-child {
-    margin-left: 0; }
+    margin-left: 0; } }
 
 .footer__partners {
   font-family: "Montserrat Bold", sans-serif;
   font-size: 16px;
-  color: #333333; }
+  color: #333333;
+  letter-spacing: -1px; }
   @media (max-width: 767px) {
     .footer__partners {
       text-align: center;
-      margin-top: 35px;
-      letter-spacing: -1px; } }
+      margin-top: 35px; } }
   @media (max-width: 939px) and (min-width: 768px) {
     .footer__partners {
-      text-align: center;
-      margin-top: 35px;
-      letter-spacing: -1px; } }
+      display: inline-block;
+      margin-left: 102px;
+      margin-top: 39px;
+      float: left; } }
 
 @media (max-width: 767px) {
   .footer__copyright {
@@ -788,17 +868,18 @@ a{
 
 @media (max-width: 939px) and (min-width: 768px) {
   .footer__copyright {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0);
-    margin-top: 15px;
-    margin-bottom: 18px;
-    text-align: center; } }
+    display: inline-block;
+    margin-right: 40px;
+    margin-top: 39px;
+    float: right; } }
 
 .footer__copyright p {
   font-family: "Montserrat Bold", sans-serif;
   font-size: 10px;
   color: #cccccc; }
+  @media (max-width: 939px) and (min-width: 768px) {
+    .footer__copyright p {
+      margin-left: 31px; } }
 
 .footer__copyright img {
   margin-top: 8px; }

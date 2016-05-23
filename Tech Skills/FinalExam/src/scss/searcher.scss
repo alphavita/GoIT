@@ -45,8 +45,8 @@
         margin: 19px auto 39px;
     }
     @include breakpoint(tablet){
-        width: 400px;
-        margin: 40px auto;
+        width: 412px;
+        margin: 40px auto 70px;
     }
 }
 .searcher__input{
@@ -59,7 +59,7 @@
             width: 93%;
         }
         @include breakpoint(tablet){
-            width: 218px;
+            width: 222px;
         }
 }
 .searcher__search{
@@ -75,7 +75,8 @@
             margin-top: 8px;
         }
         @include breakpoint(tablet){
-            width: 160px;
-            display: inline-block;   
+            width: 163px;
+            margin-left: 5px;
+            display: inline-block;
         }
 }

@@ -11,13 +11,13 @@ function getPictures(filter, count) {
             }
             $grid.masonry('remove', $('.ideas__picture'));
             var $items = $(tmpl('ideas__template', data));
+            $grid.append($items).masonry('appended', $items);
             if (window.innerWidth >= 768) {
                 if (data.count > 4)
-                    $('.ideas__picture:nth-child(5) img').addClass('ideas__foto--width2');
+                    $('img', $items).eq(4).addClass('ideas__foto--width2');
                 if (data.count > 5)                                        
-                    $('.ideas__picture:nth-child(6) img').addClass('ideas__foto--width2');
+                    $('img', $items).eq(5).addClass('ideas__foto--width2');
             }
-            $grid.append($items).masonry('appended', $items);
             $grid.masonry('layout');
         },
         error: function (xhr, textStatus, errorThrown) {

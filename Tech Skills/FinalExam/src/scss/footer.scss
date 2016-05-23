@@ -11,23 +11,31 @@ footer{
     }
 }
 .logo--footer{
-    display: block;
     font-size: 16px;
     color: $colorFooterLogo;
     text-align: center;
+    letter-spacing: 1px;
     @include breakpoint(mobile){
+        display: block;
         margin-top: 17px;
-        letter-spacing: 1px;
     }
     @include breakpoint(tablet){
-        margin-top: 17px;
-        letter-spacing: 1px;
+        margin-top: 39px;
+        display: block;
+        margin-left: 39px;
+        float: left;
     }
 }
 .footer__company{
-    margin-top: 16px;
-    position: relative;
-
+    @include breakpoint(mobile){
+        margin-top: 16px;
+        position: relative;
+    }
+    @include breakpoint(tablet){
+        float: left;
+        display: inline-block;
+        margin: 39px 0 40px 81px;
+    }
     p{
         display: block;
         text-align: center;
@@ -37,35 +45,46 @@ footer{
     }
 
     ul{
-        margin-top: 5px;
-        width: 196px;
-        @include centerer(true,false);
+        @include breakpoint(mobile){
+            margin-top: 5px;
+            width: 196px;
+            @include centerer(true,false);
+        }
     }
 
     li{
-        display: inline-block;
         font-family: $fontFooterItem;
         font-size: 14px;
-        margin-left: 9px;
         color: $colorFooterItem;
+        @include breakpoint(mobile){
+            display: inline-block;
+            margin-left: 9px;
+        }
+        @include breakpoint(tablet){
+            display: block;
+            margin-top: 11.8px;
+        }
     }
     li:first-child{
-        margin-left: 0;
+        @include breakpoint(mobile){
+            margin-left: 0;
+        }
     }
 }
 .footer__partners{
     font-family: $fontFooterPartners;
     font-size: 16px;
     color: $colorFooterPartners;
+    letter-spacing: -1px;
     @include breakpoint(mobile){
         text-align: center;
         margin-top: 35px;
-        letter-spacing: -1px;
     }
     @include breakpoint(tablet){
-        text-align: center;
-        margin-top: 35px;
-        letter-spacing: -1px;
+        display: inline-block;
+        margin-left: 102px;
+        margin-top: 39px;
+        float: left;
     }
 }
 .footer__copyright{
@@ -76,15 +95,18 @@ footer{
         text-align: center;
     }
     @include breakpoint(tablet){
-        @include centerer(true,false);
-        margin-top: 15px;
-        margin-bottom: 18px;
-        text-align: center;
+        display: inline-block;
+        margin-right: 40px;
+        margin-top: 39px;
+        float: right;
     }
     p{
         font-family: $fontFooterDesigned;
         font-size: 10px;
         color: $colorFooterDesigned;
+        @include breakpoint(tablet){
+            margin-left: 31px;
+        }
     }
     img{
         margin-top: 8px;

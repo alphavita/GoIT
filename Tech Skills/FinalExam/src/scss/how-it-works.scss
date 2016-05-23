@@ -8,6 +8,9 @@
     @include breakpoint(tablet){
         margin-top: 97px;
     }
+    @include breakpoint(desktop){
+        margin-top: 97px;
+    }
 }
 .howitworks__header{
     text-align: center;
@@ -17,7 +20,9 @@
     @include breakpoint(tablet){
         margin-bottom: 35px;
     }
-
+    @include breakpoint(desktop){
+        margin-bottom: 35px;
+    }
     h2{
         font-family: $fontHowitworksHeader;
         font-size: 22px;
@@ -35,6 +40,16 @@
         float: left;
         margin: 0 10px;
         width: 236px;
+    }
+    @include breakpoint(desktop){
+        float: left;
+        margin-left:20px;
+        width: 300px;
+    }
+}
+.howitworks__slider:first-of-type{
+    @include breakpoint(desktop){
+        margin-left: 0;
     }
 }
 .howitworks__list{
@@ -56,6 +71,10 @@
         @include breakpoint(tablet){
             width: 236px;
             height: 402px; 
+        }
+        @include breakpoint(desktop){
+            width: 300px;
+            height: 400px; 
         }
     }
 }
@@ -92,12 +111,18 @@
     @include breakpoint(tablet){
             top: 214px;
     }
+    @include breakpoint(desktop){
+            top: 214px;
+    }
 }
 .howitworks__text--low {
     @include breakpoint(mobile){
             top: 98px;
     }
     @include breakpoint(tablet){
+            top: 260px;
+    }
+    @include breakpoint(desktop){
             top: 260px;
     }
 }
@@ -139,6 +164,10 @@
         top: -17px;
         font-size: 140px;
     }
+    @include breakpoint(desktop){
+        top: -17px;
+        font-size: 140px;
+    }
 }
 .howitworks__prev{
     @include breakpoint(mobile){
@@ -147,12 +176,18 @@
     @include breakpoint(tablet){
         left:10px;
     }
+    @include breakpoint(desktop){
+        left:10px;
+    }
 }
 .howitworks__next{
     @include breakpoint(mobile){
         right:0;
     }
     @include breakpoint(tablet){
+        right:10px;
+    }
+    @include breakpoint(desktop){
         right:10px;
     }
 }

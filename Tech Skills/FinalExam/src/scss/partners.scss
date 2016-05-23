@@ -48,14 +48,9 @@
 .partners__picture{
     height: 130px;
     width: 130px;
-    @include breakpoint(mobile){
-        @include centerer(true,false);
-    }
-    @include breakpoint(tablet){
-        left: 50%;
-        transform: translate(-50%, 0);    
-    }
     position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);    
 }
 .partners__foto{
     @include centerer;
