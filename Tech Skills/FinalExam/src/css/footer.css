@@ -1,11 +1,6 @@
 footer {
-  border-top: 4px solid #ff4e50; }
-  @media (max-width: 767px) {
-    footer {
-      margin-top: 27px; } }
-  @media (max-width: 939px) and (min-width: 768px) {
-    footer {
-      margin-top: 27px; } }
+  border-top: 4px solid #ff4e50;
+  margin-top: 27px; }
 
 .logo--footer {
   font-size: 16px;
@@ -22,6 +17,12 @@ footer {
       display: block;
       margin-left: 39px;
       float: left; } }
+  @media (min-width: 940px) {
+    .logo--footer {
+      margin-top: 39px;
+      display: block;
+      margin-left: -2px;
+      float: left; } }
 
 @media (max-width: 767px) {
   .footer__company {
@@ -33,6 +34,12 @@ footer {
     float: left;
     display: inline-block;
     margin: 39px 0 40px 81px; } }
+
+@media (min-width: 940px) {
+  .footer__company {
+    float: left;
+    display: inline-block;
+    margin: 41px 0 40px 96px; } }
 
 .footer__company p {
   display: block;
@@ -49,6 +56,10 @@ footer {
     left: 50%;
     transform: translate(-50%, 0); } }
 
+@media (min-width: 940px) {
+  .footer__company ul {
+    margin-top: 13px; } }
+
 .footer__company li {
   font-family: "Roboto Light", sans-serif;
   font-size: 14px;
@@ -61,8 +72,16 @@ footer {
     .footer__company li {
       display: block;
       margin-top: 11.8px; } }
+  @media (min-width: 940px) {
+    .footer__company li {
+      display: block;
+      margin-top: 11.8px; } }
 
 @media (max-width: 767px) {
+  .footer__company li:first-child {
+    margin-left: 0; } }
+
+@media (min-width: 940px) {
   .footer__company li:first-child {
     margin-left: 0; } }
 
@@ -79,6 +98,12 @@ footer {
     .footer__partners {
       display: inline-block;
       margin-left: 102px;
+      margin-top: 39px;
+      float: left; } }
+  @media (min-width: 940px) {
+    .footer__partners {
+      display: inline-block;
+      margin-left: 91px;
       margin-top: 39px;
       float: left; } }
 
@@ -98,11 +123,20 @@ footer {
     margin-top: 39px;
     float: right; } }
 
+@media (min-width: 940px) {
+  .footer__copyright {
+    display: inline-block;
+    margin-top: 39px;
+    float: right; } }
+
 .footer__copyright p {
   font-family: "Montserrat Bold", sans-serif;
   font-size: 10px;
   color: #cccccc; }
   @media (max-width: 939px) and (min-width: 768px) {
+    .footer__copyright p {
+      margin-left: 31px; } }
+  @media (min-width: 940px) {
     .footer__copyright p {
       margin-left: 31px; } }
 

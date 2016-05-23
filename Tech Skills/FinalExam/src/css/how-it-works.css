@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @media (max-width: 767px) {
   #howitworks {
     margin-top: 37px; } }
@@ -44,9 +45,11 @@
       margin-left: 20px;
       width: 300px; } }
 
-@media (min-width: 940px) {
-  .howitworks__slider:first-of-type {
-    margin-left: 0; } }
+.howitworks__slider:nth-child(2) {
+  /*   .howitworks__slider:first-of-type не работает. Почему, Марианна???   */ }
+  @media (min-width: 940px) {
+    .howitworks__slider:nth-child(2) {
+      margin-left: 0; } }
 
 .howitworks__list {
   width: 20000em;
@@ -108,7 +111,7 @@
 
 @media (min-width: 940px) {
   .howitworks__text--high {
-    top: 214px; } }
+    top: 230px; } }
 
 @media (max-width: 767px) {
   .howitworks__text--low {
@@ -161,7 +164,7 @@
       font-size: 140px; } }
   @media (min-width: 940px) {
     .howitworks__prev, .howitworks__next {
-      top: -17px;
+      top: 96px;
       font-size: 140px; } }
 
 @media (max-width: 767px) {

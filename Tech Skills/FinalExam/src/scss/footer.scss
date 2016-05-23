@@ -3,12 +3,7 @@
 
 footer{
     border-top: 4px solid $colorFooterBorder;
-    @include breakpoint(mobile){
-        margin-top: 27px;
-    }
-    @include breakpoint(tablet){
-        margin-top: 27px;
-    }
+    margin-top: 27px;
 }
 .logo--footer{
     font-size: 16px;
@@ -25,6 +20,12 @@ footer{
         margin-left: 39px;
         float: left;
     }
+    @include breakpoint(desktop){
+        margin-top: 39px;
+        display: block;
+        margin-left: -2px;
+        float: left;
+    }
 }
 .footer__company{
     @include breakpoint(mobile){
@@ -35,6 +36,11 @@ footer{
         float: left;
         display: inline-block;
         margin: 39px 0 40px 81px;
+    }
+    @include breakpoint(desktop){
+        float: left;
+        display: inline-block;
+        margin: 41px 0 40px 96px;
     }
     p{
         display: block;
@@ -50,6 +56,9 @@ footer{
             width: 196px;
             @include centerer(true,false);
         }
+        @include breakpoint(desktop){
+            margin-top: 13px;
+        }
     }
 
     li{
@@ -64,9 +73,16 @@ footer{
             display: block;
             margin-top: 11.8px;
         }
+        @include breakpoint(desktop){
+            display: block;
+            margin-top: 11.8px;
+        }
     }
     li:first-child{
         @include breakpoint(mobile){
+            margin-left: 0;
+        }
+        @include breakpoint(desktop){
             margin-left: 0;
         }
     }
@@ -86,6 +102,12 @@ footer{
         margin-top: 39px;
         float: left;
     }
+    @include breakpoint(desktop){
+        display: inline-block;
+        margin-left: 91px;
+        margin-top: 39px;
+        float: left;
+    }
 }
 .footer__copyright{
     @include breakpoint(mobile){
@@ -100,11 +122,19 @@ footer{
         margin-top: 39px;
         float: right;
     }
+    @include breakpoint(desktop){
+        display: inline-block;
+        margin-top: 39px;
+        float: right;
+    }
     p{
         font-family: $fontFooterDesigned;
         font-size: 10px;
         color: $colorFooterDesigned;
         @include breakpoint(tablet){
+            margin-left: 31px;
+        }
+        @include breakpoint(desktop){
             margin-left: 31px;
         }
     }

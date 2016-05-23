@@ -47,7 +47,7 @@
         width: 300px;
     }
 }
-.howitworks__slider:first-of-type{
+.howitworks__slider:nth-child(2){      /*   .howitworks__slider:first-of-type не работает. Почему, Марианна???   */
     @include breakpoint(desktop){
         margin-left: 0;
     }
@@ -112,7 +112,7 @@
             top: 214px;
     }
     @include breakpoint(desktop){
-            top: 214px;
+            top: 230px;
     }
 }
 .howitworks__text--low {
@@ -165,7 +165,7 @@
         font-size: 140px;
     }
     @include breakpoint(desktop){
-        top: -17px;
+        top: 96px;
         font-size: 140px;
     }
 }

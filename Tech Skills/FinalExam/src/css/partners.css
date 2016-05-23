@@ -1,8 +1,13 @@
+@charset "UTF-8";
 @media (max-width: 767px) {
   #partners {
     margin-top: 32px; } }
 
 @media (max-width: 939px) and (min-width: 768px) {
+  #partners {
+    margin-top: 94px; } }
+
+@media (min-width: 940px) {
   #partners {
     margin-top: 94px; } }
 
@@ -16,17 +21,15 @@
     .partners__header {
       margin-bottom: 25px;
       width: 98%; } }
+  @media (min-width: 940px) {
+    .partners__header {
+      margin-bottom: 25px;
+      width: 100%; } }
   .partners__header h2 {
     font-family: "Montserrat Bold", sans-serif;
-    font-size: 22px; }
-    @media (max-width: 767px) {
-      .partners__header h2 {
-        color: #333333;
-        line-height: 1.2; } }
-    @media (max-width: 939px) and (min-width: 768px) {
-      .partners__header h2 {
-        color: #333333;
-        line-height: 1.2; } }
+    font-size: 22px;
+    color: #333333;
+    line-height: 1.2; }
 
 @media (max-width: 767px) {
   .partners__partner {
@@ -40,6 +43,20 @@
     margin-left: 104px;
     margin-right: -148px;
     position: relative; } }
+
+@media (min-width: 940px) {
+  .partners__partner {
+    display: inline-block;
+    width: 220px;
+    height: 260px;
+    margin-left: 16px;
+    position: relative; } }
+
+.partners__partner:nth-child(2) {
+  /*.partners__partner:first-of-type{   не работает!!??????  */ }
+  @media (min-width: 940px) {
+    .partners__partner:nth-child(2) {
+      margin-left: 0; } }
 
 .partners__picture {
   height: 130px;
@@ -70,6 +87,9 @@
   @media (max-width: 939px) and (min-width: 768px) {
     .partners__name {
       margin-top: 16px; } }
+  @media (min-width: 940px) {
+    .partners__name {
+      margin-top: 18px; } }
 
 .partners__description {
   text-align: center;
@@ -84,6 +104,15 @@
   @media (max-width: 939px) and (min-width: 768px) {
     .partners__description {
       width: 230px;
+      height: 70px;
+      display: block;
+      margin-top: 15px;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, 0); } }
+  @media (min-width: 940px) {
+    .partners__description {
+      width: 216px;
       height: 70px;
       display: block;
       margin-top: 15px;
@@ -108,3 +137,8 @@
       line-height: 36px;
       width: 190px;
       margin-top: 16px; } }
+  @media (min-width: 940px) {
+    .partners__other {
+      line-height: 36px;
+      width: 190px;
+      margin-top: 20px; } }

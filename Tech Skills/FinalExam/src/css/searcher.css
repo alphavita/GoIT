@@ -6,6 +6,10 @@
   #searcher {
     margin-top: 44px; } }
 
+@media (min-width: 940px) {
+  #searcher {
+    margin-top: 44px; } }
+
 .searcher__header {
   text-align: center; }
   @media (max-width: 767px) {
@@ -13,6 +17,10 @@
       margin-bottom: 10px;
       width: 100%; } }
   @media (max-width: 939px) and (min-width: 768px) {
+    .searcher__header {
+      margin-bottom: 10px;
+      width: 100%; } }
+  @media (min-width: 940px) {
     .searcher__header {
       margin-bottom: 10px;
       width: 100%; } }
@@ -31,6 +39,9 @@
     @media (max-width: 939px) and (min-width: 768px) {
       .searcher__header h3 {
         margin-top: 31px; } }
+    @media (min-width: 940px) {
+      .searcher__header h3 {
+        margin-top: 31px; } }
 
 @media (max-width: 767px) {
   .searcher__controls {
@@ -38,6 +49,11 @@
     margin: 19px auto 39px; } }
 
 @media (max-width: 939px) and (min-width: 768px) {
+  .searcher__controls {
+    width: 412px;
+    margin: 40px auto 70px; } }
+
+@media (min-width: 940px) {
   .searcher__controls {
     width: 412px;
     margin: 40px auto 70px; } }
@@ -54,6 +70,9 @@
   @media (max-width: 939px) and (min-width: 768px) {
     .searcher__input {
       width: 222px; } }
+  @media (min-width: 940px) {
+    .searcher__input {
+      width: 222px; } }
 
 .searcher__search {
   font-family: "Montserrat Bold", sans-serif;
@@ -68,6 +87,11 @@
       width: 99%;
       margin-top: 8px; } }
   @media (max-width: 939px) and (min-width: 768px) {
+    .searcher__search {
+      width: 163px;
+      margin-left: 5px;
+      display: inline-block; } }
+  @media (min-width: 940px) {
     .searcher__search {
       width: 163px;
       margin-left: 5px;

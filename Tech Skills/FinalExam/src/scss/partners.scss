@@ -8,6 +8,9 @@
     @include breakpoint(tablet){
         margin-top: 94px;
     }
+    @include breakpoint(desktop){
+        margin-top: 94px;
+    }
 }
 .partners__header{
     text-align: center;
@@ -19,18 +22,16 @@
         margin-bottom: 25px;
         width: 98%;
     }
+    @include breakpoint(desktop){
+        margin-bottom: 25px;
+        width: 100%;
+    }
     h2{
         font-family: $fontPartnersHeader;
         font-size: 22px;
-        @include breakpoint(mobile){
-            color: $colorPartnersHeader;
-            line-height: 1.2;
-        }
-         @include breakpoint(tablet){
-            color: $colorPartnersHeader;
-            line-height: 1.2;
-        }
-   }
+        color: $colorPartnersHeader;
+        line-height: 1.2;
+    }
 }
 .partners__partner{
     @include breakpoint(mobile){
@@ -44,7 +45,19 @@
         margin-right: -148px;
         position: relative;
     }
+    @include breakpoint(desktop){
+        display: inline-block;
+        width: 220px;
+        height: 260px;
+        margin-left: 16px;
+        position: relative;
+    }
 } 
+.partners__partner:nth-child(2){      /*.partners__partner:first-of-type{   не работает!!??????  */
+    @include breakpoint(desktop){
+        margin-left: 0;
+    }
+}
 .partners__picture{
     height: 130px;
     width: 130px;
@@ -52,6 +65,7 @@
     left: 50%;
     transform: translate(-50%, 0);    
 }
+
 .partners__foto{
     @include centerer;
 }
@@ -71,6 +85,9 @@ position: absolute;
     @include breakpoint(tablet){
         margin-top: 16px;
     }
+    @include breakpoint(desktop){
+        margin-top: 18px;
+    }
 }
 .partners__description{
     text-align: center;
@@ -84,6 +101,13 @@ position: absolute;
     }
     @include breakpoint(tablet){
         width: 230px;
+        height: 70px;
+        display: block;
+        margin-top: 15px;
+        @include centerer(true,false);
+    }
+    @include breakpoint(desktop){
+        width: 216px;
         height: 70px;
         display: block;
         margin-top: 15px;
@@ -107,6 +131,10 @@ position: absolute;
         width: 190px;
         margin-top: 16px;
     }
-
+    @include breakpoint(desktop){
+        line-height: 36px;
+        width: 190px;
+        margin-top: 20px;
+    }
 }
 

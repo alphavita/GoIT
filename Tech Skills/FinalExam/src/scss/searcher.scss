@@ -8,6 +8,9 @@
     @include breakpoint(tablet){
         margin-top: 44px;
     }
+    @include breakpoint(desktop){
+        margin-top: 44px;
+    }
 }
 .searcher__header{
     text-align: center;
@@ -16,6 +19,10 @@
         width: 100%;
     }
     @include breakpoint(tablet){
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    @include breakpoint(desktop){
         margin-bottom: 10px;
         width: 100%;
     }
@@ -37,6 +44,9 @@
         @include breakpoint(tablet){
             margin-top: 31px;
         }
+        @include breakpoint(desktop){
+            margin-top: 31px;
+        }
     }
 }
 .searcher__controls{
@@ -48,35 +58,47 @@
         width: 412px;
         margin: 40px auto 70px;
     }
+    @include breakpoint(desktop){
+        width: 412px;
+        margin: 40px auto 70px;
+    }
 }
 .searcher__input{
-        font-family: $fontSearcherInput;
-        font-size: 14px;
-        padding-left: 13px;
-        color: $colorSearcherInput;
-        line-height: 2.5;
-        @include breakpoint(mobile){
-            width: 93%;
-        }
-        @include breakpoint(tablet){
-            width: 222px;
-        }
+    font-family: $fontSearcherInput;
+    font-size: 14px;
+    padding-left: 13px;
+    color: $colorSearcherInput;
+    line-height: 2.5;
+    @include breakpoint(mobile){
+        width: 93%;
+    }
+    @include breakpoint(tablet){
+        width: 222px;
+    }
+    @include breakpoint(desktop){
+        width: 222px;
+    }
 }
 .searcher__search{
-        font-family: $fontSearcherSearch;
-        font-size: 14px;
-        text-align: center;
-        color: $colorSearcherSearch;
-        background-color: $colorSearcherSearchBG;
-        line-height: 3;
-        @include breakpoint(mobile){
-            display: block;
-            width: 99%;
-            margin-top: 8px;
-        }
-        @include breakpoint(tablet){
-            width: 163px;
-            margin-left: 5px;
-            display: inline-block;
-        }
+    font-family: $fontSearcherSearch;
+    font-size: 14px;
+    text-align: center;
+    color: $colorSearcherSearch;
+    background-color: $colorSearcherSearchBG;
+    line-height: 3;
+    @include breakpoint(mobile){
+        display: block;
+        width: 99%;
+        margin-top: 8px;
+    }
+    @include breakpoint(tablet){
+        width: 163px;
+        margin-left: 5px;
+        display: inline-block;
+    }
+    @include breakpoint(desktop){
+        width: 163px;
+        margin-left: 5px;
+        display: inline-block;
+    }
 }
