@@ -10,7 +10,18 @@ function getPictures(filter, count) {
                 return;
             }
             $grid.masonry('remove', $('.ideas__picture'));
-            var $items = $(tmpl('ideas__template', data));
+
+
+            // не работает в ie 8   !!! var $items = $(tmpl('ideas__template', data));
+            var items = tmpl('ideas__template', data);
+
+            var re = /(<div class=\s|\S<\/div>)/gi;
+            var found = items.match(re);
+            var $items = $(found);
+
+
+
+
             $grid.append($items).masonry('appended', $items);
             if (window.innerWidth >= 768) {
                 if (data.count > 4)
@@ -25,7 +36,8 @@ function getPictures(filter, count) {
         }
     });
 }
-function initSearchPictures(){
+function initSearchPictures() {
+    $.support.cors = true;   //   !!! ie
     $('.searcher__search').on('click', function (e) {
         e.preventDefault();
         var searchText = $('input[name="search-picture"]').val();
@@ -35,7 +47,7 @@ function initSearchPictures(){
         }
         getPictures(searchText, 7);
         $('input[name="search-picture"]').focus().select();
-        $(this).scrollView();
+//         $(this).scrollView();
     });
     $('input[name="search-picture"]').on('keyup', function (e) {
         if (e.which == 13)            

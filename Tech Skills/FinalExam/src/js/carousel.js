@@ -25,7 +25,8 @@
                   ]
                 };
     var htmlData = tmpl('howitworks__template',contentForSlidersTemplate );
-    $(htmlData).insertBefore($('#howitworks__template'));
+    // не работает в ie 8   !!!  $(htmlData).insertBefore($('#howitworks__template'));
+    document.querySelector('.howitworks__container').innerHTML+=htmlData;
 
     // init carousels
     var carouselSelectors = {

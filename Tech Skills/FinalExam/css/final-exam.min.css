@@ -828,7 +828,7 @@ a{
   font-size: 14px;
   padding-left: 13px;
   color: #999999;
-  line-height: 2.5; }
+  height: 36px; }
   @media (max-width: 767px) {
     .searcher__input {
       width: 93%; } }

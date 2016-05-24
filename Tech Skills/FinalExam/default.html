@@ -5,7 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ДЗ Tech Skills JS Module 19-20</title>
     <link rel="stylesheet" href="css/final-exam.min.css" />
-    <script src="js/jquery-1.12.2.min.js" type="text/javascript"></script>
+    <!--[if IE]>
+        <!--[if lt IE 9]>
+            <script src="http://code.jquery.com/jquery-1.9.0.js" type="text/javascript"></script>
+        <![endif]-->
+        <!--[if gte IE 9]><!-->
+            <script src="http://code.jquery.com/jquery-2.0.0.js" type="text/javascript"></script>
+        <!--[endif]-->
+<!--        <script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/jquery-ajaxtransport-xdomainrequest/1.0.0/jquery.xdomainrequest.min.js'></script>
+-->
+    <![endif]-->
+    <!--[if !IE]>-->
+        <script src="js/jquery-1.12.2.min.js" type="text/javascript"></script>
+        <script src="js/masonry.pkgd.min.js" type="text/javascript"></script>
+    <!--<![endif]-->
+    <script src="js/jquery.masonry.min-ie8.js" type="text/javascript"></script>
     <script src="js/final-exam.min.js" type="text/javascript"></script>
 </head>
 <body>
@@ -25,27 +39,28 @@
         <section id="howitworks">
             <div class="howitworks__container container">
                 <div class="howitworks__header"><h2>How Urlaubsglück works?</h2></div>
-                <script type="text/template" id="howitworks__template">
-                    <% for(var i=0;i < sliders.length ;i++) { %>
-                        <div class="howitworks__slider">
-                            <ul class="howitworks__list">
-                                <% for(var j=0;j<sliders[i].images.length;j++) { %>
-                                    <li class="howitworks__item">
-                                        <img src="<%= sliders[i].images[j] %>" alt="" />
-                                    </li>
-                                <% } %>
-                            </ul>
-                            <div class="howitworks__text  howitworks__text--<%=sliders[i].text_high_or_low%>">
-                                <a href="#" class="howitworks__step border-around-22">STEP&nbsp;<%=i+1%></a>
-                                <p class="howitworks__title"><%= sliders[i].title %></p>
-                                <p class="howitworks__description"><%= sliders[i].text %></p>
-                            </div>
-                            <a class="howitworks__prev howitworks__prev--<%=i+1%>" href="#">&lsaquo;</a>
-                            <a class="howitworks__next howitworks__next--<%=i+1%>" href="#">&rsaquo;</a>
-                        </div>
-                    <% } %>
-                </script>
             </div>
+            <script type="text/template" id="howitworks__template">
+                <% for(var i=0;i < sliders.length ;i++) { %>
+                <div class="howitworks__slider">
+                    <ul class="howitworks__list">
+                        <% for(var j=0;j
+                        <sliders[i].images.length;j++) { %>
+                            <li class="howitworks__item">
+                                <img src="<%= sliders[i].images[j] %>" alt="" />
+                            </li>
+                            <% } %>
+                    </ul>
+                    <div class="howitworks__text  howitworks__text--<%=sliders[i].text_high_or_low%>">
+                        <a href="#" class="howitworks__step border-around-22">STEP&nbsp;<%=i+1%></a>
+                        <p class="howitworks__title"><%= sliders[i].title %></p>
+                        <p class="howitworks__description"><%= sliders[i].text %></p>
+                    </div>
+                    <a class="howitworks__prev howitworks__prev--<%=i+1%>" href="#">&lsaquo;</a>
+                    <a class="howitworks__next howitworks__next--<%=i+1%>" href="#">&rsaquo;</a>
+                </div>
+                <% } %>
+            </script>
         </section>
         <section id="partners">
             <div class="partners__container container">
