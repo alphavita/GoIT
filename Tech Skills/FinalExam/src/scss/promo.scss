@@ -66,9 +66,9 @@
 .promo__autorization{
     font-family: $fontAutorization;
     font-size: 14px;
+    line-height: 2.3;
     @include breakpoint(mobile){
         top: 23px;
-        line-height: 2.3;
         width: 256px;
         @include centerer(true,false)
     }
@@ -76,14 +76,12 @@
         position: absolute;
         top: 40px;
         right: 50px;
-        line-height: 2.3;
         width: 204px;
     }
     @include breakpoint(desktop){
         position: absolute;
         top: 40px;
         right: 0;
-        line-height: 2.3;
         width: 204px;
     }
 }
@@ -167,4 +165,38 @@
 }
 .promo__active{
     border: $colorPromoActive solid 2px;
+}
+
+
+.ie8 {
+    #promo{
+        min-height:1000px;
+    }
+    .bg{
+        display:block;
+        position: absolute;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .container{
+        width: 940px;
+    }
+    .promo__container{
+        z-index: 5;
+     }
+    .logo--header{
+        position:absolute;
+        top: 48px;
+        left: 0 ;
+    }
+    .promo__autorization{
+        position: absolute;
+        top: 40px;
+        right: 0;
+        width: 204px;
+     }
+    .promo_title{
+        top: 216px;
+        font-size: 52px;
+    }
 }

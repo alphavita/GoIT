@@ -3,8 +3,8 @@
     populateCarousels();
     initAutorization();
     populatePartners();
-    if (isIE8() || isIE9()) 
-        initMasonry(window, jQuery);
+/*    if (isIE8() ) 
+        initMasonry(window, jQuery);*/
     initSearchPictures();
 });
 

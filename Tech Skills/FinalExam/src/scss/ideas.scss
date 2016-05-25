@@ -48,6 +48,9 @@
         margin: 33px auto;
     }
 }
+.ie8 .ideas__pictures/*, .ie9 .ideas__pictures*/{
+    width: 1100px;
+}
 .ideas__picture{
     @include breakpoint(mobile){
         margin-bottom: 10px;
@@ -66,6 +69,12 @@
     @include breakpoint(desktop){
         margin-bottom: 20px;
     }
+}
+.ie8 .ideas__picture/*,.ie9 .ideas__picture*/{
+    display: inline-block;
+    margin-left:20px;
+    width: 300px;
+    height:310px;
 }
 .ideas__foto{
     display: block;

@@ -12,24 +12,38 @@ function getPictures(filter, count) {
             $grid.masonry('remove', $('.ideas__picture'));
 
 
-            // не работает в ie 8   !!! var $items = $(tmpl('ideas__template', data));
             var items = tmpl('ideas__template', data);
-
             var re = /(<div class([\s\S]*?)\/div>)/gim;
             var found = items.match(re);
             var $items = $(found.join(''));
 
-
-
-
-            $grid.append($items).masonry('appended', $items);
             if (window.innerWidth >= 768) {
-                if (data.count > 4)
+                if (data.count > 4) {
                     $('img', $items).eq(4).addClass('ideas__foto--width2');
-                if (data.count > 5)                                        
+                    $items.eq(4).addClass('ideas__foto--width2');
+                }
+                if (data.count > 5) {
                     $('img', $items).eq(5).addClass('ideas__foto--width2');
+                }
             }
-            $grid.masonry('layout',$items);
+            if (!isIE8() && !isIE9()) {
+                $grid.append($items).masonry('appended', $items);
+                $grid.masonry('layout', $items);
+            }
+            else {
+                $grid.masonry('destroy')/*.masonry('reload', $items)*/;
+                $('.ideas__picture').html('');
+                var optionsMasonry = {
+                    itemSelector: '.ideas__picture',
+                    initLayout: true,
+                    gutter: 20,
+                    columnWidth: 300
+                };
+                $grid = $('.ideas__pictures').masonry(optionsMasonry);
+
+                $grid.append($items).masonry('appended', $items);
+                $grid.masonry('layout', $items);
+            }
         },
         error: function (xhr, textStatus, errorThrown) {
             alert('Ошибка с кодом ' + errorThrown);

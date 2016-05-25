@@ -65,11 +65,11 @@
 
 .promo__autorization {
   font-family: "Montserrat Bold", sans-serif;
-  font-size: 14px; }
+  font-size: 14px;
+  line-height: 2.3; }
   @media (max-width: 767px) {
     .promo__autorization {
       top: 23px;
-      line-height: 2.3;
       width: 256px;
       position: absolute;
       left: 50%;
@@ -79,14 +79,12 @@
       position: absolute;
       top: 40px;
       right: 50px;
-      line-height: 2.3;
       width: 204px; } }
   @media (min-width: 940px) {
     .promo__autorization {
       position: absolute;
       top: 40px;
       right: 0;
-      line-height: 2.3;
       width: 204px; } }
 
 .promo__login {
@@ -175,3 +173,33 @@
 
 .promo__active {
   border: white solid 2px; }
+
+.ie8 #promo {
+  min-height: 1000px; }
+
+.ie8 .bg {
+  display: block;
+  position: absolute;
+  margin: 0 auto;
+  width: 100%; }
+
+.ie8 .container {
+  width: 940px; }
+
+.ie8 .promo__container {
+  z-index: 5; }
+
+.ie8 .logo--header {
+  position: absolute;
+  top: 48px;
+  left: 0; }
+
+.ie8 .promo__autorization {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  width: 204px; }
+
+.ie8 .promo_title {
+  top: 216px;
+  font-size: 52px; }

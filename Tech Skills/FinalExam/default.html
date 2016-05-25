@@ -1,42 +1,46 @@
-﻿<!DOCTYPE html>
-<html>
+﻿<!DOCTYPE html>  
+<!--[if IE 8 ]> <html class="ie8"> <![endif]-->
+<!--[if IE 9 ]> <html class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]> <html> <![endif]-->
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>ДЗ Tech Skills JS Module 19-20</title>
+    <title>ДЗ Tech Skills Final Exam</title>
     <link rel="stylesheet" href="css/final-exam.min.css" />
-    <!--[if IE]>
-        <!--[if lt IE 9]>
-            <script src="http://code.jquery.com/jquery-1.9.0.js" type="text/javascript"></script>
-        <![endif]-->
-        <!--[if gte IE 9]><!-->
-            <script src="http://code.jquery.com/jquery-2.0.0.js" type="text/javascript"></script>
-        <!--[endif]-->
-<!--        <script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/jquery-ajaxtransport-xdomainrequest/1.0.0/jquery.xdomainrequest.min.js'></script>
--->
+    <!--[if IE 8]>
+        <script src="http://code.jquery.com/jquery-1.9.0.js" type="text/javascript"></script>
+        <script src="js/jquery.masonry.min-v3.js" type="text/javascript"></script>
     <![endif]-->
-    <!--[if !IE]>-->
-        <script src="js/jquery-1.12.2.min.js" type="text/javascript"></script>
+    <!--[if IE 9]>
+        <script src="http://code.jquery.com/jquery-1.9.0.js" type="text/javascript"></script>
+        <script src="js/jquery.masonry.min-v3.js" type="text/javascript"></script>
+    <![endif]-->
+    <![if !IE]>
+        <script src="http://code.jquery.com/jquery-2.0.0.js" type="text/javascript"></script>
         <script src="js/masonry.pkgd.min.js" type="text/javascript"></script>
-    <!--<![endif]-->
-    <script src="js/jquery.masonry.min-ie8.js" type="text/javascript"></script>
+    <![endif]>
+    <!--[if gt IE 9]>
+        <script src="http://code.jquery.com/jquery-2.0.0.js" type="text/javascript"></script>
+        <script src="js/masonry.pkgd.min.js" type="text/javascript"></script>
+    <![endif]-->
     <script src="js/final-exam.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div class="wrapper">
-        <section id="promo">
+        <div id="promo">
+            <!--[if IE 8 ]> <img src="img/bg/promodesktop.jpg" class="bg"><![endif]-->
             <div class="promo__container container">
                 <a href="#" class="logo logo--header">URLAUBSGLÜCK</a>
                 <div class="promo__autorization">
                     <a href="#" class="promo__login border-around-22">Log in</a>
                     <a href="#" class="promo__signup border-around-22">Sign up</a>
                 </div>
-                <h1 class="promo_title">SHARE YOUR<br/>HOLIDAY DREAMS</h1>
+                <h1 class="promo_title">SHARE YOUR<br />HOLIDAY DREAMS</h1>
                 <h3 class="promo_subtitle">And find the perfect partner to fullfill it</h3>
                 <a href="#" class="promo__find border-around-22">Find your holiday partner</a>
             </div>
-        </section>
-        <section id="howitworks">
+        </div>
+        <div id="howitworks">
             <div class="howitworks__container container">
                 <div class="howitworks__header"><h2>How Urlaubsglück works?</h2></div>
             </div>
@@ -61,12 +65,13 @@
                 </div>
                 <% } %>
             </script>
-        </section>
-        <section id="partners">
+        </div>
+        <div id="partners">
             <div class="partners__container container">
                 <div class="partners__header"><h2>Meet a partner for your best holiday</h2></div>
                 <script type="text/template" id="partners__template">
-                    <% for(var i=0;i<partners.length ;i++) { %>
+                    <% for(var i=0;i
+                    <partners.length ;i++) { %>
                         <div class="partners__partner">
                             <div class="partners__picture">
                                 <img class="partners__foto" src="<%=partners[i].imageName%>" alt="" />
@@ -79,22 +84,23 @@
                 </script>
                 <a href="#" class="partners__other border-around-22">See other partners</a>
             </div>
-        </section>
-        <section id="ideas">
+        </div>
+        <div id="ideas">
             <div class="ideas__container container">
                 <div class="ideas__header"><h2>Discover holiday activity ideas</h2></div>
                 <div class="ideas__pictures"></div>
                 <script type="text/template" id="ideas__template">
-                    <% for(var i=0;i<count;i++) { %> 
+                    <% for(var i=0;i
+                    <count;i++) { %>
                         <div class="ideas__picture">
                             <img class="ideas__foto" src="<%=images[i].imageurl%>" alt="" />
                             <p class="ideas__text"><%= images[i].word %></p>
                         </div>
-                    <% } %>
+                        <% } %>
                 </script>
             </div>
-        </section>
-        <section id="searcher">
+        </div>
+        <div id="searcher">
             <div class="searcher__container container">
                 <div class="searcher__header">
                     <h2>Discover holiday activity ideas</h2>
@@ -105,8 +111,8 @@
                     <a href="#" class="searcher__search border-around-22">Search partners</a>
                 </div>
             </div>
-        </section>
-        <footer>
+        </div>
+        <div id="footer">
             <div class="footer__container container">
                 <a href="#" class="logo logo--footer">URLAUBSGLÜCK</a>
                 <nav class="footer__company">
@@ -119,9 +125,9 @@
                     </ul>
                 </nav>
                 <p class="footer__partners">Partners</p>
-                <div class="footer__copyright"><p>DESIGNED BY</p><img  src="img/copyright.jpg" alt="" /></div>
+                <div class="footer__copyright"><p>DESIGNED BY</p><img src="img/copyright.jpg" alt="" /></div>
             </div>
-        </footer>
+        </div>
     </div>
 </body>
 </html>
