@@ -138,3 +138,44 @@ position: absolute;
     }
 }
 
+.ie8{
+    #partners{
+        margin-top: 94px;
+    }
+    .partners__header{
+        margin-bottom: 25px;
+        width: 100%;
+    }
+    .partners__partner{
+        display: block;
+        float: left;
+        width: 230px;
+        height: 260px;
+        position: relative;
+    }
+    .partners__picture{
+        left:0;
+        margin-left:50px
+     }
+    .partners__foto {
+        left: 0;
+        top: 0;
+    }
+    .partners__name{
+        margin-top: 18px;
+        width: 230px;
+    }
+    .partners__description{
+        width: 216px;
+        height: 70px;
+        display: block;
+        margin-top: 15px;
+    }
+    .partners__other{
+        clear: both;
+        line-height: 36px;
+        width: 190px;
+        margin-top: 20px;
+    }
+}
+

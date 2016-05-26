@@ -43,9 +43,6 @@
     width: 940px;
     margin: 33px auto; } }
 
-.ie8 .ideas__pictures {
-  width: 1100px; }
-
 @media (max-width: 767px) {
   .ideas__picture {
     margin-bottom: 10px; } }
@@ -65,12 +62,6 @@
 @media (min-width: 940px) {
   .ideas__picture--width2 {
     margin-bottom: 20px; } }
-
-.ie8 .ideas__picture {
-  display: inline-block;
-  margin-left: 20px;
-  width: 300px;
-  height: 310px; }
 
 .ideas__foto {
   display: block; }
@@ -104,3 +95,30 @@
   font-family: "Montserrat Bold", sans-serif;
   font-size: 22px;
   color: white; }
+
+.ie8 #ideas {
+  margin-top: 97px; }
+
+.ie8 .ideas__header {
+  margin-bottom: 10px; }
+
+.ie8 .ideas__pictures {
+  width: 1100px;
+  margin: 33px auto; }
+
+.ie8 .ideas__picture {
+  display: inline-block;
+  margin-left: 20px;
+  width: 300px;
+  height: 310px;
+  margin-bottom: 20px; }
+
+.ie8 .ideas__picture--width2 {
+  margin-bottom: 20px; }
+
+.ie8 .ideas__foto {
+  width: 300px;
+  height: 310px; }
+
+.ie8 .ideas__foto--width2 {
+  width: 620px; }

@@ -24,7 +24,10 @@
         }]
     };
     var htmlData = tmpl('partners__template', contentForPartnersTemplate);
-    // не работает в ie 8   !!!  $(htmlData).insertBefore($('#partners__template'));
+    // не работает в ie 8,9   !!!  $(htmlData).insertBefore($('#partners__template'));
     var pc = document.querySelector('.partners__container');
-    pc.innerHTML = pc.innerHTML.replace('<script',htmlData+'<script');
+    if(isIE8())
+        pc.innerHTML = pc.innerHTML.replace('<SCRIPT', htmlData + '<SCRIPT');
+    else
+        pc.innerHTML = pc.innerHTML.replace('<script', htmlData + '<script');
 }

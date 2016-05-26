@@ -17,7 +17,7 @@ function getPictures(filter, count) {
             var found = items.match(re);
             var $items = $(found.join(''));
 
-            if (window.innerWidth >= 768) {
+            if (window.innerWidth >= 768  || isIE8() ) {  /* чудеса творятся в ie8, в отладчике вижу, движок  не видит ширину окна  */ 
                 if (data.count > 4) {
                     $('img', $items).eq(4).addClass('ideas__foto--width2');
                     $items.eq(4).addClass('ideas__foto--width2');
@@ -43,6 +43,11 @@ function getPictures(filter, count) {
 
                 $grid.append($items).masonry('appended', $items);
                 $grid.masonry('layout', $items);
+                if(isIE8()) {                                  //  Марианна, это признанная автором ошибка плагина в версии v3 под IE8, 
+                    var x = $(optionsMasonry.itemSelector);    // но v4 под IE8 не работает совсем, а v2 совсем глюкавая
+                    var el = x.eq(x.length - 1);               // и поддерживается то сейчас только v4 !!!!
+                    el.css('left',parseInt(el.css('left'))*2); // поэтому подставляю костыль.
+                }
             }
         },
         error: function (xhr, textStatus, errorThrown) {

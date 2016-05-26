@@ -142,3 +142,41 @@
         margin-top: 8px;
     }
 }
+
+.ie8{
+    .logo--footer{
+        margin-top: 39px;
+        display: block;
+        float: left;
+    }
+
+    .footer__company{
+        float: left;
+        display: inline-block;
+        margin: 41px 0 40px 96px;
+        ul{
+            margin-top: 13px;
+        }
+        li{
+            display: block;
+            margin-top: 11.8px;
+        }
+        li:first-child{
+            margin-left: 0;
+        }
+    }
+    .footer__partners{
+        display: inline-block;
+        margin-left: 91px;
+        margin-top: 39px;
+        float: left;
+    }
+    .footer__copyright{
+        display: inline-block;
+        margin-top: 39px;
+        float: right;
+        p{
+            margin-left: 31px;
+        }
+    }
+}

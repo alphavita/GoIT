@@ -326,13 +326,14 @@ a{
   border: white solid 2px; }
 
 .ie8 #promo {
-  min-height: 1000px; }
+  min-height: 800px; }
 
 .ie8 .bg {
   display: block;
   position: absolute;
   margin: 0 auto;
-  width: 100%; }
+  width: 100%;
+  height: 750px; }
 
 .ie8 .container {
   width: 940px; }
@@ -353,7 +354,19 @@ a{
 
 .ie8 .promo_title {
   top: 216px;
-  font-size: 52px; }
+  font-size: 52px;
+  left: 0; }
+
+.ie8 .promo_subtitle {
+  top: 364px;
+  font-size: 24px;
+  left: 0;
+  width: 100%; }
+
+.ie8 .promo__find {
+  top: 426px;
+  left: 37%;
+  width: 224px; }
 
 @charset "UTF-8";
 @media (max-width: 767px) {
@@ -548,6 +561,41 @@ a{
   .howitworks__next {
     right: 10px; } }
 
+.ie8 .howitworks__header {
+  margin-bottom: 35px; }
+
+.ie8 .howitworks__slider {
+  float: left;
+  margin-left: 20px;
+  width: 290px; }
+
+.ie8 .howitworks__slider:first-child {
+  /*   .howitworks__slider:first-of-type не работает. Почему, Марианна???   */
+  margin-left: 0; }
+
+.ie8 .howitworks__item {
+  float: left;
+  z-index: 1;
+  width: 290px; }
+  .ie8 .howitworks__item img {
+    height: 400px; }
+
+.ie8 .howitworks__text--high {
+  top: 230px; }
+
+.ie8 .howitworks__text--low {
+  top: 260px; }
+
+.ie8 .howitworks__prev, .ie8 .howitworks__next {
+  top: 96px;
+  font-size: 140px; }
+
+.ie8 .howitworks__prev {
+  left: 10px; }
+
+.ie8 .howitworks__next {
+  right: 10px; }
+
 @charset "UTF-8";
 @media (max-width: 767px) {
   #partners {
@@ -693,6 +741,44 @@ a{
       width: 190px;
       margin-top: 20px; } }
 
+.ie8 #partners {
+  margin-top: 94px; }
+
+.ie8 .partners__header {
+  margin-bottom: 25px;
+  width: 100%; }
+
+.ie8 .partners__partner {
+  display: block;
+  float: left;
+  width: 230px;
+  height: 260px;
+  position: relative; }
+
+.ie8 .partners__picture {
+  left: 0;
+  margin-left: 50px; }
+
+.ie8 .partners__foto {
+  left: 0;
+  top: 0; }
+
+.ie8 .partners__name {
+  margin-top: 18px;
+  width: 230px; }
+
+.ie8 .partners__description {
+  width: 216px;
+  height: 70px;
+  display: block;
+  margin-top: 15px; }
+
+.ie8 .partners__other {
+  clear: both;
+  line-height: 36px;
+  width: 190px;
+  margin-top: 20px; }
+
 @media (max-width: 767px) {
   #ideas {
     margin-top: 34px; } }
@@ -738,9 +824,6 @@ a{
     width: 940px;
     margin: 33px auto; } }
 
-.ie8 .ideas__pictures {
-  width: 1100px; }
-
 @media (max-width: 767px) {
   .ideas__picture {
     margin-bottom: 10px; } }
@@ -760,12 +843,6 @@ a{
 @media (min-width: 940px) {
   .ideas__picture--width2 {
     margin-bottom: 20px; } }
-
-.ie8 .ideas__picture {
-  display: inline-block;
-  margin-left: 20px;
-  width: 300px;
-  height: 310px; }
 
 .ideas__foto {
   display: block; }
@@ -799,6 +876,33 @@ a{
   font-family: "Montserrat Bold", sans-serif;
   font-size: 22px;
   color: white; }
+
+.ie8 #ideas {
+  margin-top: 97px; }
+
+.ie8 .ideas__header {
+  margin-bottom: 10px; }
+
+.ie8 .ideas__pictures {
+  width: 1100px;
+  margin: 33px auto; }
+
+.ie8 .ideas__picture {
+  display: inline-block;
+  margin-left: 20px;
+  width: 300px;
+  height: 310px;
+  margin-bottom: 20px; }
+
+.ie8 .ideas__picture--width2 {
+  margin-bottom: 20px; }
+
+.ie8 .ideas__foto {
+  width: 300px;
+  height: 310px; }
+
+.ie8 .ideas__foto--width2 {
+  width: 620px; }
 
 @media (max-width: 767px) {
   #searcher {
@@ -898,6 +1002,29 @@ a{
       width: 163px;
       margin-left: 5px;
       display: inline-block; } }
+
+.ie8 #searcher {
+  margin-top: 44px; }
+
+.ie8 .searcher__header {
+  margin-bottom: 10px;
+  width: 100%; }
+  .ie8 .searcher__header h3 {
+    margin-top: 31px; }
+
+.ie8 .searcher__controls {
+  width: 412px;
+  margin: 40px auto 70px; }
+
+.ie8 .searcher__input {
+  width: 222px;
+  float: left;
+  line-height: 36px; }
+
+.ie8 .searcher__search {
+  width: 163px;
+  margin-left: 5px;
+  display: inline-block; }
 
 #footer {
   border-top: 4px solid #ff4e50;
@@ -1043,3 +1170,33 @@ a{
 
 .footer__copyright img {
   margin-top: 8px; }
+
+.ie8 .logo--footer {
+  margin-top: 39px;
+  display: block;
+  float: left; }
+
+.ie8 .footer__company {
+  float: left;
+  display: inline-block;
+  margin: 41px 0 40px 96px; }
+  .ie8 .footer__company ul {
+    margin-top: 13px; }
+  .ie8 .footer__company li {
+    display: block;
+    margin-top: 11.8px; }
+  .ie8 .footer__company li:first-child {
+    margin-left: 0; }
+
+.ie8 .footer__partners {
+  display: inline-block;
+  margin-left: 91px;
+  margin-top: 39px;
+  float: left; }
+
+.ie8 .footer__copyright {
+  display: inline-block;
+  margin-top: 39px;
+  float: right; }
+  .ie8 .footer__copyright p {
+    margin-left: 31px; }

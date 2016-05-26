@@ -102,3 +102,30 @@
         display: inline-block;
     }
 }
+
+.ie8{
+    #searcher{
+        margin-top: 44px;
+    }
+    .searcher__header{
+        margin-bottom: 10px;
+        width: 100%;
+        h3{
+                margin-top: 31px;
+        }
+    }
+    .searcher__controls{
+        width: 412px;
+        margin: 40px auto 70px;
+    }
+    .searcher__input{
+        width: 222px;
+        float: left;
+        line-height: 36px;
+    }
+    .searcher__search{
+        width: 163px;
+        margin-left: 5px;
+        display: inline-block;
+    }
+}

@@ -142,3 +142,33 @@
 
 .footer__copyright img {
   margin-top: 8px; }
+
+.ie8 .logo--footer {
+  margin-top: 39px;
+  display: block;
+  float: left; }
+
+.ie8 .footer__company {
+  float: left;
+  display: inline-block;
+  margin: 41px 0 40px 96px; }
+  .ie8 .footer__company ul {
+    margin-top: 13px; }
+  .ie8 .footer__company li {
+    display: block;
+    margin-top: 11.8px; }
+  .ie8 .footer__company li:first-child {
+    margin-left: 0; }
+
+.ie8 .footer__partners {
+  display: inline-block;
+  margin-left: 91px;
+  margin-top: 39px;
+  float: left; }
+
+.ie8 .footer__copyright {
+  display: inline-block;
+  margin-top: 39px;
+  float: right; }
+  .ie8 .footer__copyright p {
+    margin-left: 31px; }

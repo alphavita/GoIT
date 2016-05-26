@@ -175,13 +175,14 @@
   border: white solid 2px; }
 
 .ie8 #promo {
-  min-height: 1000px; }
+  min-height: 800px; }
 
 .ie8 .bg {
   display: block;
   position: absolute;
   margin: 0 auto;
-  width: 100%; }
+  width: 100%;
+  height: 750px; }
 
 .ie8 .container {
   width: 940px; }
@@ -202,4 +203,16 @@
 
 .ie8 .promo_title {
   top: 216px;
-  font-size: 52px; }
+  font-size: 52px;
+  left: 0; }
+
+.ie8 .promo_subtitle {
+  top: 364px;
+  font-size: 24px;
+  left: 0;
+  width: 100%; }
+
+.ie8 .promo__find {
+  top: 426px;
+  left: 37%;
+  width: 224px; }

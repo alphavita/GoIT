@@ -190,3 +190,38 @@
 @media (min-width: 940px) {
   .howitworks__next {
     right: 10px; } }
+
+.ie8 .howitworks__header {
+  margin-bottom: 35px; }
+
+.ie8 .howitworks__slider {
+  float: left;
+  margin-left: 20px;
+  width: 290px; }
+
+.ie8 .howitworks__slider:first-child {
+  /*   .howitworks__slider:first-of-type не работает. Почему, Марианна???   */
+  margin-left: 0; }
+
+.ie8 .howitworks__item {
+  float: left;
+  z-index: 1;
+  width: 290px; }
+  .ie8 .howitworks__item img {
+    height: 400px; }
+
+.ie8 .howitworks__text--high {
+  top: 230px; }
+
+.ie8 .howitworks__text--low {
+  top: 260px; }
+
+.ie8 .howitworks__prev, .ie8 .howitworks__next {
+  top: 96px;
+  font-size: 140px; }
+
+.ie8 .howitworks__prev {
+  left: 10px; }
+
+.ie8 .howitworks__next {
+  right: 10px; }

@@ -96,3 +96,26 @@
       width: 163px;
       margin-left: 5px;
       display: inline-block; } }
+
+.ie8 #searcher {
+  margin-top: 44px; }
+
+.ie8 .searcher__header {
+  margin-bottom: 10px;
+  width: 100%; }
+  .ie8 .searcher__header h3 {
+    margin-top: 31px; }
+
+.ie8 .searcher__controls {
+  width: 412px;
+  margin: 40px auto 70px; }
+
+.ie8 .searcher__input {
+  width: 222px;
+  float: left;
+  line-height: 36px; }
+
+.ie8 .searcher__search {
+  width: 163px;
+  margin-left: 5px;
+  display: inline-block; }
