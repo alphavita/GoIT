@@ -16,9 +16,12 @@
     @include breakpoint(desktop){
         width: 940px;
     }
-}
+} 
 .border-around-22{
+    -moz-border-radius: 22px;
+    -webkit-border-radius: 22px;
     border-radius: 22px;
+    -ms-behavior: url(pie.htc);
 }
 #promo{
     background-position: center top;
