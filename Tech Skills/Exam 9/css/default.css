@@ -26,14 +26,14 @@
     color: white;
     text-shadow: 0 0.5px 0.5px rgba(0, 0, 0, 0.3);
 }
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-   /* IE10-specific styles go here */
-  .end-logo{
+.ie10 .end-logo{
         background-color: transparent;
-        color: yellow;
-    }
+        color: rgb(83, 59, 94);
 }        
-
+.ie11 .end-logo{
+        background-color: transparent;
+        color: rgb(83, 59, 94);
+}        
 .end-logo{
     background: -moz-linear-gradient(left,  rgba(0,0,0,1) 0%, rgba(0,0,0,0.03) 31%, rgba(0,0,0,0) 32%, rgba(0,0,0,0) 100%);
     background: -webkit-linear-gradient(top,  rgb(50, 37, 57) 0%,rgb(83, 59, 94) 50%, rgb(116, 80, 131) 100%);
