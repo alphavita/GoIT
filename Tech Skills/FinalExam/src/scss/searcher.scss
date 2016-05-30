@@ -123,9 +123,20 @@
         float: left;
         line-height: 36px;
     }
-    .searcher__search{
-        width: 163px;
-        margin-left: 5px;
+    .searcher__search {
+        width: 120px;
+        float: left;
         display: inline-block;
+    }
+    .searcher__left-corner {
+        display:block;
+        float: left;
+        width: 23px;
+        margin-left: 5px;
+    }
+    .searcher__right-corner {
+        display:block;
+        float: left;
+        width: 24px;
     }
 }

@@ -355,6 +355,18 @@ a{
   right: 0;
   width: 204px; }
 
+.ie8 .promo__left-corner--login {
+  display: none; }
+
+.ie8 .promo__right-corner--login {
+  display: none; }
+
+.ie8 .promo__left-corner--signup {
+  display: none; }
+
+.ie8 .promo__right-corner--signup {
+  display: none; }
+
 .ie8 .promo_title {
   top: 216px;
   font-size: 52px;
@@ -374,9 +386,31 @@ a{
 .ie8 .promo__left-corner {
   position: absolute;
   top: 426px;
-  width: 30px;
-  left: 0;
+  width: 23.5px;
+  left: 327px;
   z-index: 5; }
+
+.ie8 .promo__right-corner {
+  position: absolute;
+  top: 426px;
+  width: 23.5px;
+  left: 565px;
+  z-index: 5; }
+
+.ie8 .promo__active {
+  border-left: none;
+  border-right: none; }
+  .ie8 .promo__active .promo__left-corner--login {
+    display: block;
+    float: left;
+    width: 24px;
+    margin-left: 30px; }
+  .ie8 .promo__active .promo__right-corner--login {
+    display: none; }
+  .ie8 .promo__active .promo__left-corner--signup {
+    display: none; }
+  .ie8 .promo__active .promo__right-corner--signup {
+    display: none; }
 
 @charset "UTF-8";
 @media (max-width: 767px) {
@@ -606,6 +640,19 @@ a{
 .ie8 .howitworks__next {
   right: 10px; }
 
+.ie8 .howitworks__step {
+  float: left; }
+
+.ie8 .howitworks__left-corner {
+  display: block;
+  float: left;
+  width: 11px; }
+
+.ie8 .howitworks__right-corner {
+  display: block;
+  float: left;
+  width: 11.5px; }
+
 @charset "UTF-8";
 @media (max-width: 767px) {
   #partners {
@@ -783,11 +830,27 @@ a{
   display: block;
   margin-top: 15px; }
 
-.ie8 .partners__other {
+.ie8 .partners__wrapper-other {
   clear: both;
+  margin: 0 auto;
+  width: 250px; }
+
+.ie8 .partners__other {
+  float: left;
   line-height: 36px;
-  width: 190px;
-  margin-top: 20px; }
+  width: 165px;
+  border-left: none;
+  border-right: none; }
+
+.ie8 .partners__left-corner {
+  display: block;
+  float: left;
+  width: 26px; }
+
+.ie8 .partners__right-corner {
+  display: block;
+  float: left;
+  width: 26px; }
 
 @media (max-width: 767px) {
   #ideas {
@@ -1032,9 +1095,20 @@ a{
   line-height: 36px; }
 
 .ie8 .searcher__search {
-  width: 163px;
-  margin-left: 5px;
+  width: 120px;
+  float: left;
   display: inline-block; }
+
+.ie8 .searcher__left-corner {
+  display: block;
+  float: left;
+  width: 23px;
+  margin-left: 5px; }
+
+.ie8 .searcher__right-corner {
+  display: block;
+  float: left;
+  width: 24px; }
 
 #footer {
   border-top: 4px solid #ff4e50;

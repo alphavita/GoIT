@@ -116,6 +116,17 @@
   line-height: 36px; }
 
 .ie8 .searcher__search {
-  width: 163px;
-  margin-left: 5px;
+  width: 120px;
+  float: left;
   display: inline-block; }
+
+.ie8 .searcher__left-corner {
+  display: block;
+  float: left;
+  width: 23px;
+  margin-left: 5px; }
+
+.ie8 .searcher__right-corner {
+  display: block;
+  float: left;
+  width: 24px; }

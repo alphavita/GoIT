@@ -171,11 +171,27 @@ position: absolute;
         display: block;
         margin-top: 15px;
     }
-    .partners__other{
+    .partners__wrapper-other{
         clear: both;
+        margin: 0 auto;
+        width: 250px;
+    }
+    .partners__other{
+        float: left;
         line-height: 36px;
-        width: 190px;
-        margin-top: 20px;
+        width: 165px;
+        border-left: none;
+        border-right: none;
+    }
+    .partners__left-corner {
+        display:block;
+        float: left;
+        width: 26px;
+    }
+    .partners__right-corner {
+        display:block;
+        float: left;
+        width: 26px;
     }
 }
 

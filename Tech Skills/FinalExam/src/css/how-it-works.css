@@ -225,3 +225,16 @@
 
 .ie8 .howitworks__next {
   right: 10px; }
+
+.ie8 .howitworks__step {
+  float: left; }
+
+.ie8 .howitworks__left-corner {
+  display: block;
+  float: left;
+  width: 11px; }
+
+.ie8 .howitworks__right-corner {
+  display: block;
+  float: left;
+  width: 11.5px; }
