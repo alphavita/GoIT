@@ -215,4 +215,11 @@
         left: 37%;
         width: 224px;
     }
+    .promo__left-corner {
+        position: absolute;
+        top: 426px;
+        width: 22.5px;
+        left: 327px; 
+        z-index: 5;
+    }
 }

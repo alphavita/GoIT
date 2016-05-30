@@ -219,3 +219,10 @@
   top: 426px;
   left: 37%;
   width: 224px; }
+
+.ie8 .promo__left-corner {
+  position: absolute;
+  top: 426px;
+  width: 30px;
+  left: 0;
+  z-index: 5; }
