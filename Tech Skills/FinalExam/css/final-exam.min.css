@@ -355,17 +355,8 @@ a{
   right: 0;
   width: 204px; }
 
-.ie8 .promo__left-corner--login {
-  display: none; }
-
-.ie8 .promo__right-corner--login {
-  display: none; }
-
-.ie8 .promo__left-corner--signup {
-  display: none; }
-
-.ie8 .promo__right-corner--signup {
-  display: none; }
+.ie8 .promo__login {
+  position: relative; }
 
 .ie8 .promo_title {
   top: 216px;
@@ -386,7 +377,7 @@ a{
 .ie8 .promo__left-corner {
   position: absolute;
   top: 426px;
-  width: 23.5px;
+  width: 22.5px;
   left: 327px;
   z-index: 5; }
 
@@ -399,18 +390,34 @@ a{
 
 .ie8 .promo__active {
   border-left: none;
-  border-right: none; }
-  .ie8 .promo__active .promo__left-corner--login {
-    display: block;
-    float: left;
-    width: 24px;
-    margin-left: 30px; }
-  .ie8 .promo__active .promo__right-corner--login {
-    display: none; }
-  .ie8 .promo__active .promo__left-corner--signup {
-    display: none; }
-  .ie8 .promo__active .promo__right-corner--signup {
-    display: none; }
+  border-right: none;
+  position: relative;
+  z-index: 1;
+  background-color: transparent; }
+
+.ie8 .promo__active:before {
+  content: "";
+  position: absolute;
+  z-index: 50;
+  top: -2px;
+  bottom: 0px;
+  left: -15px;
+  width: 22px;
+  height: 37px;
+  background: url("../img/ie8/left-white.png");
+  background-repeat: no-repeat; }
+
+.ie8 .promo__active:after {
+  content: "";
+  position: absolute;
+  z-index: 50;
+  top: -2px;
+  bottom: 0px;
+  left: 80px;
+  width: 22px;
+  height: 37px;
+  background: url("../img/ie8/right-white.png");
+  background-repeat: no-repeat; }
 
 @charset "UTF-8";
 @media (max-width: 767px) {

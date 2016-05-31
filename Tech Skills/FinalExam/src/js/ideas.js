@@ -6,7 +6,7 @@ function getPictures(filter, count) {
         method: 'GET',
         success: function (data) {
             if (data.count==0) {
-                alert('Ничего не найдено');
+                alert('pixplorer не вернул ни одной картинки');
                 return;
             }
             $grid.masonry('remove', $('.ideas__picture'));

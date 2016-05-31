@@ -199,17 +199,8 @@
         right: 0;
         width: 204px;
      }
-    .promo__left-corner--login{
-        display: none;
-    }
-    .promo__right-corner--login{
-        display: none;
-    }
-    .promo__left-corner--signup{
-        display: none;
-    }
-    .promo__right-corner--signup{
-        display: none;
+    .promo__login{
+        position: relative;
     }
     .promo_title{
         top: 216px;
@@ -230,7 +221,7 @@
     .promo__left-corner {
         position: absolute;
         top: 426px;
-        width: 23.5px;
+        width: 22.5px;
         left: 327px; 
         z-index: 5;
     }
@@ -244,20 +235,32 @@
     .promo__active{
         border-left:none;
         border-right:none;
-        .promo__left-corner--login{
-            display: block;
-            float: left;
-            width: 24px;
-            margin-left: 30px;
-        }
-        .promo__right-corner--login{
-            display: none;
-        }
-        .promo__left-corner--signup{
-            display: none;
-        }
-        .promo__right-corner--signup{
-            display: none;
-        }
+        position:relative;
+        z-index:1;
+        background-color: transparent;
+     }
+    .promo__active:before {
+        content:""; 
+        position:absolute;
+        z-index:50;
+        top: -2px;
+        bottom:0px;
+        left:-15px;
+        width:22px;
+        height:37px;
+        background:url('../img/ie8/left-white.png'); 
+        background-repeat: no-repeat;
+    }
+    .promo__active:after {
+        content:""; 
+        position:absolute;
+        z-index:50;
+        top: -2px;
+        bottom:0px;
+        left:80px;
+        width:22px;
+        height:37px;
+        background:url('../img/ie8/right-white.png'); 
+        background-repeat: no-repeat;
     }
 }
