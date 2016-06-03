@@ -16,7 +16,10 @@
     margin: 0 auto;
     overflow: hidden;
 }
-
+a {
+    text-decoration: none;
+    color: inherit;
+}
 
 .logo-text{
     position:absolute;
@@ -282,7 +285,7 @@
         text-shadow: 0.5px 0.9px 0 #0f1518;
     }
 
-     .feedback{
+    .feedback{
         position: relative;
         overflow: hidden;
         background-color: #f9f9f9;
